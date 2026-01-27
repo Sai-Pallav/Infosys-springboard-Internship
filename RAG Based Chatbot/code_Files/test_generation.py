@@ -10,8 +10,8 @@ def test_generation_mock():
     print("Testing generate_answer with MOCK...")
     
     
-    with patch('generation.genai') as mock_genai, \
-         patch('generation.GEMINI_API_KEY', 'mock-key-123'), \
+    with patch('generation.OpenAI') as mock_openai, \
+         patch('generation.GROQ_API_KEY', 'mock-key-123'), \
          patch('generation.retrieve_chunks') as mock_retrieve:
         
         mock_retrieve.return_value = [
@@ -19,12 +19,12 @@ def test_generation_mock():
             {'text': 'Text 2', 'source': 'doc2.pdf', 'chunk_id': 5, 'similarity_score': 0.2}
         ]
 
-        mock_model_instance = MagicMock()
-        mock_response = MagicMock()
-        mock_response.text = "This is a mocked answer."
+        mock_client = MagicMock()
+        mock_completion = MagicMock()
+        mock_completion.choices = [MagicMock(message=MagicMock(content="This is a mocked answer."))]
         
-        mock_model_instance.generate_content.return_value = mock_response
-        mock_genai.GenerativeModel.return_value = mock_model_instance
+        mock_client.chat.completions.create.return_value = mock_completion
+        mock_openai.return_value = mock_client
         
         query = "Who is the Missile Man?"
         answer = generate_answer(query)

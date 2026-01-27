@@ -1,17 +1,18 @@
 import time
-from config import OPENAI_API_KEY, LLM_MODEL
+from config import GROQ_API_KEY, GROQ_BASE_URL, LLM_MODEL
 from retrieval import retrieve_chunks
 from openai import OpenAI
 
-# ---- CREATE CLIENT ONCE ----
-client = OpenAI(api_key=OPENAI_API_KEY)
+client = OpenAI(
+    api_key=GROQ_API_KEY,
+    base_url=GROQ_BASE_URL
+)
 
-# ---- OPTIONAL SIMPLE CACHE (SAVES MONEY) ----
 _CACHE = {}
 
 def generate_answer(query: str, history: list = []):
     """
-    Efficient RAG-based answer generation using OpenAI.
+    Efficient RAG-based answer generation using Groq.
 
     Guarantees:
     - ONE API call per query
@@ -20,21 +21,16 @@ def generate_answer(query: str, history: list = []):
     - Cache-enabled
     """
 
-    if not OPENAI_API_KEY:
-        return "Error: OPENAI_API_KEY is not set."
+    if not GROQ_API_KEY:
+        return "Error: GROQ_API_KEY is not set."
 
-    # Note: We disable caching for multi-turn conversations to ensure context updates
-    # allow for follow-up questions
     if not history and query in _CACHE:
         return _CACHE[query]
 
-    # ---- Retrieve context ----
-    # (In a more advanced system, we might rewrite the query using history before retrieval)
     chunks = retrieve_chunks(query, k=5)
     if not chunks:
         return {"answer": "I couldn't find any relevant information in the knowledge base.", "sources": []}
 
-    # ---- Trim context (VERY IMPORTANT) ----
     MAX_CHARS = 3500  # safe limit
     context_parts = []
     total_chars = 0
@@ -50,7 +46,6 @@ def generate_answer(query: str, history: list = []):
 
     context_text = "\n\n".join(context_parts)
 
-    # Format history for prompt
     history_text = ""
     if history:
          history_text = "Conversation History:\n" + "\n".join([f"{msg['role'].title()}: {msg['content']}" for msg in history]) + "\n\n"
@@ -74,7 +69,6 @@ Question:
 Answer:
 """
 
-    # ---- Soft cooldown (good hygiene) ----
     time.sleep(1)
 
     try:
@@ -91,7 +85,6 @@ Answer:
     except Exception as e:
         return {"answer": f"OpenAI API error: {str(e)}", "sources": []}
 
-    # ---- Build sources list ----
     structured_sources = []
     seen = set()
     for c in chunks:
@@ -108,13 +101,11 @@ Answer:
             })
             seen.add(key)
 
-    # Return structured data
     result = {
         "answer": answer_text,
         "sources": structured_sources
     }
 
-    # Only cache if no history (simple queries)
     if not history:
         _CACHE[query] = result
     return result

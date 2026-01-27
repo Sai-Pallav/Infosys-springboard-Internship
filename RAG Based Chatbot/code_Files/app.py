@@ -8,7 +8,6 @@ import os
 
 app = Flask(__name__)
 
-# Configure Upload Folder
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 UPLOAD_FOLDER = os.path.join(BASE_DIR, "data")
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
@@ -38,11 +37,9 @@ def upload_file():
         file.save(filepath)
         
         try:
-            # Trigger Ingestion
             print(f"File saved to {filepath}. Triggering ingestion...")
             status = ingest()
             
-            # Reload Index in Memory (Important!)
             global index, stored_chunks, metadata
             index, stored_chunks, metadata = load_faiss_index()
             
@@ -55,8 +52,6 @@ def upload_file():
             traceback.print_exc()
             return jsonify({"error": f"Ingestion failed: {str(e)}"}), 500
 
-# In-memory session history (for demonstration purposes)
-# Structure: { "session_id": [ {"role": "user", "content": "..."}, {"role": "assistant", "content": "..."} ] }
 SESSION_HISTORY = {}
 
 @app.route('/')
@@ -75,23 +70,18 @@ def get_response():
     if not query:
         return jsonify({"error": "No query provided"}), 400
     
-    # Initialize history for new session
     if session_id and session_id not in SESSION_HISTORY:
         SESSION_HISTORY[session_id] = []
     
-    # Get history for this session (default to empty list if no session_id)
     history = SESSION_HISTORY.get(session_id, [])
 
     try:
-        # Pass history to generation logic
         result = generate_answer(query, history)
         
-        # update history if session_id provided
         if session_id:
             SESSION_HISTORY[session_id].append({"role": "user", "content": query})
             SESSION_HISTORY[session_id].append({"role": "assistant", "content": result["answer"]})
             
-            # Keep history manageable (last 10 turns)
             if len(SESSION_HISTORY[session_id]) > 20:
                 SESSION_HISTORY[session_id] = SESSION_HISTORY[session_id][-20:]
 
