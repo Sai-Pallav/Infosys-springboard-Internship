@@ -1,0 +1,9 @@
+flask
+numpy
+sentence-transformers
+faiss-cpu
+langchain-community
+langchain-text-splitters
+pypdf
+docx2txt
+google-genai

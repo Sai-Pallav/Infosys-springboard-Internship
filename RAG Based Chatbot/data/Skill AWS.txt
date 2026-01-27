@@ -1,0 +1,560 @@
+Skill: AWS
+
+1️⃣ GeeksforGeeks (Most Preferred):
+1st Preferred: 
+https://www.geeksforgeeks.org/devops/aws-tutorial/
+​
+2nd Preferred: 
+https://www.geeksforgeeks.org/blogs/30-days-of-aws/
+​
+3rd Preferred: 
+https://www.youtube.com/watch?v=vW2ObiatEJk
+​
+
+2️⃣ YouTube Tutorials:
+1st Preferred: 
+https://www.youtube.com/watch?v=k1RI5locZE4
+​
+2nd Preferred: 
+https://www.youtube.com/watch?v=WkJ0xB1dPwM
+​
+3rd Preferred: 
+https://www.youtube.com/watch?v=HK_q1lH5x5M
+​
+
+3️⃣ Official Documentation:
+1st Preferred: 
+https://docs.aws.amazon.com
+​
+2nd Preferred: https://docs.aws.amazon.com/whitepapers/latest/aws-overview/aws-overview.pdf
+​
+
+4️⃣ Courses / Tutorials:
+1st Preferred: 
+https://digitalcloud.training/free-aws-certification-training/
+​
+2nd Preferred: https://aws.amazon.com/training/digital/
+​
+3rd Preferred: 
+https://www.freecodecamp.org/news/beginners-guide-to-cloud-computing-with-aws/
+​
+
+5️⃣ Practice Resources:
+1st Preferred: https://aws.amazon.com/free/ (Free Tier hands-on)
+​
+2nd Preferred: https://wellarchitectedlabs.com/
+​
+3rd Preferred: 
+https://www.whizlabs.com/blog/hands-on-labs-aws-generative-ai/
+​
+
+6️⃣ Notes / PDFs:
+1st Preferred: 
+https://docs.aws.amazon.com/pdfs/aws-certification/latest/examguides/aws-certification-exam-guides.pdf
+​
+2nd Preferred: 
+https://www.scribd.com/document/597827391/AWS-NOTES
+​
+3rd Preferred: 
+https://www.geeksforgeeks.org/blogs/30-days-of-aws/
+ (Printable guide)
+
+Skill: Agile Methodology
+
+1️⃣ GeeksforGeeks (Most Preferred):
+1st Preferred: https://www.geeksforgeeks.org/agile-methodology/
+​
+2nd Preferred: https://www.geeksforgeeks.org/software-engineering-agile-development-models/
+​
+3rd Preferred: https://www.geeksforgeeks.org/introduction-to-agile-software-development/
+​
+4th Preferred: https://www.geeksforgeeks.org/scrum-agile-framework/
+​
+5th Preferred: https://www.geeksforgeeks.org/kanban-agile-framework/
+​
+
+2️⃣ YouTube Tutorials:
+1st Preferred: https://www.youtube.com/watch?v=uaNji9iorzQ (Agile Tutorial for Beginners)
+2nd Preferred: https://www.youtube.com/watch?v=4oPUs4mTR9Y (Scrum Master Certification)
+3rd Preferred: https://www.youtube.com/watch?v=GWtuT8mUK28 (Agile Methodology Explained)
+4th Preferred: https://www.youtube.com/watch?v=3rGCqOR-3Ys (Kanban Tutorial)
+5th Preferred: https://www.youtube.com/watch?v=2c9lDKy21Kc (Agile vs Waterfall)
+​
+
+3️⃣ Official Documentation:
+1st Preferred: 
+https://agilemanifesto.org
+​
+2nd Preferred: https://agilealliance.org/agile101/
+​
+3rd Preferred: 
+https://agilealliance.org/agile101/the-agile-manifesto/
+​
+4th Preferred: 
+https://agilealliance.org/agile101/12-principles-behind-the-agile-manifesto/
+​
+5th Preferred: 
+https://www.atlassian.com/agile
+​
+
+4️⃣ Courses / Tutorials:
+1st Preferred: https://www.coursera.org/learn/agile-development-and-scrum
+2nd Preferred: https://www.udemy.com/course/agile-project-management/
+3rd Preferred: https://www.linkedin.com/learning/agile-foundations
+4th Preferred: 
+https://asana.com/resources/agile-methodology
+​
+5th Preferred: https://www.atlassian.com/agile/tutorials
+​
+
+5️⃣ Practice Resources:
+1st Preferred: https://www.scrum.org/assessments
+2nd Preferred: https://agileonline.it/quiz/
+3rd Preferred: https://www.agilekatas.com/
+4th Preferred: https://www.playagile.com/
+5th Preferred: https://kanbanize.com/kanban-resources/
+
+6️⃣ Notes / PDFs:
+1st Preferred: https://agilemanifesto.org/iso/AgileManifesto.pdf
+​
+2nd Preferred: https://www.atlassian.com/software/scrum
+​
+3rd Preferred: https://www.scrumguides.org/docs/scrumguide/v2020/2020-Scrum-Guide-US.pdf
+4th Preferred: https://agilealliance.org/resources/
+​
+5th Preferred: https://nuclino.com/articles/agile-documentation
+​
+Algorithms
+Skill: Algorithms
+1️⃣ GeeksforGeeks (Most Preferred):
+1st Preferred: https://www.geeksforgeeks.org/fundamentals-of-algorithms/
+​
+2nd Preferred: https://www.geeksforgeeks.org/dsa/gfg-complete-set-of-gfg-articles/
+3rd Preferred: https://www.geeksforgeeks.org/learn-dsa-in-60-days/
+4th Preferred: https://www.geeksforgeeks.org/top-50-algorithms-dsa-questions/
+5th Preferred: https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/
+​
+
+2️⃣ YouTube Tutorials:
+1st Preferred: https://www.youtube.com/watch?v=8hly31xKli0 (Abdul Bari Algorithms)
+2nd Preferred: https://www.youtube.com/watch?v=pkYVOmUO92U (mycodeschool)
+3rd Preferred: https://www.youtube.com/watch?v=0IAPZzGSbME (NeetCode)
+4th Preferred: https://www.youtube.com/watch?v=BZZ1lI9rd7Y (freeCodeCamp)
+5th Preferred: https://www.youtube.com/watch?v=WR-jNuA-2h0 (Tushar Roy)
+​
+
+3️⃣ Official Documentation:
+1st Preferred: https://www.coursera.org/learn/algorithms-part1 (Princeton)
+2nd Preferred: https://algs4.cs.princeton.edu/home/
+3rd Preferred: https://introcs.cs.princeton.edu/java/home/
+4th Preferred: https://www.geeksforgeeks.org/dsa/
+5th Preferred: https://cp-algorithms.com/
+​
+
+4️⃣ Courses / Tutorials:
+1st Preferred: https://www.coursera.org/learn/algorithms-part1
+2nd Preferred: https://leetcode.com/explore/interview/card/top-interview-questions-easy/
+3rd Preferred: https://www.udacity.com/course/intro-to-algorithms--cs258
+4th Preferred: https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/
+5th Preferred: https://www.khanacademy.org/computing/computer-science/algorithms
+​
+
+5️⃣ Practice Resources:
+1st Preferred: https://leetcode.com/problemset/algorithms/
+2nd Preferred: https://www.hackerrank.com/domains/algorithms
+3rd Preferred: https://codeforces.com/problemset
+4th Preferred: https://www.codewars.com/kata/search/python?q=&beta=false&order_by=sort_date%20desc
+5th Preferred: https://www.geeksforgeeks.org/explore?page=1&sortBy=submissions
+​
+
+6️⃣ Notes / PDFs:
+1st Preferred: https://www.geeksforgeeks.org/wp-content/uploads/Algorithms.pdf
+2nd Preferred: https://algs4.cs.princeton.edu/42graph/Algorithms-4th-Edition-book.pdf
+3rd Preferred: https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/mit6_006s20_chap01.pdf
+4th Preferred: https://jeffe.cs.illinois.edu/teaching/algorithms/notes/01-Intro.pdf
+5th Preferred: https://www.tutorialspoint.com/data_structures_algorithms/algorithms_tutorial.pdf
+​
+
+Angular
+Skill: Angular
+1️⃣ GeeksforGeeks (Most Preferred):
+1st Preferred: https://www.geeksforgeeks.org/angularjs-tutorial/
+2nd Preferred: https://www.geeksforgeeks.org/angular-7-tutorial/
+3rd Preferred: https://www.geeksforgeeks.org/how-to-install-angular-cli/
+4th Preferred: https://www.geeksforgeeks.org/angular-material/
+5th Preferred: https://www.geeksforgeeks.org/angularjs-directives-overview/
+​
+
+2️⃣ YouTube Tutorials:
+1st Preferred: https://www.youtube.com/watch?v=Fdf5aTYWEs4 (freeCodeCamp Angular)
+2nd Preferred: https://www.youtube.com/watch?v=3dHNOWTI7mA (Academind)
+3rd Preferred: https://www.youtube.com/watch?v=k5E2AVpwsko (Traversy Media)
+4th Preferred: https://www.youtube.com/watch?v=UBOcO6BTg_Q (Angular University)
+5th Preferred: https://www.youtube.com/watch?v=FqAR_x0Oewk (Codevolution)
+​
+
+3️⃣ Official Documentation:
+1st Preferred: https://angular.dev/
+2nd Preferred: https://angular.dev/tutorials/first-app
+3rd Preferred: https://angular.dev/guide/architecture
+4th Preferred: https://angular.dev/reference/standalone
+5th Preferred: https://angular.dev/api
+​
+
+4️⃣ Courses / Tutorials:
+1st Preferred: https://www.codecademy.com/learn/learn-angular
+2nd Preferred: https://angular.dev/tutorials
+3rd Preferred: https://www.udemy.com/course/the-complete-guide-to-angular-2/
+4th Preferred: https://www.pluralsight.com/courses/angular-fundamentals
+5th Preferred: https://frontendmasters.com/courses/angular
+​
+
+5️⃣ Practice Resources:
+1st Preferred: https://www.angularjswiki.com/angular/
+2nd Preferred: https://tour-of-heroes-angular.readthedocs.io/
+3rd Preferred: https://angular-realworld-example-app.com/
+4th Preferred: https://github.com/angular/angular-cli/issues
+5th Preferred: https://exercism.org/tracks/angular
+​
+
+6️⃣ Notes / PDFs:
+1st Preferred: https://angular.dev/assets/guide/angular.pdf
+2nd Preferred: https://www.tutorialspoint.com/angularjs/angularjs_pdf.pdf
+3rd Preferred: https://v2.angular.io/docs/ts/latest/guide/architecture.pdf
+4th Preferred: https://angular.io/guide/quickstart.pdf
+5th Preferred: https://www.geeksforgeeks.org/angular-notes/
+​
+Skill: Ansible
+1️⃣ GeeksforGeeks (Most Preferred):
+1st Preferred: https://www.geeksforgeeks.org/ansible-tutorial/
+​
+2nd Preferred: https://www.geeksforgeeks.org/introduction-to-ansible/
+​
+3rd Preferred: https://www.geeksforgeeks.org/ansible-playbook/
+​
+4th Preferred: https://www.geeksforgeeks.org/ansible-inventory/
+​
+5th Preferred: https://www.geeksforgeeks.org/ansible-galaxy/
+​
+
+2️⃣ YouTube Tutorials:
+1st Preferred: https://www.youtube.com/watch?v=weZxb0ed_5k (freeCodeCamp Ansible)
+2nd Preferred: https://www.youtube.com/watch?v=wgPbf0aHQ_o (NetworkChuck)
+3rd Preferred: https://www.youtube.com/watch?v=QD1Ny4WvTZw (TechWorld with Nana)
+4th Preferred: https://www.youtube.com/watch?v=hmNfyPB-_DM (Simplilearn)
+5th Preferred: https://www.youtube.com/watch?v=lyagFTyZa1k (Edureka)
+​
+
+3️⃣ Official Documentation:
+1st Preferred: https://docs.ansible.com/ansible/latest/index.html
+​
+2nd Preferred: https://docs.ansible.com/ansible/latest/user_guide/intro_getting_started.html
+3rd Preferred: https://docs.ansible.com/ansible/latest/collections/index.html
+4th Preferred: https://docs.ansible.com/ansible/latest/playbook_guide/index.html
+5th Preferred: https://docs.ansible.com/ansible/latest/inventory_guide/index.html
+​
+
+4️⃣ Courses / Tutorials:
+1st Preferred: https://www.udemy.com/course/ansible-for-the-absolute-beginner/
+2nd Preferred: https://www.coursera.org/learn/ansible
+3rd Preferred: https://www.redhat.com/en/services/training/do007-red-hat-ansible-automation
+4th Preferred: https://learn.redhat.com/
+​
+5th Preferred: https://www.codecademy.com/learn/paths/devops
+​
+
+5️⃣ Practice Resources:
+1st Preferred: https://labs.playground.com/?track=ansible
+2nd Preferred: https://www.katacoda.com/courses/ansible
+3rd Preferred: https://www.qwiklabs.com/catalog?keywords=ansible
+​
+4th Preferred: https://github.com/ansible/ansible-examples
+5th Preferred: https://www.ansible.com/resources/demos
+​
+
+6️⃣ Notes / PDFs:
+1st Preferred: https://docs.ansible.com/ansible/latest/reference_appendices/playbooks_keywords.html
+2nd Preferred: https://www.ansible.com/sites/default/files/2022-06/Ansible-for-DevOps.pdf
+3rd Preferred: https://docs.ansible.com/ansible/latest/user_guide/pdf/ansible-docgen.pdf
+4th Preferred: https://www.redhat.com/en/resources/ansible-automation-platform-ebook
+5th Preferred: https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html
+​
+
+Skill: Apache Kafka
+1️⃣ GeeksforGeeks (Most Preferred):
+1st Preferred: https://www.geeksforgeeks.org/apache-kafka/
+​
+2nd Preferred: https://www.geeksforgeeks.org/introduction-to-kafka/
+​
+3rd Preferred: https://www.geeksforgeeks.org/kafka-producer-and-consumer/
+​
+4th Preferred: https://www.geeksforgeeks.org/kafka-topics/
+​
+5th Preferred: https://www.geeksforgeeks.org/kafka-streams/
+​
+
+2️⃣ YouTube Tutorials:
+1st Preferred: https://www.youtube.com/watch?v=06iK3_b9koc (Stéphane Maarek)
+2nd Preferred: https://www.youtube.com/watch?v=KVp3aNz8G2w (Confluent)
+3rd Preferred: https://www.youtube.com/watch?v=ImtZ5yENzgE (freeCodeCamp)
+4th Preferred: https://www.youtube.com/watch?v=6ZwlNI6hB_c (TechWorld with Nana)
+5th Preferred: https://www.youtube.com/watch?v=k8Qfecvy8eA (Simplilearn)
+​
+
+3️⃣ Official Documentation:
+1st Preferred: https://kafka.apache.org/documentation/
+​
+2nd Preferred: https://kafka.apache.org/quickstart
+3rd Preferred: https://kafka.apache.org/documentation/#streams
+4th Preferred: https://kafka.apache.org/documentation/#connect
+5th Preferred: https://kafka.apache.org/documentation/#operations
+​
+
+4️⃣ Courses / Tutorials:
+1st Preferred: https://www.confluent.io/learn/kafka/
+2nd Preferred: https://developer.confluent.io/learn-kafka/
+3rd Preferred: https://www.udemy.com/course/apache-kafka/
+4th Preferred: https://www.coursera.org/learn/apache-kafka
+​
+5th Preferred: https://stephenreichard.com/kafka-training/
+​
+
+5️⃣ Practice Resources:
+1st Preferred: https://kafka-tutorials.confluent.io/
+2nd Preferred: https://developer.confluent.io/learn-kafka/practice/
+3rd Preferred: https://github.com/confluentinc/kafka-streams-examples
+​
+4th Preferred: https://www.katacoda.com/courses/kafka
+5th Preferred: https://labs.confluent.io/
+​
+
+6️⃣ Notes / PDFs:
+1st Preferred: https://www.confluent.io/wp-content/uploads/Kafka-The-Definitive-Guide-v2.pdf
+2nd Preferred: https://kafka.apache.org/documentation/Apache-Kafka-Quickstart.pdf
+3rd Preferred: https://www.oreilly.com/library/view/kafka-the-definitive/9781491936153/
+4th Preferred: https://developer.confluent.io/learn-kafka/kafka-pdf-guide/
+5th Preferred: https://kafka.apache.org/documentation.pdf
+​
+
+Skill: Azure
+1️⃣ GeeksforGeeks (Most Preferred):
+1st Preferred: https://www.geeksforgeeks.org/microsoft-azure/
+​
+2nd Preferred: https://www.geeksforgeeks.org/azure-virtual-machines/
+​
+3rd Preferred: https://www.geeksforgeeks.org/azure-storage/
+​
+4th Preferred: https://www.geeksforgeeks.org/azure-sql-database/
+​
+5th Preferred: https://www.geeksforgeeks.org/azure-active-directory/
+​
+
+2️⃣ YouTube Tutorials:
+1st Preferred: https://www.youtube.com/watch?v=UBGzsbBwCDo (freeCodeCamp Azure)
+2nd Preferred: https://www.youtube.com/watch?v=hJMmIOvJy9I (Adam Marczak)
+3rd Preferred: https://www.youtube.com/watch?v=buKIMcLS0Tg (TechWorld with Nana)
+4th Preferred: https://www.youtube.com/watch?v=6Ly6RWr3Vvg (Microsoft Azure)
+5th Preferred: https://www.youtube.com/watch?v=lvxr31KqeMM (Simplilearn)
+​
+
+3️⃣ Official Documentation:
+1st Preferred: https://docs.microsoft.com/en-us/azure/
+​
+2nd Preferred: https://docs.microsoft.com/en-us/learn/azure/
+3rd Preferred: https://docs.microsoft.com/en-us/azure/architecture/
+4th Preferred: https://docs.microsoft.com/en-us/azure/well-architected/
+5th Preferred: https://docs.microsoft.com/en-us/azure/security/
+​
+
+4️⃣ Courses / Tutorials:
+1st Preferred: https://docs.microsoft.com/en-us/learn/paths/azure-fundamentals/
+2nd Preferred: https://www.coursera.org/learn/azure-fundamentals
+3rd Preferred: https://azure.microsoft.com/en-us/resources/training-and-certifications/
+​
+4th Preferred: https://www.pluralsight.com/paths/azure
+5th Preferred: https://www.udemy.com/course/microsoft-azure-fundamentals-az900/
+​
+
+5️⃣ Practice Resources:
+1st Preferred: https://microsoftlearning.github.io/AZ-900T00-StudentManual/
+2nd Preferred: https://azure.microsoft.com/en-us/free/
+3rd Preferred: https://labs.azure.com/
+​
+4th Preferred: https://portal.azure.com/
+5th Preferred: https://microsoft.github.io/AZ-104-W10-C01/
+​
+
+6️⃣ Notes / PDFs:
+1st Preferred: https://docs.microsoft.com/en-us/azure/architecture/aws-professional/
+2nd Preferred: https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4tn8y
+3rd Preferred: https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/
+4th Preferred: https://docs.microsoft.com/en-us/azure/governance/
+5th Preferred: https://azure.microsoft.com/en-us/resources/azure-fundamentals-cheatsheet/
+​
+
+Skill: Bash Scripting
+1️⃣ GeeksforGeeks (Most Preferred):
+1st Preferred: https://www.geeksforgeeks.org/bash-scripting/
+​
+2nd Preferred: https://www.geeksforgeeks.org/introduction-linux-shell-bash-scripting/
+​
+3rd Preferred: https://www.geeksforgeeks.org/bash-scripting-loops/
+​
+4th Preferred: https://www.geeksforgeeks.org/bash-functions/
+​
+5th Preferred: https://www.geeksforgeeks.org/bash-scripting-arrays/
+​
+
+2️⃣ YouTube Tutorials:
+1st Preferred: https://www.youtube.com/watch?v=Sp1tjkT72%
+​
+2nd Preferred: https://www.youtube.com/watch?v=rm6zSQIwF14 (NetworkChuck)
+3rd Preferred: https://www.youtube.com/watch?v=ORovYpPMf14 (The Net Ninja)
+4th Preferred: https://www.youtube.com/watch?v=fcN8eSyoCWY (Corey Schafer)
+5th Preferred: https://www.youtube.com/watch?v=hwrhm3iqtek (LinuxHint)
+​
+
+3️⃣ Official Documentation:
+1st Preferred: https://www.gnu.org/software/bash/manual/bash.html
+​
+2nd Preferred: https://tldp.org/LDP/abs/html/
+3rd Preferred: https://linux.die.net/man/1/bash
+4th Preferred: https://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html
+5th Preferred: https://www.tldp.org/LDP/Bash-Beginners-Guide/html/
+​
+
+4️⃣ Courses / Tutorials:
+1st Preferred: https://www.codecademy.com/learn/learn-bash-scripting
+​
+2nd Preferred: https://ryanstutorials.net/bash-tutorial/
+3rd Preferred: https://www.udemy.com/course/linux-shell-scripting-bash/
+4th Preferred: https://linuxconfig.org/bash-scripting-tutorial
+​
+5th Preferred: https://www.coursera.org/learn/shell-scripting-linux
+​
+
+5️⃣ Practice Resources:
+1st Preferred: https://www.hackerrank.com/domains/shell
+​
+2nd Preferred: https://overthewire.org/wargames/bandit/
+3rd Preferred: https://exercism.org/tracks/bash
+4th Preferred: https://www.codewars.com/kata/search/shell?q=&beta=false
+5th Preferred: https://tryhackme.com/room/bashscripting
+​
+
+6️⃣ Notes / PDFs:
+1st Preferred: https://tldp.org/LDP/abs/html/abs.html
+2nd Preferred: https://linux.die.net/Bash-Beginners-Guide.pdf
+3rd Preferred: https://www.gnu.org/software/bash/manual/bash.pdf
+4th Preferred: https://io.csie.ntnu.edu.tw/~b93081/notes/bash.pdf
+5th Preferred: https://www.tldp.org/LDP/Bash-Beginners-Guide/bash.pdf
+​
+
+Skill: Blender
+1️⃣ GeeksforGeeks (Most Preferred):
+1st Preferred: https://www.geeksforgeeks.org/blender-3d/
+2nd Preferred: https://www.geeksforgeeks.org/python-scripting-in-blender/
+3rd Preferred: https://www.geeksforgeeks.org/blender-python-api/
+4th Preferred: https://www.geeksforgeeks.org/3d-modeling-blender/
+5th Preferred: https://www.geeksforgeeks.org/blender-animation/
+​
+
+2️⃣ YouTube Tutorials:
+1st Preferred: https://www.youtube.com/watch?v=TPrnSACiTJ4 (Blender Guru Donut)
+2nd Preferred: https://www.youtube.com/watch?v=9Tj12P1Wj8k (CG Geek)
+3rd Preferred: https://www.youtube.com/watch?v=VUoMOwvaF3A (Grant Abbitt)
+4th Preferred: https://www.youtube.com/watch?v=ORovYpPMf14 (Blender Foundation)
+5th Preferred: https://www.youtube.com/watch?v=1gM8yEMFMKg (Ducky 3D)
+​
+
+3️⃣ Official Documentation:
+1st Preferred: https://docs.blender.org/manual/en/latest/
+​
+2nd Preferred: https://docs.blender.org/manual/en/latest/render/introduction.html
+3rd Preferred: https://docs.blender.org/api/current/
+4th Preferred: https://wiki.blender.org/wiki/Reference/Release_Notes
+5th Preferred: https://developer.blender.org/docs/handbook/
+​
+
+4️⃣ Courses / Tutorials:
+1st Preferred: https://www.blender.org/support/tutorials/
+2nd Preferred: https://cgcookie.com/courses
+3rd Preferred: https://www.udemy.com/course/blender-30/
+​
+4th Preferred: https://www.skillshare.com/classes/Blender/123456
+5th Preferred: https://blendercloud.com/
+​
+
+5️⃣ Practice Resources:
+1st Preferred: https://www.blender.org/support/tutorials/
+2nd Preferred: https://blenderartists.org/c/artwork/wiplash
+3rd Preferred: https://www.blendernation.com/
+4th Preferred: https://gamedev.net/forums/topic/701234-blender-practice-projects/
+​
+5th Preferred: https://www.artstation.com/challenges
+​
+
+6️⃣ Notes / PDFs:
+1st Preferred: https://docs.blender.org/manual/en/latest/advanced/blender_directory_layout.html
+2nd Preferred: https://download.blender.org/documentation/GD-blender_manual_2.79.pdf
+3rd Preferred: https://wiki.blender.org/wiki/Reference/Release_Notes/2.8
+4th Preferred: https://en.wikibooks.org/wiki/Blender_3D:_Noob_to_Pro
+5th Preferred: https://docs.blender.org/manual/en/dev/pdf/index.html
+
+Skill: C
+1️⃣ GeeksforGeeks (Most Preferred):
+1st Preferred: https://www.geeksforgeeks.org/c-programming-language/
+​
+2nd Preferred: https://www.geeksforgeeks.org/c-language-introduction/
+​
+3rd Preferred: https://www.geeksforgeeks.org/c-pointers/
+​
+4th Preferred: https://www.geeksforgeeks.org/c-functions/
+​
+5th Preferred: https://www.geeksforgeeks.org/c-arrays/
+​
+
+2️⃣ YouTube Tutorials:
+1st Preferred: https://www.youtube.com/watch?v=KJgsSFOSQv0 (freeCodeCamp C Programming)
+2nd Preferred: https://www.youtube.com/watch?v=EDab8V9X4i8 (Caleb Curry)
+3rd Preferred: https://www.youtube.com/watch?v=h-HpxS5GT50 (Neso Academy)
+4th Preferred: https://www.youtube.com/watch?v=2Vv-BfVoq4g (Jenny's Lectures)
+5th Preferred: https://www.youtube.com/watch?v=K8Rpb2ChN0g (CodeWithHarry)
+​
+
+3️⃣ Official Documentation:
+1st Preferred: https://en.cppreference.com/w/c/language
+​
+2nd Preferred: https://www.iso.org/standard/74528.html
+3rd Preferred: https://cdecl.org/
+4th Preferred: https://pubs.opengroup.org/onlinepubs/9699919799/
+5th Preferred: https://www.tutorialspoint.com/cprogramming/
+​
+
+4️⃣ Courses / Tutorials:
+1st Preferred: https://www.codecademy.com/learn/learn-c
+​
+2nd Preferred: https://cs50.harvard.edu/x/
+3rd Preferred: https://www.edx.org/learn/c-programming
+4th Preferred: https://www.coursera.org/learn/c-programming
+5th Preferred: https://introcs.cs.princeton.edu/java/11cheatsheet/
+​
+
+5️⃣ Practice Resources:
+1st Preferred: https://www.hackerrank.com/domains/c
+​
+2nd Preferred: https://www.codewars.com/kata/search/c?q=&beta=false
+3rd Preferred: https://exercism.org/tracks/c
+4th Preferred: https://www.geeksforgeeks.org/c-programming-examples/
+​
+5th Preferred: https://onlinegdb.com/online_c_compiler
+​
+
+6️⃣ Notes / PDFs:
+1st Preferred: https://www.tutorialspoint.com/cprogramming/cprogramming_tutorial.pdf
+​
+2nd Preferred: https://www.geeksforgeeks.org/wp-content/uploads/CProgramming.pdf
+3rd Preferred: https://iitd-plos.github.io/cprogm/notes.pdf
+4th Preferred: https://nptel.ac.in/content/storage2/courses/106105055/www_m1l1.pdf
+5th Preferred: https://see.stanford.edu/materials/lslcombine/lsl.pdf
+​

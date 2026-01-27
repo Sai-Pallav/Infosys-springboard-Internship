@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>RAG Intelligence Dashboard</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            /* Production Theme: "Cyberpunk Lite" */
+            --bg-deep: #0f172a;
+            --bg-surface: rgba(30, 41, 59, 0.7);
+            --bg-surface-solid: #1e293b;
+            --primary: #3b82f6;
+            --primary-glow: 0 0 20px rgba(59, 130, 246, 0.4);
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --border: rgba(148, 163, 184, 0.1);
+            --border-highlight: rgba(59, 130, 246, 0.3);
+            --success: #10b981;
+
+            --glass-blur: blur(12px);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-deep);
+            background-image:
+                radial-gradient(circle at 10% 20%, rgba(59, 130, 246, 0.1) 0%, transparent 40%),
+                radial-gradient(circle at 90% 80%, rgba(139, 92, 246, 0.1) 0%, transparent 40%);
+            color: var(--text-main);
+            height: 100dvh;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        h1,
+        h2,
+        h3,
+        .brand-font {
+            font-family: 'Outfit', sans-serif;
+        }
+
+        /* --- Glass Header --- */
+        header {
+            flex-shrink: 0;
+            height: 64px;
+            padding: 0 2rem;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            backdrop-filter: var(--glass-blur);
+            background: rgba(15, 23, 42, 0.8);
+            z-index: 10;
+        }
+
+        .logo {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 600;
+            font-size: 1.35rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            letter-spacing: -0.02em;
+        }
+
+        .logo svg {
+            color: var(--primary);
+            filter: drop-shadow(0 0 8px rgba(59, 130, 246, 0.5));
+        }
+
+        .status-badge {
+            background: rgba(16, 185, 129, 0.1);
+            border: 1px solid rgba(16, 185, 129, 0.2);
+            color: var(--success);
+            padding: 0.35rem 0.75rem;
+            border-radius: 99px;
+            font-size: 0.75rem;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .status-dot {
+            width: 6px;
+            height: 6px;
+            background: var(--success);
+            border-radius: 50%;
+            box-shadow: 0 0 8px var(--success);
+        }
+
+        /* --- Workspace --- */
+        .workspace {
+            flex: 1;
+            display: flex;
+            overflow: hidden;
+        }
+
+        /* --- Chat Section --- */
+        .chat-section {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            min-width: 0;
+            position: relative;
+        }
+
+        .messages-area {
+            flex: 1;
+            overflow-y: auto;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            scroll-behavior: smooth;
+            padding-bottom: 100px;
+            /* Space for empty state */
+        }
+
+        /* --- Empty State --- */
+        .empty-state {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            text-align: center;
+            animation: fadeIn 0.5s ease-out;
+        }
+
+        .empty-icon {
+            width: 64px;
+            height: 64px;
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(139, 92, 246, 0.1));
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+            border: 1px solid var(--border-highlight);
+        }
+
+        .empty-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .empty-desc {
+            color: var(--text-muted);
+            margin-bottom: 3rem;
+            max-width: 400px;
+            line-height: 1.6;
+        }
+
+        .suggestions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 1rem;
+            width: 100%;
+            max-width: 800px;
+        }
+
+        .suggestion-card {
+            background: var(--bg-surface);
+            border: 1px solid var(--border);
+            padding: 1.25rem;
+            border-radius: 1rem;
+            text-align: left;
+            cursor: pointer;
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .suggestion-card:hover {
+            border-color: var(--primary);
+            transform: translateY(-2px);
+            background: rgba(30, 41, 59, 0.9);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .suggestion-header {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .suggestion-text {
+            font-size: 0.95rem;
+            color: var(--text-main);
+        }
+
+
+        /* --- Messages --- */
+        .message-row {
+            display: flex;
+            gap: 1rem;
+            animation: slideUp 0.3s ease-out;
+        }
+
+        .message-row.user {
+            justify-content: flex-end;
+        }
+
+        .avatar {
+            width: 36px;
+            height: 36px;
+            border-radius: 10px;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+        }
+
+        .avatar.bot {
+            background: var(--bg-surface-solid);
+            border: 1px solid var(--border);
+            color: var(--primary);
+        }
+
+        .avatar.user {
+            background: var(--primary);
+            color: white;
+            box-shadow: var(--primary-glow);
+        }
+
+        .bubble {
+            max-width: 70%;
+            padding: 1.25rem 1.75rem;
+            border-radius: 1.25rem;
+            line-height: 1.7;
+            position: relative;
+            font-size: 1rem;
+        }
+
+        .bubble.user {
+            background: linear-gradient(135deg, #3b82f6, #6366f1);
+            color: white;
+            border-radius: 1.25rem 0.25rem 1.25rem 1.25rem;
+            box-shadow: 0 8px 24px rgba(59, 130, 246, 0.25);
+        }
+
+        .bubble.bot {
+            background: var(--bg-surface);
+            border: 1px solid var(--border);
+            border-radius: 0.25rem 1.25rem 1.25rem 1.25rem;
+            backdrop-filter: blur(8px);
+        }
+
+        /* --- Code Blocks --- */
+        .bubble.bot code {
+            font-family: 'JetBrains Mono', monospace;
+            background: rgba(0, 0, 0, 0.3);
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            font-size: 0.9em;
+            color: #e2e8f0;
+        }
+
+        .bubble.bot strong {
+            color: #93c5fd;
+        }
+
+        /* --- Input Area --- */
+        .input-container {
+            flex-shrink: 0;
+            padding: 1.5rem 2rem;
+            background: linear-gradient(to top, var(--bg-deep) 40%, transparent);
+            display: flex;
+            justify-content: center;
+        }
+
+        .input-capsule {
+            width: 100%;
+            max-width: 900px;
+            background: var(--bg-surface);
+            backdrop-filter: blur(16px);
+            border: 1px solid var(--border);
+            border-radius: 99px;
+            padding: 0.5rem 0.75rem 0.5rem 1.5rem;
+            /* Left padding for text */
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+
+        .input-capsule:focus-within {
+            border-color: var(--primary);
+            box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2), 0 8px 32px rgba(0, 0, 0, 0.2);
+        }
+
+        .upload-btn {
+            color: var(--text-muted);
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
+            border-radius: 50%;
+            transition: all 0.2s;
+        }
+
+        .upload-btn:hover {
+            background: rgba(255, 255, 255, 0.05);
+            color: var(--text-main);
+        }
+
+        input {
+            flex: 1;
+            background: transparent;
+            border: none;
+            color: white;
+            font-size: 1rem;
+            font-family: 'Inter', sans-serif;
+            outline: none;
+            height: 48px;
+        }
+
+        input::placeholder {
+            color: rgba(148, 163, 184, 0.5);
+        }
+
+        .send-btn {
+            width: 44px;
+            height: 44px;
+            background: var(--primary);
+            border: none;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            cursor: pointer;
+            transition: transform 0.2s;
+            box-shadow: var(--primary-glow);
+        }
+
+        .send-btn:hover {
+            transform: scale(1.05);
+        }
+
+        /* --- Sidebar --- */
+        .sidebar {
+            width: 360px;
+            background: rgba(15, 23, 42, 0.6);
+            backdrop-filter: blur(20px);
+            border-left: 1px solid var(--border);
+            display: flex;
+            flex-direction: column;
+            z-index: 5;
+        }
+
+        .sidebar-header {
+            padding: 1.5rem;
+            font-family: 'Outfit', sans-serif;
+            font-weight: 600;
+            font-size: 0.9rem;
+            letter-spacing: 0.05em;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .sources-list {
+            flex: 1;
+            overflow-y: auto;
+            padding: 1.5rem;
+            gap: 1rem;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .source-card {
+            background: rgba(30, 41, 59, 0.4);
+            border: 1px solid var(--border);
+            border-radius: 0.75rem;
+            padding: 1rem;
+            font-size: 0.9rem;
+            transition: all 0.2s;
+        }
+
+        .source-card:hover {
+            border-color: var(--primary);
+            background: rgba(30, 41, 59, 0.6);
+        }
+
+        .source-meta {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+            font-size: 0.75rem;
+            color: var(--primary);
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .source-text {
+            color: var(--text-muted);
+            line-height: 1.5;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            line-clamp: 3;
+            overflow: hidden;
+        }
+
+        /* --- Mobile --- */
+        @media (max-width: 768px) {
+            .sidebar {
+                display: none;
+            }
+
+            /* Drawer logic could go here */
+            header {
+                padding: 0 1rem;
+            }
+
+            .messages-area {
+                padding: 1rem;
+            }
+
+            .bubble {
+                max-width: 90%;
+            }
+
+            .suggestions-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .input-container {
+                padding: 1rem;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .loading-dots span {
+            display: inline-block;
+            width: 6px;
+            height: 6px;
+            background: var(--text-muted);
+            border-radius: 50%;
+            margin: 0 2px;
+            animation: bounce 1.4s infinite ease-in-out;
+        }
+
+        .loading-dots span:nth-child(1) {
+            animation-delay: -0.32s;
+        }
+
+        .loading-dots span:nth-child(2) {
+            animation-delay: -0.16s;
+        }
+
+        @keyframes bounce {
+
+            0%,
+            80%,
+            100% {
+                transform: scale(0);
+            }
+
+            40% {
+                transform: scale(1);
+            }
+        }
+
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: rgba(148, 163, 184, 0.2);
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(148, 163, 184, 0.4);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+            </svg>
+            <span>RAG</span>Chat
+        </div>
+        <div class="status-badge">
+            <div class="status-dot"></div>
+            System Operational
+        </div>
+    </header>
+
+    <div class="workspace">
+        <main class="chat-section">
+            <div id="messages-area" class="messages-area">
+                <!-- Empty State -->
+                <div id="empty-state" class="empty-state">
+                    <div class="empty-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                    </div>
+                    <h2 class="empty-title">How can I help you today?</h2>
+                    <p class="empty-desc">I have access to your uploaded documents. Ask me anything, and I'll find the
+                        answer for you.</p>
+
+                    <div class="suggestions-grid">
+                        <div class="suggestion-card"
+                            onclick="useSuggestion('Summarize the key points of the uploaded documents')">
+                            <div class="suggestion-header">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                                    <polyline points="14 2 14 8 20 8" />
+                                    <line x1="16" y1="13" x2="8" y2="13" />
+                                    <line x1="16" y1="17" x2="8" y2="17" />
+                                    <polyline points="10 9 9 9 8 9" />
+                                </svg>
+                                Summarize
+                            </div>
+                            <div class="suggestion-text">Summarize the key points of the uploaded documents.</div>
+                        </div>
+                        <div class="suggestion-card"
+                            onclick="useSuggestion('What are the core technical skills mentioned?')">
+                            <div class="suggestion-header">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <circle cx="11" cy="11" r="8" />
+                                    <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                                </svg>
+                                Find Specifics
+                            </div>
+                            <div class="suggestion-text">What are the core technical skills mentioned?</div>
+                        </div>
+                        <div class="suggestion-card" onclick="useSuggestion('Explain the architecture')">
+                            <div class="suggestion-header">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <polygon points="12 2 2 7 12 12 22 7 12 2" />
+                                    <polyline points="2 17 12 22 22 17" />
+                                    <polyline points="2 12 12 17 22 12" />
+                                </svg>
+                                Explain
+                            </div>
+                            <div class="suggestion-text">Explain the system architecture described.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="input-container">
+                <div class="input-capsule">
+                    <button class="upload-btn" onclick="document.getElementById('file-input').click()"
+                        title="Upload File">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path
+                                d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48" />
+                        </svg>
+                    </button>
+                    <input type="file" id="file-input" style="display: none;" onchange="handleFileUpload(this)">
+
+                    <input type="text" id="user-input" placeholder="Ask anything..." autocomplete="off">
+
+                    <button class="send-btn" onclick="sendMessage()">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" style="margin-left: -2px;">
+                            <line x1="22" y1="2" x2="11" y2="13"></line>
+                            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </main>
+
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                Context Sources
+            </div>
+            <div id="sources-list" class="sources-list">
+                <div style="text-align: center; color: var(--text-muted); margin-top: 50%;">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"
+                        style="opacity: 0.5; margin-bottom: 1rem;">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                        <polyline points="14 2 14 8 20 8" />
+                        <line x1="16" y1="13" x2="8" y2="13" />
+                        <line x1="16" y1="17" x2="8" y2="17" />
+                        <polyline points="10 9 9 9 8 9" />
+                    </svg>
+                    <p style="font-size: 0.9rem;">No citations yet.</p>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <script>
+        const input = document.getElementById('user-input');
+        const messagesArea = document.getElementById('messages-area');
+        const sourcesList = document.getElementById('sources-list');
+        const emptyState = document.getElementById('empty-state');
+
+        // Generate Session ID
+        const sessionId = 'session-' + Math.random().toString(36).substr(2, 9) + '-' + Date.now();
+        console.log("Session ID:", sessionId);
+
+        input.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') sendMessage();
+        });
+
+        function useSuggestion(text) {
+            input.value = text;
+            sendMessage();
+        }
+
+        function scrollToBottom() {
+            messagesArea.scrollTop = messagesArea.scrollHeight;
+        }
+
+        // Hide empty state on first message
+        function hideEmptyState() {
+            if (emptyState && emptyState.style.display !== 'none') {
+                emptyState.style.display = 'none';
+            }
+        }
+
+        function appendMessage(text, sender, isHtml = false) {
+            hideEmptyState();
+
+            const row = document.createElement('div');
+            row.className = `message-row ${sender}`;
+
+            // Avatar
+            const avatar = document.createElement('div');
+            avatar.className = `avatar ${sender}`;
+            avatar.innerHTML = sender === 'user'
+                ? '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>'
+                : '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>';
+
+            // Bubble
+            const bubble = document.createElement('div');
+            bubble.className = `bubble ${sender}`;
+
+            if (sender === 'bot' && !isHtml) {
+                text = text.replace(/\n/g, '<br>');
+                // Simple markdown bold parsing
+                text = text.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+            }
+
+            bubble.innerHTML = text;
+
+            if (sender === 'user') {
+                row.appendChild(bubble); // User: bubble first (right aligned) can be styled via flex order or simple append
+                // Actually for flex-end: Bubble is naturally last. But let's keep avatar logic consistent if needed. 
+                // Currently user bubble is right aligned, we can skip avatar or add it.
+                // Let's add avatar for consistency.
+                row.appendChild(avatar);
+            } else {
+                row.appendChild(avatar);
+                row.appendChild(bubble);
+            }
+
+            messagesArea.appendChild(row);
+            scrollToBottom();
+        }
+
+        async function handleFileUpload(input) {
+            const file = input.files[0];
+            if (!file) return;
+
+            hideEmptyState();
+            appendMessage(`Uploading <strong>${file.name}</strong>...`, 'user', true);
+
+            const formData = new FormData();
+            formData.append('file', file);
+
+            try {
+                const response = await fetch('/upload', { method: 'POST', body: formData });
+                const data = await response.json();
+
+                if (response.ok) {
+                    appendMessage(`✅ ${data.message}`, 'bot');
+                } else {
+                    appendMessage(`❌ Upload failed: ${data.error}`, 'bot');
+                }
+            } catch (err) {
+                appendMessage(`❌ Network error: ${err}`, 'bot');
+            }
+            input.value = '';
+        }
+
+        function updateSources(sources) {
+            sourcesList.innerHTML = '';
+            if (!sources || sources.length === 0) {
+                sourcesList.innerHTML = '<div style="text-align: center; color: var(--text-muted); margin-top: 50%;"><p style="font-size: 0.9rem;">No citations used.</p></div>';
+                return;
+            }
+
+            sources.forEach((src, index) => {
+                const card = document.createElement('div');
+                card.className = 'source-card';
+                card.style.animation = `fadeIn 0.5s ease-out ${index * 0.1}s backwards`;
+                card.innerHTML = `
+                    <div class="source-meta">
+                        <span>${src.source}</span>
+                        <span>#[${src.chunk_id}]</span>
+                    </div>
+                    <div class="source-text" title="${src.text}">${src.text}</div>
+                `;
+                sourcesList.appendChild(card);
+            });
+        }
+
+        async function sendMessage() {
+            const query = input.value.trim();
+            if (!query) return;
+
+            appendMessage(query, 'user');
+            input.value = '';
+
+            // Loading
+            const loadingId = 'loading-' + Date.now();
+            const loadingHtml = `
+                <div id="${loadingId}" class="message-row bot">
+                    <div class="avatar bot"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
+                    <div class="bubble bot">
+                        <div class="loading-dots"><span></span><span></span><span></span></div>
+                    </div>
+                </div>`;
+            messagesArea.insertAdjacentHTML('beforeend', loadingHtml);
+            scrollToBottom();
+
+            try {
+                const response = await fetch('/get_response', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ query: query, session_id: sessionId })
+                });
+
+                const data = await response.json();
+                document.getElementById(loadingId).remove();
+
+                if (data.error) {
+                    appendMessage("Error: " + data.error, 'bot');
+                } else {
+                    appendMessage(data.answer, 'bot');
+                    updateSources(data.sources);
+                }
+            } catch (err) {
+                document.getElementById(loadingId).remove();
+                appendMessage("Network Error: " + err, 'bot');
+            }
+        }
+    </script>
+</body>
+
+</html>

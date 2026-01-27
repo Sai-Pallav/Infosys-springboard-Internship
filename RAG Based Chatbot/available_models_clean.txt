@@ -1,0 +1,214 @@
+Fetching models...
+Model: models/embedding-gecko-001
+  Display Name: Embedding Gecko
+  Methods: []
+--------------------
+Model: models/gemini-2.5-flash
+  Display Name: Gemini 2.5 Flash
+  Methods: []
+--------------------
+Model: models/gemini-2.5-pro
+  Display Name: Gemini 2.5 Pro
+  Methods: []
+--------------------
+Model: models/gemini-2.0-flash-exp
+  Display Name: Gemini 2.0 Flash Experimental
+  Methods: []
+--------------------
+Model: models/gemini-2.0-flash
+  Display Name: Gemini 2.0 Flash
+  Methods: []
+--------------------
+Model: models/gemini-2.0-flash-001
+  Display Name: Gemini 2.0 Flash 001
+  Methods: []
+--------------------
+Model: models/gemini-2.0-flash-exp-image-generation
+  Display Name: Gemini 2.0 Flash (Image Generation) Experimental
+  Methods: []
+--------------------
+Model: models/gemini-2.0-flash-lite-001
+  Display Name: Gemini 2.0 Flash-Lite 001
+  Methods: []
+--------------------
+Model: models/gemini-2.0-flash-lite
+  Display Name: Gemini 2.0 Flash-Lite
+  Methods: []
+--------------------
+Model: models/gemini-2.0-flash-lite-preview-02-05
+  Display Name: Gemini 2.0 Flash-Lite Preview 02-05
+  Methods: []
+--------------------
+Model: models/gemini-2.0-flash-lite-preview
+  Display Name: Gemini 2.0 Flash-Lite Preview
+  Methods: []
+--------------------
+Model: models/gemini-exp-1206
+  Display Name: Gemini Experimental 1206
+  Methods: []
+--------------------
+Model: models/gemini-2.5-flash-preview-tts
+  Display Name: Gemini 2.5 Flash Preview TTS
+  Methods: []
+--------------------
+Model: models/gemini-2.5-pro-preview-tts
+  Display Name: Gemini 2.5 Pro Preview TTS
+  Methods: []
+--------------------
+Model: models/gemma-3-1b-it
+  Display Name: Gemma 3 1B
+  Methods: []
+--------------------
+Model: models/gemma-3-4b-it
+  Display Name: Gemma 3 4B
+  Methods: []
+--------------------
+Model: models/gemma-3-12b-it
+  Display Name: Gemma 3 12B
+  Methods: []
+--------------------
+Model: models/gemma-3-27b-it
+  Display Name: Gemma 3 27B
+  Methods: []
+--------------------
+Model: models/gemma-3n-e4b-it
+  Display Name: Gemma 3n E4B
+  Methods: []
+--------------------
+Model: models/gemma-3n-e2b-it
+  Display Name: Gemma 3n E2B
+  Methods: []
+--------------------
+Model: models/gemini-flash-latest
+  Display Name: Gemini Flash Latest
+  Methods: []
+--------------------
+Model: models/gemini-flash-lite-latest
+  Display Name: Gemini Flash-Lite Latest
+  Methods: []
+--------------------
+Model: models/gemini-pro-latest
+  Display Name: Gemini Pro Latest
+  Methods: []
+--------------------
+Model: models/gemini-2.5-flash-lite
+  Display Name: Gemini 2.5 Flash-Lite
+  Methods: []
+--------------------
+Model: models/gemini-2.5-flash-image
+  Display Name: Nano Banana
+  Methods: []
+--------------------
+Model: models/gemini-2.5-flash-preview-09-2025
+  Display Name: Gemini 2.5 Flash Preview Sep 2025
+  Methods: []
+--------------------
+Model: models/gemini-2.5-flash-lite-preview-09-2025
+  Display Name: Gemini 2.5 Flash-Lite Preview Sep 2025
+  Methods: []
+--------------------
+Model: models/gemini-3-pro-preview
+  Display Name: Gemini 3 Pro Preview
+  Methods: []
+--------------------
+Model: models/gemini-3-flash-preview
+  Display Name: Gemini 3 Flash Preview
+  Methods: []
+--------------------
+Model: models/gemini-3-pro-image-preview
+  Display Name: Nano Banana Pro
+  Methods: []
+--------------------
+Model: models/nano-banana-pro-preview
+  Display Name: Nano Banana Pro
+  Methods: []
+--------------------
+Model: models/gemini-robotics-er-1.5-preview
+  Display Name: Gemini Robotics-ER 1.5 Preview
+  Methods: []
+--------------------
+Model: models/gemini-2.5-computer-use-preview-10-2025
+  Display Name: Gemini 2.5 Computer Use Preview 10-2025
+  Methods: []
+--------------------
+Model: models/deep-research-pro-preview-12-2025
+  Display Name: Deep Research Pro Preview (Dec-12-2025)
+  Methods: []
+--------------------
+Model: models/embedding-001
+  Display Name: Embedding 001
+  Methods: []
+--------------------
+Model: models/text-embedding-004
+  Display Name: Text Embedding 004
+  Methods: []
+--------------------
+Model: models/gemini-embedding-exp-03-07
+  Display Name: Gemini Embedding Experimental 03-07
+  Methods: []
+--------------------
+Model: models/gemini-embedding-exp
+  Display Name: Gemini Embedding Experimental
+  Methods: []
+--------------------
+Model: models/gemini-embedding-001
+  Display Name: Gemini Embedding 001
+  Methods: []
+--------------------
+Model: models/aqa
+  Display Name: Model that performs Attributed Question Answering.
+  Methods: []
+--------------------
+Model: models/imagen-4.0-generate-preview-06-06
+  Display Name: Imagen 4 (Preview)
+  Methods: []
+--------------------
+Model: models/imagen-4.0-ultra-generate-preview-06-06
+  Display Name: Imagen 4 Ultra (Preview)
+  Methods: []
+--------------------
+Model: models/imagen-4.0-generate-001
+  Display Name: Imagen 4
+  Methods: []
+--------------------
+Model: models/imagen-4.0-ultra-generate-001
+  Display Name: Imagen 4 Ultra
+  Methods: []
+--------------------
+Model: models/imagen-4.0-fast-generate-001
+  Display Name: Imagen 4 Fast
+  Methods: []
+--------------------
+Model: models/veo-2.0-generate-001
+  Display Name: Veo 2
+  Methods: []
+--------------------
+Model: models/veo-3.0-generate-001
+  Display Name: Veo 3
+  Methods: []
+--------------------
+Model: models/veo-3.0-fast-generate-001
+  Display Name: Veo 3 fast
+  Methods: []
+--------------------
+Model: models/veo-3.1-generate-preview
+  Display Name: Veo 3.1
+  Methods: []
+--------------------
+Model: models/veo-3.1-fast-generate-preview
+  Display Name: Veo 3.1 fast
+  Methods: []
+--------------------
+Model: models/gemini-2.5-flash-native-audio-latest
+  Display Name: Gemini 2.5 Flash Native Audio Latest
+  Methods: []
+--------------------
+Model: models/gemini-2.5-flash-native-audio-preview-09-2025
+  Display Name: Gemini 2.5 Flash Native Audio Preview 09-2025
+  Methods: []
+--------------------
+Model: models/gemini-2.5-flash-native-audio-preview-12-2025
+  Display Name: Gemini 2.5 Flash Native Audio Preview 12-2025
+  Methods: []
+--------------------
+Done.
