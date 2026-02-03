@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+
+# Environment Variables
+.env
+.env.local
+
+# Local Data (Vector Store and Uploads)
+# Keep this if you want to share data, IGNORE if you want clean repo
+# For internship demo, maybe okay to commit sample data, but standard practice is ignore.
+# Un-comment the next lines to be "Cloud Native" correct:
+# data/
+# *.pdf
+
+# Logs
+npm-debug.log
+logs/
+*.log
+
+# OS
+.DS_Store
+Thumbs.db

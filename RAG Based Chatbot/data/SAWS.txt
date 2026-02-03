@@ -1,0 +1,4178 @@
+Skill: AWS
+🔹 IF USER SELECTS: 3 DAYS (CRASH COURSE) 🎯 Outcome: Understand Cloud fundamentals, navigate the Management Console, and launch basic storage/compute. 🚀 Daily Action Steps:
+
+Day 1: Learn Cloud vs. On-premise concepts. Create an AWS Free Tier account.
+
+Day 2: Launch an EC2 Instance (Linux) and connect via SSH.
+
+Day 3: Create an S3 Bucket, upload a file, and explore IAM User basics.
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/devops/aws-tutorial/
+
+2nd: https://www.geeksforgeeks.org/blogs/30-days-of-aws/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=k1RI5locZE4
+
+2nd: https://www.youtube.com/watch?v=vW2ObiatEJk
+
+3️⃣ Official Documentation
+
+1st: https://docs.aws.amazon.com
+
+2nd: https://docs.aws.amazon.com/whitepapers/latest/aws-overview/aws-overview.pdf
+
+4️⃣ Courses / Tutorials
+
+1st: https://www.freecodecamp.org/news/beginners-guide-to-cloud-computing-with-aws/
+
+5️⃣ Practice Resources
+
+1st: https://aws.amazon.com/free/
+
+6️⃣ Notes / PDFs
+
+1st: https://docs.aws.amazon.com/pdfs/aws-certification/latest/examguides/aws-certification-exam-guides.pdf
+
+✅ Checkpoint: You can explain what a Region and Availability Zone are and have a running EC2 instance.
+
+🔹 IF USER SELECTS: 1 WEEK (CORE SERVICES) 🎯 Outcome: Independent management of compute, storage, and security identity (IAM). 🚀 Action Steps:
+
+Day 1-3: Complete the 3-day path.
+
+Day 4-5: Master EC2 Instance types, EBS volumes, and S3 Lifecycle policies.
+
+Day 6-7: Deep dive into IAM Roles, Groups, and Policies for security.
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/blogs/30-days-of-aws/
+
+2nd: https://www.geeksforgeeks.org/devops/aws-tutorial/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=WkJ0xB1dPwM
+
+3️⃣ Official Documentation
+
+1st: https://docs.aws.amazon.com
+
+2nd: https://docs.aws.amazon.com/whitepapers/latest/aws-overview/aws-overview.pdf
+
+4️⃣ Courses / Tutorials
+
+1st: https://digitalcloud.training/free-aws-certification-training/
+
+5️⃣ Practice Resources
+
+1st: https://aws.amazon.com/free/
+
+6️⃣ Notes / PDFs
+
+1st: https://www.scribd.com/document/597827391/AWS-NOTES
+
+🔹 IF USER SELECTS: 2 WEEKS (NETWORKING & DATABASES) 🎯 Outcome: Design custom virtual networks (VPC) and deploy managed database instances (RDS). 🚀 Action Steps:
+
+Week 1: Complete Core Services path.
+
+Week 2: Build a custom VPC with Public/Private subnets, and launch an RDS database connected to an EC2.
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/blogs/30-days-of-aws/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=HK_q1lH5x5M
+
+3️⃣ Official Documentation
+
+1st: https://docs.aws.amazon.com
+
+2nd: https://docs.aws.amazon.com/whitepapers/latest/aws-overview/aws-overview.pdf
+
+4️⃣ Courses / Tutorials
+
+1st: https://digitalcloud.training/free-aws-certification-training/
+
+5️⃣ Practice Resources
+
+1st: https://wellarchitectedlabs.com/
+
+6️⃣ Notes / PDFs
+
+1st: https://www.scribd.com/document/597827391/AWS-NOTES
+
+🔹 IF USER SELECTS: 3 WEEKS (SERVERLESS & MODERN WEB) 🎯 Outcome: Build scalable applications using Lambda, API Gateway, and DynamoDB. 🚀 Action Steps:
+
+Week 1-2: Master Compute, Storage, and Networking.
+
+Week 3: Build a serverless API using Lambda and store data in a NoSQL DynamoDB table.
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/devops/aws-tutorial/
+
+2nd: https://www.geeksforgeeks.org/blogs/30-days-of-aws/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=vW2ObiatEJk
+
+3️⃣ Official Documentation
+
+1st: https://docs.aws.amazon.com
+
+4️⃣ Courses / Tutorials
+
+1st: https://aws.amazon.com/training/digital/
+
+5️⃣ Practice Resources
+
+1st: https://www.whizlabs.com/blog/hands-on-labs-aws-generative-ai/
+
+6️⃣ Notes / PDFs
+
+1st: https://www.geeksforgeeks.org/blogs/30-days-of-aws/
+
+🔹 IF USER SELECTS: 4 WEEKS (SCALABILITY & MONITORING) 🎯 Outcome: Implement High Availability using Auto Scaling, Load Balancers, and CloudWatch. 🚀 Action Steps:
+
+Week 1-3: Advanced architectural foundations.
+
+Week 4: Set up an Application Load Balancer and Auto Scaling Groups to handle traffic spikes.
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/blogs/30-days-of-aws/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=WkJ0xB1dPwM
+
+3️⃣ Official Documentation
+
+1st: https://docs.aws.amazon.com
+
+4️⃣ Courses / Tutorials
+
+1st: https://digitalcloud.training/free-aws-certification-training/
+
+5️⃣ Practice Resources
+
+1st: https://wellarchitectedlabs.com/
+
+6️⃣ Notes / PDFs
+
+1st: https://docs.aws.amazon.com/pdfs/aws-certification/latest/examguides/aws-certification-exam-guides.pdf
+
+🔹 IF USER SELECTS: 5 WEEKS (PROFESSIONAL MASTERY) 🎯 Outcome: Full-scale orchestration of a production-grade application and exam readiness. 🚀 Action Steps:
+
+Week 1-4: Mastery of individual service pillars.
+
+Week 5: Capstone Project: Deploy a secure, multi-tier, auto-scaling application. Review all exam guides.
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/blogs/30-days-of-aws/ (Final Project)
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=k1RI5locZE4
+
+3️⃣ Official Documentation
+
+1st: https://docs.aws.amazon.com (Deep dive into Troubleshooting)
+
+4️⃣ Courses / Tutorials
+
+1st: https://aws.amazon.com/training/digital/
+
+5️⃣ Practice Resources
+
+1st: https://aws.amazon.com/free/
+
+2nd: https://wellarchitectedlabs.com/
+
+6️⃣ Notes / PDFs
+
+1st: https://www.geeksforgeeks.org/blogs/30-days-of-aws/ (Printable Guide)
+
+2nd: https://docs.aws.amazon.com/pdfs/aws-certification/latest/examguides/aws-certification-exam-guides.pdf
+
+Skill: Agile Methodology
+🔹 IF USER SELECTS: 3 DAYS (CRASH COURSE) 🎯 Outcome: Understand the Agile mindset, the 4 Values, and the 12 Principles. 🚀 Daily Action Steps:
+
+Day 1: Compare Waterfall vs. Agile. Study the history and the "Why" behind Agile.
+
+Day 2: Deep dive into the Agile Manifesto and the 12 Core Principles.
+
+Day 3: Learn basic terminology: Sprints, User Stories, and the concept of Iterative Development.
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/agile-methodology/
+
+2nd: https://www.geeksforgeeks.org/introduction-to-agile-software-development/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=uaNji9iorzQ
+
+2nd: https://www.youtube.com/watch?v=2c9lDKy21Kc
+
+3️⃣ Official Documentation
+
+1st: https://agilemanifesto.org
+
+2nd: https://agilealliance.org/agile101/
+
+4️⃣ Courses / Tutorials
+
+1st: https://asana.com/resources/agile-methodology
+
+5️⃣ Practice Resources
+
+1st: https://agileonline.it/quiz/
+
+6️⃣ Notes / PDFs
+
+1st: https://agilemanifesto.org/iso/AgileManifesto.pdf
+
+🔹 IF USER SELECTS: 1 WEEK (SCRUM FOCUS) 🎯 Outcome: Master the Scrum Framework: Roles, Artifacts, and Ceremonies. 🚀 Action Steps:
+
+Day 1-3: Follow the 3-day path.
+
+Day 4-5: Study Scrum Roles (PO, Scrum Master, Team) and Artifacts (Backlogs).
+
+Day 6-7: Learn Scrum Events: Sprint Planning, Daily Stand-up, Review, and Retrospective.
+
+
+Shutterstock
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/scrum-agile-framework/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=4oPUs4mTR9Y
+
+2nd: https://www.youtube.com/watch?v=GWtuT8mUK28
+
+3️⃣ Official Documentation
+
+1st: https://www.atlassian.com/agile
+
+2nd: https://agilealliance.org/agile101/the-agile-manifesto/
+
+4️⃣ Courses / Tutorials
+
+1st: https://www.coursera.org/learn/agile-development-and-scrum
+
+5️⃣ Practice Resources
+
+1st: https://www.scrum.org/assessments
+
+6️⃣ Notes / PDFs
+
+1st: https://www.scrumguides.org/docs/scrumguide/v2020/2020-Scrum-Guide-US.pdf
+
+🔹 IF USER SELECTS: 2 WEEKS (KANBAN & HYBRID) 🎯 Outcome: Manage workflow using Kanban and understand secondary Agile models. 🚀 Action Steps:
+
+Week 1: Complete the 1-Week Scrum path.
+
+Week 2: Master Kanban (Visual boards, WIP limits) and explore Lean/XP basics.
+
+
+Shutterstock
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/kanban-agile-framework/
+
+2nd: https://www.geeksforgeeks.org/software-engineering-agile-development-models/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=3rGCqOR-3Ys
+
+3️⃣ Official Documentation
+
+1st: https://agilealliance.org/agile101/12-principles-behind-the-agile-manifesto/
+
+4️⃣ Courses / Tutorials
+
+1st: https://www.atlassian.com/agile/tutorials
+
+5️⃣ Practice Resources
+
+1st: https://kanbanize.com/kanban-resources/
+
+6️⃣ Notes / PDFs
+
+1st: https://www.atlassian.com/software/scrum
+
+🔹 IF USER SELECTS: 3 WEEKS (METRICS & ESTIMATION) 🎯 Outcome: Learn how to measure Agile success using Velocity and Story Points. 🚀 Action Steps:
+
+Week 1-2: Master Scrum and Kanban foundations.
+
+Week 3: Practice Estimation techniques (Planning Poker) and reading Burndown/Burnup charts.
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/agile-methodology/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=uaNji9iorzQ
+
+3️⃣ Official Documentation
+
+1st: https://www.atlassian.com/agile
+
+4️⃣ Courses / Tutorials
+
+1st: https://www.udemy.com/course/agile-project-management/
+
+5️⃣ Practice Resources
+
+1st: https://www.agilekatas.com/
+
+2nd: https://www.playagile.com/
+
+6️⃣ Notes / PDFs
+
+1st: https://nuclino.com/articles/agile-documentation
+
+🔹 IF USER SELECTS: 4 WEEKS (SCALING & TOOLS) 🎯 Outcome: Understand how large teams scale Agile (SAFe/LeSS) and use industry tools like Jira. 🚀 Action Steps:
+
+Week 1-3: Advanced Framework and Metrics mastery.
+
+Week 4: Study Scaled Agile frameworks and practice setting up a digital Agile board (Jira/Asana).
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/scrum-agile-framework/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=4oPUs4mTR9Y
+
+3️⃣ Official Documentation
+
+1st: https://agilealliance.org/resources/
+
+4️⃣ Courses / Tutorials
+
+1st: https://www.atlassian.com/agile/tutorials
+
+5️⃣ Practice Resources
+
+1st: https://www.scrum.org/assessments
+
+6️⃣ Notes / PDFs
+
+1st: https://agilealliance.org/resources/
+
+🔹 IF USER SELECTS: 5 WEEKS (COACHING & MASTERY) 🎯 Outcome: Full readiness for a Scrum Master role and professional certification. 🚀 Action Steps:
+
+Week 1-4: Integrated learning of all frameworks and tools.
+
+Week 5: Scenario-based practice (Handling conflict, blocked Sprints). Final review of the Scrum Guide for certification exams.
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/agile-methodology/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=4oPUs4mTR9Y (Full Review)
+
+3️⃣ Official Documentation
+
+1st: https://agilealliance.org/agile101/
+
+4️⃣ Courses / Tutorials
+
+1st: https://www.linkedin.com/learning/agile-foundations
+
+5️⃣ Practice Resources
+
+1st: https://www.scrum.org/assessments (PSM I Level)
+
+6️⃣ Notes / PDFs
+
+1st: https://www.scrumguides.org/docs/scrumguide/v2020/2020-Scrum-Guide-US.pdf
+
+Skill: Algorithms
+🔹 IF USER SELECTS: 3 DAYS (CRASH COURSE) 🎯 Outcome: Understand Big O notation, time complexity, and basic recursion. 🚀 Daily Action Steps:
+
+Day 1: Study Time and Space complexity. Learn to analyze loops and constant time operations.
+
+Day 2: Introduction to Recursion. Solve basic problems like Factorial and Fibonacci.
+
+Day 3: Master Big O notation symbols and their growth rates (Linear vs. Logarithmic vs. Quadratic).
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/fundamentals-of-algorithms/
+
+2nd: https://www.geeksforgeeks.org/learn-dsa-in-60-days/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=8hly31xKli0
+
+2nd: https://www.youtube.com/watch?v=pkYVOmUO92U
+
+3️⃣ Official Documentation
+
+1st: https://introcs.cs.princeton.edu/java/home/
+
+4️⃣ Courses / Tutorials
+
+1st: https://www.khanacademy.org/computing/computer-science/algorithms
+
+5️⃣ Practice Resources
+
+1st: https://leetcode.com/problemset/algorithms/ (Filter: Easy)
+
+6️⃣ Notes / PDFs
+
+1st: https://jeffe.cs.illinois.edu/teaching/algorithms/notes/01-Intro.pdf
+
+🔹 IF USER SELECTS: 1 WEEK (SORTING & SEARCHING) 🎯 Outcome: Implement and explain the most common searching and sorting algorithms. 🚀 Action Steps:
+
+Day 1-3: Follow the 3-day path.
+
+Day 4-5: Master Linear Search and Binary Search.
+
+Day 6-7: Learn Bubble, Selection, Insertion, and Quick Sort.
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/dsa/gfg-complete-set-of-gfg-articles/
+
+2nd: https://www.geeksforgeeks.org/top-50-algorithms-dsa-questions/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=BZZ1lI9rd7Y
+
+2nd: https://www.youtube.com/watch?v=WR-jNuA-2h0
+
+3️⃣ Official Documentation
+
+1st: https://algs4.cs.princeton.edu/home/
+
+4️⃣ Courses / Tutorials
+
+1st: https://www.coursera.org/learn/algorithms-part1
+
+5️⃣ Practice Resources
+
+1st: https://www.hackerrank.com/domains/algorithms
+
+6️⃣ Notes / PDFs
+
+1st: https://www.geeksforgeeks.org/wp-content/uploads/Algorithms.pdf
+
+🔹 IF USER SELECTS: 2 WEEKS (GRAPH ALGORITHMS) 🎯 Outcome: Master Graph traversals and shortest path algorithms. 🚀 Action Steps:
+
+Week 1: Complete the 1-Week Sorting path.
+
+Week 2: Learn Graph representations (Adjacency Matrix/List), BFS, DFS, and Dijkstra's Algorithm.
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=0IAPZzGSbME
+
+2nd: https://www.youtube.com/watch?v=8hly31xKli0
+
+3️⃣ Official Documentation
+
+1st: https://cp-algorithms.com/
+
+4️⃣ Courses / Tutorials
+
+1st: https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/
+
+5️⃣ Practice Resources
+
+1st: https://codeforces.com/problemset
+
+6️⃣ Notes / PDFs
+
+1st: https://algs4.cs.princeton.edu/42graph/Algorithms-4th-Edition-book.pdf
+
+🔹 IF USER SELECTS: 3 WEEKS (DYNAMIC PROGRAMMING) 🎯 Outcome: Solve complex optimization problems using Memoization and Tabulation. 🚀 Action Steps:
+
+Week 1-2: Master Foundations and Graph logic.
+
+Week 3: Study the DP mindset. Solve "Knapsack", "Longest Common Subsequence", and "Coin Change" problems.
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/learn-dsa-in-60-days/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=0IAPZzGSbME (DP Playlist)
+
+3️⃣ Official Documentation
+
+1st: https://cp-algorithms.com/
+
+4️⃣ Courses / Tutorials
+
+1st: https://leetcode.com/explore/interview/card/top-interview-questions-easy/
+
+5️⃣ Practice Resources
+
+1st: https://leetcode.com/problemset/algorithms/ (Filter: DP)
+
+6️⃣ Notes / PDFs
+
+1st: https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/mit6_006s20_chap01.pdf
+
+🔹 IF USER SELECTS: 4 WEEKS (GREEDY & BACKTRACKING) 🎯 Outcome: Understand Greedy strategies and exhaustive search through Backtracking. 🚀 Action Steps:
+
+Week 1-3: Advanced data structure and DP mastery.
+
+Week 4: Solve Greedy problems (Fractional Knapsack) and Backtracking (N-Queens, Sudoku Solver).
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/top-50-algorithms-dsa-questions/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=8hly31xKli0
+
+3️⃣ Official Documentation
+
+1st: https://algs4.cs.princeton.edu/home/
+
+4️⃣ Courses / Tutorials
+
+1st: https://www.udacity.com/course/intro-to-algorithms--cs258
+
+5️⃣ Practice Resources
+
+1st: https://www.codewars.com/kata/search/python
+
+6️⃣ Notes / PDFs
+
+1st: https://www.tutorialspoint.com/data_structures_algorithms/algorithms_tutorial.pdf
+
+🔹 IF USER SELECTS: 5 WEEKS (INTERVIEW MASTERY) 🎯 Outcome: Solve high-level algorithmic problems under time constraints for technical interviews. 🚀 Action Steps:
+
+Week 1-4: Integrated review of all topics.
+
+Week 5: Focus on "Pattern Matching" (Sliding Window, Two Pointers). Mock interviews on LeetCode Medium/Hard.
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/top-50-algorithms-dsa-questions/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=0IAPZzGSbME
+
+3️⃣ Official Documentation
+
+1st: https://www.coursera.org/learn/algorithms-part1
+
+4️⃣ Courses / Tutorials
+
+1st: https://leetcode.com/explore/interview/card/top-interview-questions-easy/
+
+5️⃣ Practice Resources
+
+1st: https://www.geeksforgeeks.org/explore?page=1&sortBy=submissions
+
+6️⃣ Notes / PDFs
+
+1st: https://www.geeksforgeeks.org/wp-content/uploads/Algorithms.pdf
+
+2nd: https://jeffe.cs.illinois.edu/teaching/algorithms/notes/01-Intro.pdf
+
+Skill: Algorithms
+🔹 IF USER SELECTS: 3 DAYS (CRASH COURSE) 🎯 Outcome: Understand Big O notation, time complexity, and basic recursion. 🚀 Daily Action Steps:
+
+Day 1: Study Time and Space complexity. Learn to analyze loops and constant time operations.
+
+Day 2: Introduction to Recursion. Solve basic problems like Factorial and Fibonacci.
+
+Day 3: Master Big O notation symbols and their growth rates (Linear vs. Logarithmic vs. Quadratic).
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/fundamentals-of-algorithms/
+
+2nd: https://www.geeksforgeeks.org/learn-dsa-in-60-days/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=8hly31xKli0
+
+2nd: https://www.youtube.com/watch?v=pkYVOmUO92U
+
+3️⃣ Official Documentation
+
+1st: https://introcs.cs.princeton.edu/java/home/
+
+4️⃣ Courses / Tutorials
+
+1st: https://www.khanacademy.org/computing/computer-science/algorithms
+
+5️⃣ Practice Resources
+
+1st: https://leetcode.com/problemset/algorithms/ (Filter: Easy)
+
+6️⃣ Notes / PDFs
+
+1st: https://jeffe.cs.illinois.edu/teaching/algorithms/notes/01-Intro.pdf
+
+🔹 IF USER SELECTS: 1 WEEK (SORTING & SEARCHING) 🎯 Outcome: Implement and explain the most common searching and sorting algorithms. 🚀 Action Steps:
+
+Day 1-3: Follow the 3-day path.
+
+Day 4-5: Master Linear Search and Binary Search.
+
+Day 6-7: Learn Bubble, Selection, Insertion, and Quick Sort.
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/dsa/gfg-complete-set-of-gfg-articles/
+
+2nd: https://www.geeksforgeeks.org/top-50-algorithms-dsa-questions/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=BZZ1lI9rd7Y
+
+2nd: https://www.youtube.com/watch?v=WR-jNuA-2h0
+
+3️⃣ Official Documentation
+
+1st: https://algs4.cs.princeton.edu/home/
+
+4️⃣ Courses / Tutorials
+
+1st: https://www.coursera.org/learn/algorithms-part1
+
+5️⃣ Practice Resources
+
+1st: https://www.hackerrank.com/domains/algorithms
+
+6️⃣ Notes / PDFs
+
+1st: https://www.geeksforgeeks.org/wp-content/uploads/Algorithms.pdf
+
+🔹 IF USER SELECTS: 2 WEEKS (GRAPH ALGORITHMS) 🎯 Outcome: Master Graph traversals and shortest path algorithms. 🚀 Action Steps:
+
+Week 1: Complete the 1-Week Sorting path.
+
+Week 2: Learn Graph representations (Adjacency Matrix/List), BFS, DFS, and Dijkstra's Algorithm.
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=0IAPZzGSbME
+
+2nd: https://www.youtube.com/watch?v=8hly31xKli0
+
+3️⃣ Official Documentation
+
+1st: https://cp-algorithms.com/
+
+4️⃣ Courses / Tutorials
+
+1st: https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/
+
+5️⃣ Practice Resources
+
+1st: https://codeforces.com/problemset
+
+6️⃣ Notes / PDFs
+
+1st: https://algs4.cs.princeton.edu/42graph/Algorithms-4th-Edition-book.pdf
+
+🔹 IF USER SELECTS: 3 WEEKS (DYNAMIC PROGRAMMING) 🎯 Outcome: Solve complex optimization problems using Memoization and Tabulation. 🚀 Action Steps:
+
+Week 1-2: Master Foundations and Graph logic.
+
+Week 3: Study the DP mindset. Solve "Knapsack", "Longest Common Subsequence", and "Coin Change" problems.
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/learn-dsa-in-60-days/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=0IAPZzGSbME (DP Playlist)
+
+3️⃣ Official Documentation
+
+1st: https://cp-algorithms.com/
+
+4️⃣ Courses / Tutorials
+
+1st: https://leetcode.com/explore/interview/card/top-interview-questions-easy/
+
+5️⃣ Practice Resources
+
+1st: https://leetcode.com/problemset/algorithms/ (Filter: DP)
+
+6️⃣ Notes / PDFs
+
+1st: https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/mit6_006s20_chap01.pdf
+
+🔹 IF USER SELECTS: 4 WEEKS (GREEDY & BACKTRACKING) 🎯 Outcome: Understand Greedy strategies and exhaustive search through Backtracking. 🚀 Action Steps:
+
+Week 1-3: Advanced data structure and DP mastery.
+
+Week 4: Solve Greedy problems (Fractional Knapsack) and Backtracking (N-Queens, Sudoku Solver).
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/top-50-algorithms-dsa-questions/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=8hly31xKli0
+
+3️⃣ Official Documentation
+
+1st: https://algs4.cs.princeton.edu/home/
+
+4️⃣ Courses / Tutorials
+
+1st: https://www.udacity.com/course/intro-to-algorithms--cs258
+
+5️⃣ Practice Resources
+
+1st: https://www.codewars.com/kata/search/python
+
+6️⃣ Notes / PDFs
+
+1st: https://www.tutorialspoint.com/data_structures_algorithms/algorithms_tutorial.pdf
+
+🔹 IF USER SELECTS: 5 WEEKS (INTERVIEW MASTERY) 🎯 Outcome: Solve high-level algorithmic problems under time constraints for technical interviews. 🚀 Action Steps:
+
+Week 1-4: Integrated review of all topics.
+
+Week 5: Focus on "Pattern Matching" (Sliding Window, Two Pointers). Mock interviews on LeetCode Medium/Hard.
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/top-50-algorithms-dsa-questions/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=0IAPZzGSbME
+
+3️⃣ Official Documentation
+
+1st: https://www.coursera.org/learn/algorithms-part1
+
+4️⃣ Courses / Tutorials
+
+1st: https://leetcode.com/explore/interview/card/top-interview-questions-easy/
+
+5️⃣ Practice Resources
+
+1st: https://www.geeksforgeeks.org/explore?page=1&sortBy=submissions
+
+6️⃣ Notes / PDFs
+
+1st: https://www.geeksforgeeks.org/wp-content/uploads/Algorithms.pdf
+
+2nd: https://jeffe.cs.illinois.edu/teaching/algorithms/notes/01-Intro.pdf
+
+Skill: Angular
+🔹 IF USER SELECTS: 3 DAYS (CRASH COURSE) 🎯 Outcome: Set up the development environment and build a basic component-driven interface. 🚀 Daily Action Steps:
+
+Day 1: Install Node.js and Angular CLI. Initialize a new project and understand the file structure.
+
+Day 2: Learn Component architecture. Create your first component and use String Interpolation.
+
+Day 3: Master Data Binding (Property and Event binding) to make the UI interactive.
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/how-to-install-angular-cli/
+
+2nd: https://www.geeksforgeeks.org/angular-7-tutorial/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=Fdf5aTYWEs4
+
+2nd: https://www.youtube.com/watch?v=k5E2AVpwsko
+
+3️⃣ Official Documentation
+
+1st: https://angular.dev/tutorials/first-app
+
+4️⃣ Courses / Tutorials
+
+1st: https://www.codecademy.com/learn/learn-angular
+
+5️⃣ Practice Resources
+
+1st: https://github.com/angular/angular-cli/issues
+
+6️⃣ Notes / PDFs
+
+1st: https://angular.io/guide/quickstart.pdf
+
+🔹 IF USER SELECTS: 1 WEEK (DIRECTIVES & SERVICES) 🎯 Outcome: Use logic-based styling and shared data services to build a functional app. 🚀 Action Steps:
+
+Day 1-3: Follow the 3-day path.
+
+Day 4-5: Master Structural Directives (*ngIf, *ngFor) and Attribute Directives.
+
+Day 6-7: Create a Service and use Dependency Injection to share data across components.
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/angularjs-directives-overview/
+
+2nd: https://www.geeksforgeeks.org/angularjs-tutorial/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=3dHNOWTI7mA
+
+2nd: https://www.youtube.com/watch?v=FqAR_x0Oewk
+
+3️⃣ Official Documentation
+
+1st: https://angular.dev/guide/architecture
+
+4️⃣ Courses / Tutorials
+
+1st: https://angular.dev/tutorials
+
+5️⃣ Practice Resources
+
+1st: https://tour-of-heroes-angular.readthedocs.io/
+
+6️⃣ Notes / PDFs
+
+1st: https://v2.angular.io/docs/ts/latest/guide/architecture.pdf
+
+🔹 IF USER SELECTS: 2 WEEKS (ROUTING & FORMS) 🎯 Outcome: Build a multi-page application with user input handling and validation. 🚀 Action Steps:
+
+Week 1: Complete the 1-Week Directives path.
+
+Week 2: Implement Angular Router for navigation and master Reactive Forms for complex user inputs.
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/angular-material/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=UBOcO6BTg_Q
+
+3️⃣ Official Documentation
+
+1st: https://angular.dev/reference/standalone
+
+4️⃣ Courses / Tutorials
+
+1st: https://www.udemy.com/course/the-complete-guide-to-angular-2/
+
+5️⃣ Practice Resources
+
+1st: https://www.angularjswiki.com/angular/
+
+6️⃣ Notes / PDFs
+
+1st: https://angular.dev/assets/guide/angular.pdf
+
+🔹 IF USER SELECTS: 3 WEEKS (HTTP & OBSERVABLES) 🎯 Outcome: Connect to external APIs and handle asynchronous data streams using RxJS. 🚀 Action Steps:
+
+Week 1-2: Master Routing and Forms.
+
+Week 3: Integrate HttpClient to fetch data and learn RxJS operators (Map, Filter, Pipe).
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/angular-notes/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=FqAR_x0Oewk (RxJS section)
+
+3️⃣ Official Documentation
+
+1st: https://angular.dev/api
+
+4️⃣ Courses / Tutorials
+
+1st: https://frontendmasters.com/courses/angular
+
+5️⃣ Practice Resources
+
+1st: https://angular-realworld-example-app.com/
+
+6️⃣ Notes / PDFs
+
+1st: https://www.geeksforgeeks.org/angular-notes/
+
+🔹 IF USER SELECTS: 4 WEEKS (SIGNALS & OPTIMIZATION) 🎯 Outcome: Modernize the app using Angular Signals and optimize performance with Lazy Loading. 🚀 Action Steps:
+
+Week 1-3: Advanced data handling mastery.
+
+Week 4: Implement Angular Signals for state management and set up Lazy Loaded modules to reduce bundle size.
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=UBOcO6BTg_Q (Signals focus)
+
+3️⃣ Official Documentation
+
+1st: https://angular.dev/guide/architecture
+
+4️⃣ Courses / Tutorials
+
+1st: https://www.pluralsight.com/courses/angular-fundamentals
+
+5️⃣ Practice Resources
+
+1st: https://exercism.org/tracks/angular
+
+6️⃣ Notes / PDFs
+
+1st: https://angular.dev/assets/guide/angular.pdf
+
+🔹 IF USER SELECTS: 5 WEEKS (DEPLOYMENT & MASTERY) 🎯 Outcome: Write unit tests and deploy a production-ready application to the cloud. 🚀 Action Steps:
+
+Week 1-4: Integrated app development.
+
+Week 5: Write unit tests with Jasmine/Karma. Perform ng build --prod and deploy to platforms like Firebase or Vercel.
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/angularjs-tutorial/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=Fdf5aTYWEs4 (Deployment section)
+
+3️⃣ Official Documentation
+
+1st: https://angular.dev/
+
+5️⃣ Practice Resources
+
+1st: https://angular-realworld-example-app.com/
+
+6️⃣ Notes / PDFs
+
+1st: https://v2.angular.io/docs/ts/latest/guide/architecture.pdf
+
+2nd: https://www.tutorialspoint.com/angularjs/angularjs_pdf.pdf
+
+Skill: Ansible
+🔹 IF USER SELECTS: 3 DAYS (CRASH COURSE) 🎯 Outcome: Understand "Agentless" architecture, set up a control node, and run basic commands. 🚀 Daily Action Steps:
+
+Day 1: Install Ansible on a Linux control node and understand the Agentless push model.
+
+Day 2: Configure a basic Inventory file with host IP addresses.
+
+Day 3: Run Ad-Hoc commands (ping, shell, copy) to manage remote nodes instantly.
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/introduction-to-ansible/
+
+2nd: https://www.geeksforgeeks.org/ansible-tutorial/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=wgPbf0aHQ_o
+
+3️⃣ Official Documentation
+
+1st: https://docs.ansible.com/ansible/latest/user_guide/intro_getting_started.html
+
+4️⃣ Courses / Tutorials
+
+1st: https://www.udemy.com/course/ansible-for-the-absolute-beginner/
+
+5️⃣ Practice Resources
+
+1st: https://labs.playground.com/?track=ansible
+
+6️⃣ Notes / PDFs
+
+1st: https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html
+
+🔹 IF USER SELECTS: 1 WEEK (PLAYBOOK BASICS) 🎯 Outcome: Automate software installation and configuration using YAML Playbooks. 🚀 Action Steps:
+
+Day 1-3: Follow the 3-day path.
+
+Day 4-5: Master YAML syntax and write your first Playbook using modules like apt, yum, and service.
+
+Day 6-7: Learn about Handlers (to restart services) and Variables for dynamic configurations.
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/ansible-playbook/
+
+2nd: https://www.geeksforgeeks.org/ansible-inventory/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=weZxb0ed_5k
+
+3️⃣ Official Documentation
+
+1st: https://docs.ansible.com/ansible/latest/playbook_guide/index.html
+
+4️⃣ Courses / Tutorials
+
+1st: https://www.codecademy.com/learn/paths/devops
+
+5️⃣ Practice Resources
+
+1st: https://www.katacoda.com/courses/ansible
+
+6️⃣ Notes / PDFs
+
+1st: https://docs.ansible.com/ansible/latest/reference_appendices/playbooks_keywords.html
+
+🔹 IF USER SELECTS: 2 WEEKS (MODULAR ROLES) 🎯 Outcome: Organize complex automation into reusable "Roles" and use Ansible Galaxy. 🚀 Action Steps:
+
+Week 1: Complete the 1-Week Playbook path.
+
+Week 2: Study the Role directory structure (tasks, vars, files, templates). Use ansible-galaxy to download community roles.
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/ansible-galaxy/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=QD1Ny4WvTZw
+
+3️⃣ Official Documentation
+
+1st: https://docs.ansible.com/ansible/latest/collections/index.html
+
+4️⃣ Courses / Tutorials
+
+1st: https://www.coursera.org/learn/ansible
+
+5️⃣ Practice Resources
+
+1st: https://github.com/ansible/ansible-examples
+
+6️⃣ Notes / PDFs
+
+1st: https://www.ansible.com/sites/default/files/2022-06/Ansible-for-DevOps.pdf
+
+🔹 IF USER SELECTS: 3 WEEKS (LOGIC & TEMPLATING) 🎯 Outcome: Use dynamic logic with Jinja2 templates and advanced inventory management. 🚀 Action Steps:
+
+Week 1-2: Master Playbooks and Roles.
+
+Week 3: Learn Conditionals (when), Loops (with_items), and create dynamic configuration files using Jinja2 templates.
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/ansible-tutorial/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=hmNfyPB-_DM
+
+3️⃣ Official Documentation
+
+1st: https://docs.ansible.com/ansible/latest/inventory_guide/index.html
+
+4️⃣ Courses / Tutorials
+
+1st: https://learn.redhat.com/
+
+5️⃣ Practice Resources
+
+1st: https://www.qwiklabs.com/catalog?keywords=ansible
+
+6️⃣ Notes / PDFs
+
+1st: https://docs.ansible.com/ansible/latest/user_guide/pdf/ansible-docgen.pdf
+
+🔹 IF USER SELECTS: 4 WEEKS (SECURITY & VAULT) 🎯 Outcome: Secure sensitive data using Ansible Vault and implement error handling. 🚀 Action Steps:
+
+Week 1-3: Advanced automation mastery.
+
+Week 4: Learn to encrypt secrets with Ansible Vault. Implement block, rescue, and always for error handling in production.
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=lyagFTyZa1k
+
+3️⃣ Official Documentation
+
+1st: https://docs.ansible.com/ansible/latest/user_guide/intro_getting_started.html
+
+4️⃣ Courses / Tutorials
+
+1st: https://www.redhat.com/en/services/training/do007-red-hat-ansible-automation
+
+5️⃣ Practice Resources
+
+1st: https://www.ansible.com/resources/demos
+
+6️⃣ Notes / PDFs
+
+1st: https://www.redhat.com/en/resources/ansible-automation-platform-ebook
+
+🔹 IF USER SELECTS: 5 WEEKS (ENTERPRISE ORCHESTRATION) 🎯 Outcome: Build a full-scale CI/CD integration and capstone project deployment. 🚀 Action Steps:
+
+Week 1-4: Integrated logic, security, and modularity mastery.
+
+Week 5: Capstone Project: Build a fully automated deployment of a 3-tier app (Load Balancer, App, Database). Review for Red Hat Certification.
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/ansible-tutorial/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=weZxb0ed_5k (Advanced sections)
+
+3️⃣ Official Documentation
+
+1st: https://docs.ansible.com/ansible/latest/index.html
+
+5️⃣ Practice Resources
+
+1st: https://labs.playground.com/?track=ansible
+
+2nd: https://github.com/ansible/ansible-examples
+
+6️⃣ Notes / PDFs
+
+1st: https://www.ansible.com/sites/default/files/2022-06/Ansible-for-DevOps.pdf
+
+2nd: https://www.redhat.com/en/resources/ansible-automation-platform-ebook
+
+Skill: Apache Kafka
+🔹 IF USER SELECTS: 3 DAYS (CRASH COURSE) 🎯 Outcome: Understand Event Streaming, core Kafka architecture, and basic CLI operations. 🚀 Daily Action Steps:
+
+Day 1: Learn the "Why" of Kafka (Pub-Sub model). Set up a local broker using Docker or binaries.
+
+Day 2: Master core terminology: Brokers, Clusters, and Zookeeper/KRaft.
+
+Day 3: Run basic CLI commands to create a Topic, Produce a message, and Consume it.
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/introduction-to-kafka/
+
+2nd: https://www.geeksforgeeks.org/apache-kafka/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=06iK3_b9koc
+
+2nd: https://www.youtube.com/watch?v=6ZwlNI6hB_c
+
+3️⃣ Official Documentation
+
+1st: https://kafka.apache.org/quickstart
+
+4️⃣ Courses / Tutorials
+
+1st: https://www.confluent.io/learn/kafka/
+
+5️⃣ Practice Resources
+
+1st: https://labs.confluent.io/
+
+6️⃣ Notes / PDFs
+
+1st: https://kafka.apache.org/documentation/Apache-Kafka-Quickstart.pdf
+
+🔹 IF USER SELECTS: 1 WEEK (PRODUCERS & CONSUMERS) 🎯 Outcome: Build Java/Python applications that send and receive real-time event data. 🚀 Action Steps:
+
+Day 1-3: Follow the 3-day path.
+
+Day 4-5: Deep dive into Topics, Partitions, and Replication Factors for data durability.
+
+Day 6-7: Write code for a Producer (Keys, Acks) and a Consumer (Consumer Groups, Offsets).
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/kafka-producer-and-consumer/
+
+2nd: https://www.geeksforgeeks.org/kafka-topics/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=ImtZ5yENzgE
+
+3️⃣ Official Documentation
+
+1st: https://kafka.apache.org/documentation/
+
+4️⃣ Courses / Tutorials
+
+1st: https://developer.confluent.io/learn-kafka/
+
+5️⃣ Practice Resources
+
+1st: https://kafka-tutorials.confluent.io/
+
+6️⃣ Notes / PDFs
+
+1st: https://developer.confluent.io/learn-kafka/kafka-pdf-guide/
+
+🔹 IF USER SELECTS: 2 WEEKS (KAFKA STREAMS) 🎯 Outcome: Perform real-time data processing (filtering, transforming, joining) using Kafka Streams API. 🚀 Action Steps:
+
+Week 1: Master Producers, Consumers, and Cluster internals.
+
+Week 2: Learn KStream vs. KTable. Build a "Word Count" or "Filter" stream application.
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/kafka-streams/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=KVp3aNz8G2w
+
+3️⃣ Official Documentation
+
+1st: https://kafka.apache.org/documentation/#streams
+
+4️⃣ Courses / Tutorials
+
+1st: https://www.udemy.com/course/apache-kafka/
+
+5️⃣ Practice Resources
+
+1st: https://github.com/confluentinc/kafka-streams-examples
+
+6️⃣ Notes / PDFs
+
+1st: https://www.confluent.io/wp-content/uploads/Kafka-The-Definitive-Guide-v2.pdf
+
+🔹 IF USER SELECTS: 3 WEEKS (KAFKA CONNECT & ECOSYSTEM) 🎯 Outcome: Integrate Kafka with databases (MySQL, MongoDB) and S3 using Kafka Connect. 🚀 Action Steps:
+
+Week 1-2: Master Core API and Streaming logic.
+
+Week 3: Setup Source and Sink connectors. Learn about Schema Registry (Avro/JSON) for data compatibility.
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/apache-kafka/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=06iK3_b9koc (Connect section)
+
+3️⃣ Official Documentation
+
+1st: https://kafka.apache.org/documentation/#connect
+
+4️⃣ Courses / Tutorials
+
+1st: https://www.coursera.org/learn/apache-kafka
+
+5️⃣ Practice Resources
+
+1st: https://developer.confluent.io/learn-kafka/practice/
+
+6️⃣ Notes / PDFs
+
+1st: https://www.oreilly.com/library/view/kafka-the-definitive/9781491936153/
+
+🔹 IF USER SELECTS: 4 WEEKS (OPERATIONS & TUNING) 🎯 Outcome: Manage a production cluster, handle security (SSL/SASL), and optimize performance. 🚀 Action Steps:
+
+Week 1-3: Advanced ecosystem and integration mastery.
+
+Week 4: Study Monitoring (JMX), Security protocols, and tuning for High Throughput or Low Latency.
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=k8Qfecvy8eA
+
+3️⃣ Official Documentation
+
+1st: https://kafka.apache.org/documentation/#operations
+
+4️⃣ Courses / Tutorials
+
+1st: https://stephenreichard.com/kafka-training/
+
+5️⃣ Practice Resources
+
+1st: https://www.katacoda.com/courses/kafka
+
+6️⃣ Notes / PDFs
+
+1st: https://kafka.apache.org/documentation.pdf
+
+🔹 IF USER SELECTS: 5 WEEKS (CAPSTONE & ARCHITECTURE) 🎯 Outcome: Design a complete Event-Driven Microservices architecture and finalize a large-scale project. 🚀 Action Steps:
+
+Week 1-4: Integrated learning across all Kafka pillars.
+
+Week 5: Capstone Project: Build a real-time analytics dashboard (DB -> Connect -> Kafka -> Streams -> Frontend).
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/apache-kafka/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=06iK3_b9koc (Final Architecture Review)
+
+3️⃣ Official Documentation
+
+1st: https://kafka.apache.org/documentation/
+
+5️⃣ Practice Resources
+
+1st: https://labs.confluent.io/
+
+2nd: https://github.com/confluentinc/kafka-streams-examples
+
+6️⃣ Notes / PDFs
+
+1st: https://www.confluent.io/wp-content/uploads/Kafka-The-Definitive-Guide-v2.pdf
+
+Skill: Azure
+🔹 IF USER SELECTS: 3 DAYS (CRASH COURSE)
+
+🎯 Outcome: Understand cloud concepts and successfully navigate the Azure Portal.
+
+🚀 Daily Action Steps:
+
+Day 1: Learn about Cloud Computing (IaaS, PaaS, SaaS) and create a free Azure account.
+
+Day 2: Explore the Azure Portal and understand Regions, Availability Zones, and Resource Groups.
+
+Day 3: Learn about Azure Subscriptions and Management Groups to organize cloud billing.
+
+Shutterstock [Educational diagram showing Azure Global Infrastructure: Regions, Geographies, and Availability Zones]
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/microsoft-azure/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=UBGzsbBwCDo
+
+3️⃣ Official Documentation
+
+1st: https://docs.microsoft.com/en-us/azure/
+
+4️⃣ Courses / Tutorials
+
+1st: https://docs.microsoft.com/en-us/learn/paths/azure-fundamentals/
+
+5️⃣ Practice Resources
+
+1st: https://azure.microsoft.com/en-us/free/
+
+6️⃣ Notes / PDFs
+
+1st: https://azure.microsoft.com/en-us/resources/azure-fundamentals-cheatsheet/
+
+✅ Checkpoint: Log in to the Azure Portal and successfully create your first Resource Group.
+
+🔹 IF USER SELECTS: 1 WEEK (CORE SERVICES)
+
+🎯 Outcome: Deploy and manage basic Compute and Storage resources in Azure.
+
+🚀 Daily Action Steps:
+
+Day 1-3: Complete the 3-day path on Portal navigation and Infrastructure.
+
+Day 4-5: Learn to deploy and connect to Azure Virtual Machines (Windows/Linux).
+
+Day 6-7: Understand Azure Storage accounts, including Blob, File, and Disk storage types.
+
+Shutterstock [Educational diagram illustrating Azure Compute options: VMs, Containers, and Serverless]
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/azure-virtual-machines/
+
+2nd: https://www.geeksforgeeks.org/azure-storage/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=hJMmIOvJy9I
+
+3️⃣ Official Documentation
+
+1st: https://docs.microsoft.com/en-us/learn/azure/
+
+4️⃣ Courses / Tutorials
+
+1st: https://www.coursera.org/learn/azure-fundamentals/
+
+5️⃣ Practice Resources
+
+1st: https://microsoftlearning.github.io/AZ-900T00-StudentManual/
+
+6️⃣ Notes / PDFs
+
+1st: https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4tn8y
+
+✅ Checkpoint: Deploy a Virtual Machine and upload a test file to an Azure Blob Storage container.
+
+🔹 IF USER SELECTS: 2 WEEKS (NETWORKING & DATABASE)
+
+🎯 Outcome: Configure secure Virtual Networks and manage Azure SQL Databases.
+
+🚀 Action Steps:
+
+Week 1: Complete the 1-Week Core Services path.
+
+Week 2: Master Virtual Networks (VNet), Subnets, and Network Security Groups (NSGs). Learn to provision and query an Azure SQL Database.
+
+Shutterstock [Educational diagram of an Azure Virtual Network architecture with subnets and security rules]
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/azure-sql-database/
+
+2nd: https://www.geeksforgeeks.org/azure-virtual-machines/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=buKIMcLS0Tg
+
+3️⃣ Official Documentation
+
+1st: https://docs.microsoft.com/en-us/azure/architecture/
+
+4️⃣ Courses / Tutorials
+
+1st: https://azure.microsoft.com/en-us/resources/training-and-certifications/
+
+5️⃣ Practice Resources
+
+1st: https://portal.azure.com/
+
+6️⃣ Notes / PDFs
+
+1st: https://docs.microsoft.com/en-us/azure/architecture/aws-professional/
+
+✅ Checkpoint: Create a VNet with a public subnet and confirm database connectivity via a private endpoint.
+
+🔹 IF USER SELECTS: 3 WEEKS (IDENTITY & SECURITY)
+
+🎯 Outcome: Manage users and secure cloud resources using Microsoft Entra ID (Azure AD).
+
+🚀 Action Steps:
+
+Week 1-2: Complete the Networking and Database paths.
+
+Week 3: Learn about Azure Active Directory (Entra ID) users, groups, and Multi-Factor Authentication (MFA). Implement Role-Based Access Control (RBAC) to restrict resource access.
+
+Shutterstock [Educational diagram showing the relationship between Azure AD tenants, subscriptions, and RBAC roles]
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/azure-active-directory/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=6Ly6RWr3Vvg
+
+3️⃣ Official Documentation
+
+1st: https://docs.microsoft.com/en-us/azure/security/
+
+4️⃣ Courses / Tutorials
+
+1st: https://www.pluralsight.com/paths/azure
+
+5️⃣ Practice Resources
+
+1st: https://labs.azure.com/
+
+6️⃣ Notes / PDFs
+
+1st: https://docs.microsoft.com/en-us/azure/governance/
+
+✅ Checkpoint: Create a new user in Azure AD and assign them the "Reader" role for a specific Resource Group.
+
+🔹 IF USER SELECTS: 4-5 WEEKS (ARCHITECT MASTERY)
+
+🎯 Outcome: Design highly available, scalable, and cost-optimized Azure solutions.
+
+🚀 Action Steps:
+
+Week 1-3: Complete the Identity and Security paths.
+
+Week 4: Learn about Azure Monitor, Advisor, and Cost Management for optimization. Study the Well-Architected Framework for high availability and disaster recovery.
+
+Week 5: Capstone Project: Deploy a load-balanced web application across multiple regions with a backend database.
+
+Shutterstock [Educational diagram of a highly available Azure architecture with Traffic Manager and Load Balancers]
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/microsoft-azure/
+
+2nd: https://www.geeksforgeeks.org/azure-sql-database/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=lvxr31KqeMM
+
+3️⃣ Official Documentation
+
+1st: https://docs.microsoft.com/en-us/azure/well-architected/
+
+4️⃣ Courses / Tutorials
+
+1st: https://www.udemy.com/course/microsoft-azure-fundamentals-az900/
+
+5️⃣ Practice Resources
+
+1st: https://microsoft.github.io/AZ-104-W10-C01/
+
+6️⃣ Notes / PDFs
+
+1st: https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/
+
+Skill: Bash Scripting
+🔹 IF USER SELECTS: 3 DAYS (CRASH COURSE) 🎯 Outcome: Understand the Shebang, basic syntax, and how to execute scripts to automate simple terminal tasks.
+
+🚀 Daily Action Steps: * Day 1: Learn the Shebang line (#!/bin/bash), file permissions (chmod +x), and printing output using echo.
+
+Day 2: Work with Variables (Global vs. Local) and learn how to take user input using the read command.
+
+Day 3: Introduction to basic Arithmetic operations and Command Substitution.
+
+1️⃣ GeeksforGeeks * 1st: https://www.geeksforgeeks.org/introduction-linux-shell-bash-scripting/
+
+2nd: https://www.geeksforgeeks.org/bash-scripting/
+
+2️⃣ YouTube Tutorials * 1st: https://www.youtube.com/watch?v=Sp1tjkT72%
+
+2nd: https://www.youtube.com/watch?v=rm6zSQIwF14
+
+3️⃣ Official Documentation * 1st: https://www.tldp.org/LDP/Bash-Beginners-Guide/html/
+
+4️⃣ Courses / Tutorials * 1st: https://ryanstutorials.net/bash-tutorial/
+
+5️⃣ Practice Resources * 1st: https://overthewire.org/wargames/bandit/
+
+6️⃣ Notes / PDFs * 1st: https://linux.die.net/Bash-Beginners-Guide.pdf
+
+✅ Checkpoint: Create a script that asks for a user's name and age, then calculates how many years until they turn 100.
+
+🔹 IF USER SELECTS: 1 WEEK (CONTROL FLOW) 🎯 Outcome: Master conditional logic and loops to process data and control script execution.
+
+🚀 Action Steps: * Day 1-3: Follow the 3-day path.
+
+Day 4-5: Master if-else statements and Case statements using numerical and string comparisons.
+
+Day 6-7: Learn for and while loops to iterate through ranges and files.
+
+1️⃣ GeeksforGeeks * 1st: https://www.geeksforgeeks.org/bash-scripting-loops/
+
+2️⃣ YouTube Tutorials * 1st: https://www.youtube.com/watch?v=ORovYpPMf14
+
+3️⃣ Official Documentation * 1st: https://linux.die.net/man/1/bash
+
+4️⃣ Courses / Tutorials * 1st: https://www.codecademy.com/learn/learn-bash-scripting
+
+5️⃣ Practice Resources * 1st: https://www.hackerrank.com/domains/shell
+
+6️⃣ Notes / PDFs * 1st: https://www.gnu.org/software/bash/manual/bash.pdf
+
+🔹 IF USER SELECTS: 2 WEEKS (FUNCTIONS & ARRAYS) 🎯 Outcome: Build modular, reusable scripts using functions and handle multiple data points with arrays.
+
+🚀 Action Steps: * Week 1: Master variables, conditions, and loops.
+
+Week 2: Study Function definition and scope. Learn how to pass arguments ($1, $2) and handle Arrays.
+
+1️⃣ GeeksforGeeks * 1st: https://www.geeksforgeeks.org/bash-functions/
+
+2nd: https://www.geeksforgeeks.org/bash-scripting-arrays/
+
+2️⃣ YouTube Tutorials * 1st: https://www.youtube.com/watch?v=fcN8eSyoCWY
+
+3️⃣ Official Documentation * 1st: https://www.gnu.org/software/bash/manual/bash.html
+
+4️⃣ Courses / Tutorials * 1st: https://linuxconfig.org/bash-scripting-tutorial
+
+5️⃣ Practice Resources * 1st: https://exercism.org/tracks/bash
+
+6️⃣ Notes / PDFs * 1st: https://tldp.org/LDP/abs/html/abs.html
+
+🔹 IF USER SELECTS: 3 WEEKS (TEXT PROCESSING & REGEX) 🎯 Outcome: Use powerful Linux utilities (grep, sed, awk) within scripts to manipulate text and logs.
+
+🚀 Action Steps: * Week 1-2: Master modular scripting.
+
+Week 3: Learn Regular Expressions and integrate grep for searching, sed for stream editing, and awk for report generation.
+
+1️⃣ GeeksforGeeks * 1st: https://www.geeksforgeeks.org/bash-scripting/
+
+2️⃣ YouTube Tutorials * 1st: https://www.youtube.com/watch?v=hwrhm3iqtek
+
+3️⃣ Official Documentation * 1st: https://tldp.org/LDP/abs/html/
+
+4️⃣ Courses / Tutorials * 1st: https://www.udemy.com/course/linux-shell-scripting-bash/
+
+5️⃣ Practice Resources * 1st: https://www.codewars.com/kata/search/shell
+
+6️⃣ Notes / PDFs * 1st: https://io.csie.ntnu.edu.tw/~b93081/notes/bash.pdf
+
+🔹 IF USER SELECTS: 4 WEEKS (ERROR HANDLING & SYSTEM OPS) 🎯 Outcome: Create robust scripts with exit codes, error redirection, and system automation (cron jobs).
+
+🚀 Action Steps: * Week 1-3: Advanced logic and text processing.
+
+Week 4: Learn Exit Status ($?), standard error redirection (2>), and scheduling scripts with crontab.
+
+2️⃣ YouTube Tutorials * 1st: https://www.youtube.com/watch?v=rm6zSQIwF14 (Automation focus)
+
+3️⃣ Official Documentation * 1st: https://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html
+
+4️⃣ Courses / Tutorials * 1st: https://www.coursera.org/learn/shell-scripting-linux
+
+5️⃣ Practice Resources * 1st: https://tryhackme.com/room/bashscripting
+
+6️⃣ Notes / PDFs * 1st: https://www.tldp.org/LDP/Bash-Beginners-Guide/bash.pdf
+
+🔹 IF USER SELECTS: 5 WEEKS (PROFESSIONAL AUTOMATION) 🎯 Outcome: Develop a complex system-wide tool, such as a backup manager or log analyzer, and optimize for performance.
+
+🚀 Action Steps: * Week 1-4: Integrated mastery of all Bash features.
+
+Week 5: Capstone Project: Build a script that monitors system disk usage, emails alerts if over 80%, and archives logs older than 30 days.
+
+1️⃣ GeeksforGeeks * 1st: https://www.geeksforgeeks.org/bash-scripting/
+
+2️⃣ YouTube Tutorials * 1st: https://www.youtube.com/watch?v=Sp1tjkT72% (Advanced sections)
+
+3️⃣ Official Documentation * 1st: https://www.gnu.org/software/bash/manual/bash.html
+
+5️⃣ Practice Resources * 1st: https://overthewire.org/wargames/bandit/ (Final Levels)
+
+6️⃣ Notes / PDFs * 1st: https://tldp.org/LDP/abs/html/abs.html
+
+2nd: https://linux.die.net/Bash-Beginners-Guide.pdf
+
+Skill: Blender
+🔹 IF USER SELECTS: 3 DAYS (CRASH COURSE)
+
+🎯 Outcome: Navigate the 3D viewport, manipulate objects, and understand the basic Blender interface.
+
+🚀 Daily Action Steps:
+
+Day 1: Learn interface navigation (Orbit, Pan, Zoom) and basic object transformations (Grab, Rotate, Scale).
+
+Day 2: Understand Object Mode vs. Edit Mode and learn basic mesh selection tools (Vertex, Edge, Face).
+
+Day 3: Introduction to the Modifier stack; apply a Subdivision Surface modifier and perform a basic render.
+
+Shutterstock [Educational diagram showing Blender 3D Viewport navigation and the XYZ coordinate system]
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/blender-3d/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=TPrnSACiTJ4
+
+3️⃣ Official Documentation
+
+1st: https://docs.blender.org/manual/en/latest/
+
+4️⃣ Courses / Tutorials
+
+1st: https://www.blender.org/support/tutorials/
+
+5️⃣ Practice Resources
+
+1st: https://www.blender.org/support/tutorials/
+
+6️⃣ Notes / PDFs
+
+1st: https://docs.blender.org/manual/en/latest/advanced/blender_directory_layout.html
+
+✅ Checkpoint: Successfully create a simple scene with three primitives and render it using the F12 shortcut.
+
+🔹 IF USER SELECTS: 1 WEEK (CORE MODELING)
+
+🎯 Outcome: Master polygonal modeling techniques and basic procedural materials.
+
+🚀 Daily Action Steps:
+
+Day 1-3: Complete the 3-day path on navigation and interface.
+
+Day 4-5: Learn modeling tools: Extrude, Inset, Bevel, and Loop Cut to create complex shapes.
+
+Day 6-7: Introduction to the Shading tab; assign basic colors and adjust Roughness/Metallic properties.
+
+Shutterstock [Educational diagram illustrating the box modeling workflow: from primitive to high-poly mesh]
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/3d-modeling-blender/
+
+2nd: https://www.geeksforgeeks.org/blender-3d/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=9Tj12P1Wj8k
+
+3️⃣ Official Documentation
+
+1st: https://docs.blender.org/manual/en/latest/render/introduction.html
+
+4️⃣ Courses / Tutorials
+
+1st: https://cgcookie.com/courses
+
+5️⃣ Practice Resources
+
+1st: https://blenderartists.org/c/artwork/wiplash
+
+6️⃣ Notes / PDFs
+
+1st: https://en.wikibooks.org/wiki/Blender_3D:_Noob_to_Pro
+
+✅ Checkpoint: Model a high-quality "Donut" or a stylized low-poly prop using at least four different modeling tools.
+
+🔹 IF USER SELECTS: 2 WEEKS (TEXTURES & LIGHTING)
+
+🎯 Outcome: Understand UV Unwrapping, PBR texturing, and realistic lighting setups.
+
+🚀 Action Steps:
+
+Week 1: Complete the 1-Week Core Modeling path.
+
+Week 2: Learn UV Unwrapping basics and the Node Editor. Setup a 3-point lighting system (Key, Fill, Back) and explore HDRI environments.
+
+Shutterstock [Educational diagram showing the UV unwrapping process: 3D mesh to 2D texture map]
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/blender-3d/
+
+2nd: https://www.geeksforgeeks.org/3d-modeling-blender/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=VUoMOwvaF3A
+
+3️⃣ Official Documentation
+
+1st: https://docs.blender.org/manual/en/latest/
+
+4️⃣ Courses / Tutorials
+
+1st: https://www.udemy.com/course/blender-30/
+
+5️⃣ Practice Resources
+
+1st: https://www.blendernation.com/
+
+6️⃣ Notes / PDFs
+
+1st: https://docs.blender.org/manual/en/dev/pdf/index.html
+
+✅ Checkpoint: Unwrap a modeled object and apply a realistic material using an Image Texture node.
+
+🔹 IF USER SELECTS: 3 WEEKS (ANIMATION & RIGGING)
+
+🎯 Outcome: Animate objects and characters using keyframes, graphs, and basic bone structures.
+
+🚀 Action Steps:
+
+Week 1-2: Complete the Modeling and Texturing paths.
+
+Week 3: Learn Keyframe animation and the Graph Editor. Understand basic Rigging: creating an Armature, Parenting with Automatic Weights, and IK constraints.
+
+Shutterstock [Educational diagram of a character rig showing the bone hierarchy and IK handles]
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/blender-animation/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=ORovYpPMf14
+
+3️⃣ Official Documentation
+
+1st: https://docs.blender.org/manual/en/latest/
+
+4️⃣ Courses / Tutorials
+
+1st: https://blendercloud.com/
+
+5️⃣ Practice Resources
+
+1st: https://gamedev.net/forums/topic/701234-blender-practice-projects/
+
+6️⃣ Notes / PDFs
+
+1st: https://wiki.blender.org/wiki/Reference/Release_Notes/2.8
+
+✅ Checkpoint: Create a 5-second animation of a bouncing ball or a simple character walk cycle.
+
+🔹 IF USER SELECTS: 4-5 WEEKS (SCRIPTING & MASTERY)
+
+🎯 Outcome: Automate workflows with Python scripting and master professional rendering/compositing.
+
+🚀 Action Steps:
+
+Week 1-3: Complete the Modeling, Texturing, and Animation paths.
+
+Week 4: Learn the Blender Python API (bpy) to automate object creation and property changes. Explore Geometry Nodes for procedural world-building.
+
+Week 5: Capstone Project: Create a fully animated, textured, and composited 3D short film or environment.
+
+Shutterstock [Educational diagram of the Blender Compositor node tree for post-processing effects]
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/python-scripting-in-blender/
+
+2nd: https://www.geeksforgeeks.org/blender-python-api/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=1gM8yEMFMKg
+
+3️⃣ Official Documentation
+
+1st: https://docs.blender.org/api/current/
+
+4️⃣ Courses / Tutorials
+
+1st: https://www.skillshare.com/classes/Blender/123456
+
+5️⃣ Practice Resources
+
+1st: https://www.artstation.com/challenges
+
+6️⃣ Notes / PDFs
+
+1st: https://download.blender.org/documentation/GD-blender_manual_2.79.pdf
+
+Skill: C
+🔹 IF USER SELECTS: 3 DAYS (CRASH COURSE) 🎯 Outcome: Understand the structure of a C program, variables, and basic I/O. 🚀 Daily Action Steps:
+
+Day 1: Install a compiler (GCC) and write your first "Hello World" to understand main() and #include.
+
+Day 2: Learn Data Types (int, float, char) and use printf and scanf for input/output.
+
+Day 3: Understand Basic Operators and how C handles memory at a high level.
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/c-language-introduction/
+
+2nd: https://www.geeksforgeeks.org/c-programming-language/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=KJgsSFOSQv0
+
+2nd: https://www.youtube.com/watch?v=K8Rpb2ChN0g
+
+3️⃣ Official Documentation
+
+1st: https://en.cppreference.com/w/c/language
+
+4️⃣ Courses / Tutorials
+
+1st: https://www.codecademy.com/learn/learn-c
+
+5️⃣ Practice Resources
+
+1st: https://onlinegdb.com/online_c_compiler
+
+6️⃣ Notes / PDFs
+
+1st: https://www.tutorialspoint.com/cprogramming/cprogramming_tutorial.pdf
+
+✅ Checkpoint: Write a script that takes two numbers from the user and prints their sum and product.
+
+🔹 IF USER SELECTS: 1 WEEK (CONTROL FLOW & LOOPS) 🎯 Outcome: Master decision-making and repetitive tasks using loops and conditions. 🚀 Action Steps:
+
+Day 1-3: Follow the 3-day path.
+
+Day 4-5: Master if-else statements and switch cases for logic.
+
+Day 6-7: Learn for, while, and do-while loops to handle iterations.
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/c-programming-language/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=h-HpxS5GT50
+
+3️⃣ Official Documentation
+
+1st: https://www.tutorialspoint.com/cprogramming/
+
+4️⃣ Courses / Tutorials
+
+1st: https://cs50.harvard.edu/x/
+
+5️⃣ Practice Resources
+
+1st: https://www.hackerrank.com/domains/c
+
+6️⃣ Notes / PDFs
+
+1st: https://www.geeksforgeeks.org/wp-content/uploads/CProgramming.pdf
+
+🔹 IF USER SELECTS: 2 WEEKS (FUNCTIONS & ARRAYS) 🎯 Outcome: Build modular code using functions and manage collections of data using arrays. 🚀 Action Steps:
+
+Week 1: Master variables, conditions, and loops.
+
+Week 2: Study Function prototypes, definitions, and scope. Learn 1D and 2D Arrays to store data sets.
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/c-functions/
+
+2nd: https://www.geeksforgeeks.org/c-arrays/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=2Vv-BfVoq4g
+
+3️⃣ Official Documentation
+
+1st: https://en.cppreference.com/w/c/language
+
+4️⃣ Courses / Tutorials
+
+1st: https://www.edx.org/learn/c-programming
+
+5️⃣ Practice Resources
+
+1st: https://www.geeksforgeeks.org/c-programming-examples/
+
+6️⃣ Notes / PDFs
+
+1st: https://iitd-plos.github.io/cprogm/notes.pdf
+
+🔹 IF USER SELECTS: 3 WEEKS (POINTERS & MEMORY) 🎯 Outcome: Master C’s most powerful feature: direct memory manipulation through pointers. 🚀 Action Steps:
+
+Week 1-2: Master modularity and arrays.
+
+Week 3: Learn Pointer arithmetic, the relationship between pointers and arrays, and "Call by Value" vs "Call by Reference."
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/c-pointers/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=EDab8V9X4i8
+
+3️⃣ Official Documentation
+
+1st: https://cdecl.org/
+
+4️⃣ Courses / Tutorials
+
+1st: https://introcs.cs.princeton.edu/java/11cheatsheet/
+
+5️⃣ Practice Resources
+
+1st: https://exercism.org/tracks/c
+
+6️⃣ Notes / PDFs
+
+1st: https://nptel.ac.in/content/storage2/courses/106105055/www_m1l1.pdf
+
+🔹 IF USER SELECTS: 4 WEEKS (STRUCTURES & DYNAMIC MEMORY) 🎯 Outcome: Define custom data types with Structures and manage memory during runtime with malloc and free. 🚀 Action Steps:
+
+Week 1-3: Advanced pointers and logic mastery.
+
+Week 4: Study struct and union. Learn Dynamic Memory Allocation (DMA) to build flexible programs.
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/c-programming-language/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=h-HpxS5GT50 (Advanced sections)
+
+3️⃣ Official Documentation
+
+1st: https://pubs.opengroup.org/onlinepubs/9699919799/
+
+4️⃣ Courses / Tutorials
+
+1st: https://www.coursera.org/learn/c-programming
+
+5️⃣ Practice Resources
+
+1st: https://www.codewars.com/kata/search/c
+
+6️⃣ Notes / PDFs
+
+1st: https://see.stanford.edu/materials/lslcombine/lsl.pdf
+
+🔹 IF USER SELECTS: 5 WEEKS (FILE HANDLING & PROJECTS) 🎯 Outcome: Develop persistent applications that read/write files and complete a final capstone project. 🚀 Action Steps:
+
+Week 1-4: Integrated mastery of pointers, memory, and structures.
+
+Week 5: Learn File I/O (fopen, fprintf). Capstone Project: Build a simple Student Record System or File-based Calculator.
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/c-programming-language/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=KJgsSFOSQv0 (Project sections)
+
+5️⃣ Practice Resources
+
+1st: https://www.hackerrank.com/domains/c (Intermediate Challenges)
+
+6️⃣ Notes / PDFs
+
+1st: https://www.tutorialspoint.com/cprogramming/cprogramming_tutorial.pdf
+
+2nd: https://iitd-plos.github.io/cprogm/notes.pdf
+
+Skill: C#
+🔹 IF USER SELECTS: 3 DAYS (CRASH COURSE)
+
+🎯 Outcome: Understand basic C# syntax and create a functional console-based Hello World application.
+
+🚀 Daily Action Steps:
+
+Day 1: Setup the environment by installing Visual Studio or VS Code and learn the basic project structure.
+
+Day 2: Understand C# Data Types, Variables, and basic operators for mathematical calculations.
+
+Day 3: Learn basic Input/Output operations and write a program to greet the user and perform simple math.
+
+Shutterstock [Educational diagram showing the .NET Compilation Process: Source Code -> CIL -> JIT -> Native Code]
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/c-sharp-programming-language/
+
+2nd: https://www.geeksforgeeks.org/c-sharp-hello-world/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=GhQdlIFylQ8
+
+2nd: https://www.youtube.com/watch?v=GQtfX3i1k4A
+
+3️⃣ Official Documentation
+
+1st: https://learn.microsoft.com/en-us/dotnet/csharp/
+
+2nd: https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/
+
+4️⃣ Courses / Tutorials
+
+1st: https://dotnet.microsoft.com/en-us/learn/csharp
+
+5️⃣ Practice Resources
+
+1st: https://dotnet.microsoft.com/en-us/platform/learn-to-code
+
+6️⃣ Notes / PDFs
+
+1st: https://www.tutorialspoint.com/csharp/csharp_tutorial.pdf
+
+✅ Checkpoint: Successfully compile and run a console application that takes user input and prints it back to the screen.
+
+🔹 IF USER SELECTS: 1 WEEK (LOGIC & CONTROL)
+
+🎯 Outcome: Master decision-making structures, loops, and basic error handling in C#.
+
+🚀 Daily Action Steps:
+
+Day 1-3: Complete the 3-day path on setup and syntax fundamentals.
+
+Day 4-5: Master Conditional statements (If-Else, Switch) and Looping structures (For, While, Foreach).
+
+Day 6-7: Learn about Arrays and basic Exception Handling using Try-Catch blocks.
+
+Shutterstock [Educational flow chart diagram illustrating the logic of a Switch statement and a For loop]
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/c-sharp-programming-language/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=YS4zW0y2M1g
+
+3️⃣ Official Documentation
+
+1st: https://learn.microsoft.com/en-us/dotnet/csharp/tutorials/
+
+4️⃣ Courses / Tutorials
+
+1st: https://learn.microsoft.com/en-us/training/paths/get-started-c-sharp-part-1/
+
+5️⃣ Practice Resources
+
+1st: https://www.hackerrank.com/domains/csharp
+
+6️⃣ Notes / PDFs
+
+1st: https://bitbucket.org/yyoncho/dotnetcorecamp/wiki/cs-cheatsheet.pdf
+
+✅ Checkpoint: Build a "Guess the Number" game that uses loops for retries and conditionals to check for higher/lower inputs.
+
+🔹 IF USER SELECTS: 2 WEEKS (OOP FOUNDATIONS)
+
+🎯 Outcome: Implement Object-Oriented Programming (OOP) concepts including Classes, Objects, and Inheritance.
+
+🚀 Action Steps:
+
+Week 1: Complete the 1-Week Logic & Control path.
+
+Week 2: Deep dive into OOP: Define Classes, create Objects, and learn about Constructors, Encapsulation, and Properties.
+
+Shutterstock [Educational diagram illustrating the four pillars of OOP: Abstraction, Encapsulation, Inheritance, and Polymorphism]
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/c-sharp-classes-and-objects/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=0t4DZ3NreUY
+
+3️⃣ Official Documentation
+
+1st: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/
+
+4️⃣ Courses / Tutorials
+
+1st: https://www.pluralsight.com/courses/csharp-fundamentals
+
+5️⃣ Practice Resources
+
+1st: https://exercism.org/tracks/csharp
+
+6️⃣ Notes / PDFs
+
+1st: https://www.blackwasp.co.uk/CSharpPDF.aspx
+
+✅ Checkpoint: Create a "Library Management" system with classes for Books and Members, using inheritance for different member types.
+
+🔹 IF USER SELECTS: 3 WEEKS (INTERMEDIATE DATA)
+
+🎯 Outcome: Use Generics, Collections, and LINQ to manipulate data efficiently.
+
+🚀 Action Steps:
+
+Week 1-2: Master OOP Foundations.
+
+Week 3: Learn about Generic Lists, Dictionaries, and use LINQ (Language Integrated Query) for filtering and sorting data sets.
+
+Shutterstock [Educational visual comparison of querying data with a Foreach loop versus using a LINQ query]
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/c-sharp-linq/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=ZwLCM-X4oLE
+
+3️⃣ Official Documentation
+
+1st: https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/
+
+4️⃣ Courses / Tutorials
+
+1st: https://www.udemy.com/course/c-sharp-tutorial-for-beginners/
+
+5️⃣ Practice Resources
+
+1st: https://leetcode.com/problemset/all/?language=csharp
+
+6️⃣ Notes / PDFs
+
+1st: https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords.pdf
+
+✅ Checkpoint: Write a script that takes a list of objects and uses LINQ to find items matching specific criteria and sort the result.
+
+🔹 IF USER SELECTS: 4-5 WEEKS (ADVANCED MASTER & PROJECT)
+
+🎯 Outcome: Master Asynchronous programming, Delegates, and build a full-scale C# application.
+
+🚀 Action Steps:
+
+Week 1-3: Complete the Intermediate Data path.
+
+Week 4: Study Delegates, Events, and Asynchronous programming (Async/Await) to build responsive applications.
+
+Week 5: Capstone Project: Build a multi-threaded Desktop App (WPF/WinForms) or a Web API that interacts with a database.
+
+Shutterstock [Educational diagram showing Synchronous vs Asynchronous execution flow in .NET]
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/c-sharp-delegates/
+
+2nd: https://www.geeksforgeeks.org/c-sharp-linq/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=GhQdlIFylQ8
+
+2nd: https://www.youtube.com/watch?v=0t4DZ3NreUY
+
+3️⃣ Official Documentation
+
+1st: https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/
+
+4️⃣ Courses / Tutorials
+
+1st: https://www.coursera.org/learn/c-sharp-programming
+
+5️⃣ Practice Resources
+
+1st: https://www.codewars.com/kata/search/csharp
+
+6️⃣ Notes / PDFs
+
+1st: https://en.wikibooks.org/wiki/C_Sharp_Programming/Keywords
+
+Skill: C#
+🔹 IF USER SELECTS: 3 DAYS (CRASH COURSE)
+
+🎯 Outcome: Understand basic C# syntax and create a functional console-based Hello World application.
+
+🚀 Daily Action Steps:
+
+Day 1: Setup the environment by installing Visual Studio or VS Code and learn the basic project structure.
+
+Day 2: Understand C# Data Types, Variables, and basic operators for mathematical calculations.
+
+Day 3: Learn basic Input/Output operations and write a program to greet the user and perform simple math.
+
+Shutterstock [Educational diagram showing the .NET Compilation Process: Source Code -> CIL -> JIT -> Native Code]
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/c-sharp-programming-language/
+
+2nd: https://www.geeksforgeeks.org/c-sharp-hello-world/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=GhQdlIFylQ8
+
+2nd: https://www.youtube.com/watch?v=GQtfX3i1k4A
+
+3️⃣ Official Documentation
+
+1st: https://learn.microsoft.com/en-us/dotnet/csharp/
+
+2nd: https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/
+
+4️⃣ Courses / Tutorials
+
+1st: https://dotnet.microsoft.com/en-us/learn/csharp
+
+5️⃣ Practice Resources
+
+1st: https://dotnet.microsoft.com/en-us/platform/learn-to-code
+
+6️⃣ Notes / PDFs
+
+1st: https://www.tutorialspoint.com/csharp/csharp_tutorial.pdf
+
+✅ Checkpoint: Successfully compile and run a console application that takes user input and prints it back to the screen.
+
+🔹 IF USER SELECTS: 1 WEEK (LOGIC & CONTROL)
+
+🎯 Outcome: Master decision-making structures, loops, and basic error handling in C#.
+
+🚀 Daily Action Steps:
+
+Day 1-3: Complete the 3-day path on setup and syntax fundamentals.
+
+Day 4-5: Master Conditional statements (If-Else, Switch) and Looping structures (For, While, Foreach).
+
+Day 6-7: Learn about Arrays and basic Exception Handling using Try-Catch blocks.
+
+Shutterstock [Educational flow chart diagram illustrating the logic of a Switch statement and a For loop]
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/c-sharp-programming-language/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=YS4zW0y2M1g
+
+3️⃣ Official Documentation
+
+1st: https://learn.microsoft.com/en-us/dotnet/csharp/tutorials/
+
+4️⃣ Courses / Tutorials
+
+1st: https://learn.microsoft.com/en-us/training/paths/get-started-c-sharp-part-1/
+
+5️⃣ Practice Resources
+
+1st: https://www.hackerrank.com/domains/csharp
+
+6️⃣ Notes / PDFs
+
+1st: https://bitbucket.org/yyoncho/dotnetcorecamp/wiki/cs-cheatsheet.pdf
+
+✅ Checkpoint: Build a "Guess the Number" game that uses loops for retries and conditionals to check for higher/lower inputs.
+
+🔹 IF USER SELECTS: 2 WEEKS (OOP FOUNDATIONS)
+
+🎯 Outcome: Implement Object-Oriented Programming (OOP) concepts including Classes, Objects, and Inheritance.
+
+🚀 Action Steps:
+
+Week 1: Complete the 1-Week Logic & Control path.
+
+Week 2: Deep dive into OOP: Define Classes, create Objects, and learn about Constructors, Encapsulation, and Properties.
+
+Shutterstock [Educational diagram illustrating the four pillars of OOP: Abstraction, Encapsulation, Inheritance, and Polymorphism]
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/c-sharp-classes-and-objects/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=0t4DZ3NreUY
+
+3️⃣ Official Documentation
+
+1st: https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/
+
+4️⃣ Courses / Tutorials
+
+1st: https://www.pluralsight.com/courses/csharp-fundamentals
+
+5️⃣ Practice Resources
+
+1st: https://exercism.org/tracks/csharp
+
+6️⃣ Notes / PDFs
+
+1st: https://www.blackwasp.co.uk/CSharpPDF.aspx
+
+✅ Checkpoint: Create a "Library Management" system with classes for Books and Members, using inheritance for different member types.
+
+🔹 IF USER SELECTS: 3 WEEKS (INTERMEDIATE DATA)
+
+🎯 Outcome: Use Generics, Collections, and LINQ to manipulate data efficiently.
+
+🚀 Action Steps:
+
+Week 1-2: Master OOP Foundations.
+
+Week 3: Learn about Generic Lists, Dictionaries, and use LINQ (Language Integrated Query) for filtering and sorting data sets.
+
+Shutterstock [Educational visual comparison of querying data with a Foreach loop versus using a LINQ query]
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/c-sharp-linq/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=ZwLCM-X4oLE
+
+3️⃣ Official Documentation
+
+1st: https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/
+
+4️⃣ Courses / Tutorials
+
+1st: https://www.udemy.com/course/c-sharp-tutorial-for-beginners/
+
+5️⃣ Practice Resources
+
+1st: https://leetcode.com/problemset/all/?language=csharp
+
+6️⃣ Notes / PDFs
+
+1st: https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords.pdf
+
+✅ Checkpoint: Write a script that takes a list of objects and uses LINQ to find items matching specific criteria and sort the result.
+
+🔹 IF USER SELECTS: 4-5 WEEKS (ADVANCED MASTER & PROJECT)
+
+🎯 Outcome: Master Asynchronous programming, Delegates, and build a full-scale C# application.
+
+🚀 Action Steps:
+
+Week 1-3: Complete the Intermediate Data path.
+
+Week 4: Study Delegates, Events, and Asynchronous programming (Async/Await) to build responsive applications.
+
+Week 5: Capstone Project: Build a multi-threaded Desktop App (WPF/WinForms) or a Web API that interacts with a database.
+
+Shutterstock [Educational diagram showing Synchronous vs Asynchronous execution flow in .NET]
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/c-sharp-delegates/
+
+2nd: https://www.geeksforgeeks.org/c-sharp-linq/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=GhQdlIFylQ8
+
+2nd: https://www.youtube.com/watch?v=0t4DZ3NreUY
+
+3️⃣ Official Documentation
+
+1st: https://learn.microsoft.com/en-us/dotnet/csharp/whats-new/
+
+4️⃣ Courses / Tutorials
+
+1st: https://www.coursera.org/learn/c-sharp-programming
+
+5️⃣ Practice Resources
+
+1st: https://www.codewars.com/kata/search/csharp
+
+6️⃣ Notes / PDFs
+
+1st: https://en.wikibooks.org/wiki/C_Sharp_Programming/Keywords
+
+Skill: CI/CD
+🔹 IF USER SELECTS: 3 DAYS (CRASH COURSE) 🎯 Outcome: Understand the core philosophy of Continuous Integration and Continuous Delivery and identify the stages of a basic pipeline. 🚀 Daily Action Steps:
+
+Day 1: Learn the definitions of CI, CD (Delivery), and CD (Deployment). Understand the "Pipeline" concept.
+
+Day 2: Explore the basic components of a pipeline: Source, Build, Test, and Deploy.
+
+Day 3: Introduction to YAML syntax, as most modern CI/CD tools (like GitHub Actions) use it for configuration.
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/continuous-integration-ci-continuous-deployment-cd/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=XiY1T3z_178
+
+2nd: https://www.youtube.com/watch?v=7KCS70sJk-I
+
+3️⃣ Official Documentation
+
+1st: https://www.atlassian.com/continuous-delivery/ci-cd-pipeline
+
+4️⃣ Courses / Tutorials
+
+1st: https://www.pluralsight.com/paths/ci-cd
+
+5️⃣ Practice Resources
+
+1st: https://github.com/jenkinsci/jenkins
+
+6️⃣ Notes / PDFs
+
+1st: https://www.atlassian.com/devops/ci-cd-pipeline.pdf
+
+🔹 IF USER SELECTS: 1 WEEK (GITHUB ACTIONS & AUTOMATION) 🎯 Outcome: Build a functional automated workflow that triggers on every code push to a repository. 🚀 Action Steps:
+
+Day 1-3: Follow the 3-day path.
+
+Day 4-5: Deep dive into GitHub Actions: Workflows, Jobs, Steps, and Runners.
+
+Day 6-7: Create a .github/workflows/main.yml file to automate a simple build and test process for a project.
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/github-actions/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=PGmBk4kN6lQ
+
+3️⃣ Official Documentation
+
+1st: https://docs.github.com/en/actions
+
+4️⃣ Courses / Tutorials
+
+1st: https://www.edx.org/learn/devops
+
+5️⃣ Practice Resources
+
+1st: https://circleci.com/docs/free-public-repos/
+
+6️⃣ Notes / PDFs
+
+1st: https://docs.gitlab.com/ee/ci/pipelines/
+
+🔹 IF USER SELECTS: 2 WEEKS (JENKINS MASTERY) 🎯 Outcome: Install, configure, and manage Jenkins to create complex, multi-stage automation pipelines. 🚀 Action Steps:
+
+Week 1: Master General CI/CD concepts and GitHub Actions.
+
+Week 2: Install Jenkins. Master "Jenkinsfile" syntax (Declarative vs. Scripted) and manage Plugins for integration.
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/what-is-jenkins/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=5eLdG7Jo4BY
+
+3️⃣ Official Documentation
+
+1st: https://www.jenkins.io/doc/
+
+4️⃣ Courses / Tutorials
+
+1st: https://www.udemy.com/course/cicd-using-jenkins-from-scratch/
+
+5️⃣ Practice Resources
+
+1st: https://labs.playground.com/?track=jenkins
+
+6️⃣ Notes / PDFs
+
+1st: https://www.jenkins.io/doc/book/pipeline/pipeline.pdf
+
+🔹 IF USER SELECTS: 3 WEEKS (GITLAB CI & ENVIRONMENT MANAGEMENT) 🎯 Outcome: Implement GitLab CI/CD and manage different environments (Staging, Production) using Variables and Runners. 🚀 Action Steps:
+
+Week 1-2: Master GitHub Actions and Jenkins.
+
+Week 3: Learn GitLab-specific features like .gitlab-ci.yml, shared runners, and secret variables management for secure deployments.
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/gitlab-ci-cd/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=9OqzQMc23kA
+
+3️⃣ Official Documentation
+
+1st: https://docs.gitlab.com/ee/ci/
+
+4️⃣ Courses / Tutorials
+
+1st: https://www.coursera.org/learn/continuous-delivery-ci-cd-using-gitlab
+
+5️⃣ Practice Resources
+
+1st: https://gitlab.com/gitlab-org/gitlab-development-kit
+
+6️⃣ Notes / PDFs
+
+1st: https://circleci.com/docs/2.0/cli/
+
+🔹 IF USER SELECTS: 4 WEEKS (ADVANCED ORCHESTRATION) 🎯 Outcome: Orchestrate complex deployments using CircleCI and integrate security scanning into the pipeline. 🚀 Action Steps:
+
+Week 1-3: Advanced Jenkins and GitLab mastery.
+
+Week 4: Explore CircleCI Orbs. Implement "DevSecOps" by adding static analysis (SAST) and container scanning stages to your pipeline.
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/circleci/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=XiY1T3z_178 (DevSecOps section)
+
+3️⃣ Official Documentation
+
+1st: https://circleci.com/docs/
+
+4️⃣ Courses / Tutorials
+
+1st: https://cloud.google.com/learn/training/machinelearning-dataai
+
+5️⃣ Practice Resources
+
+1st: https://www.katacoda.com/courses/jenkins
+
+6️⃣ Notes / PDFs
+
+1st: https://www.continuous-delivery.co.uk/
+
+🔹 IF USER SELECTS: 5 WEEKS (ENTERPRISE DELIVERY MASTERY) 🎯 Outcome: Design a production-grade, zero-downtime deployment strategy (Blue/Green or Canary) and complete a capstone project. 🚀 Action Steps:
+
+Week 1-4: Integrated mastery across Jenkins, GitHub, GitLab, and CircleCI.
+
+Week 5: Capstone Project: Build a complete pipeline that builds a Docker image, scans for vulnerabilities, and deploys to a cloud provider using a Blue/Green strategy.
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/continuous-integration-ci-continuous-deployment-cd/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=9OqzQMc23kA (Advanced project section)
+
+3️⃣ Official Documentation
+
+1st: https://www.atlassian.com/continuous-delivery/ci-cd-pipeline
+
+5️⃣ Practice Resources
+
+1st: https://labs.playground.com/?track=jenkins
+
+2nd: https://gitlab.com/gitlab-org/gitlab-development-kit
+
+6️⃣ Notes / PDFs
+
+1st: https://www.atlassian.com/devops/ci-cd-pipeline.pdf
+
+2nd: https://www.jenkins.io/doc/book/pipeline/pipeline.pdf
+
+Skill: Clean Architecture
+🔹 IF USER SELECTS: 3 DAYS (CRASH COURSE)
+
+🎯 Outcome: Understand the core philosophy of Clean Architecture and the separation of concerns.
+
+🚀 Daily Action Steps:
+
+Day 1: Study the fundamental concept of "Independence" (Framework, UI, Database) and the Dependency Rule.
+
+Day 2: Learn the SOLID principles, focusing specifically on the Single Responsibility Principle.
+
+Day 3: Explore the "Onion" layers: Entities, Use Cases, Interface Adapters, and Frameworks.
+
+Shutterstock [Educational diagram showing the Clean Architecture concentric circles and the direction of dependencies pointing inwards]
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/solid-principle-in-programming/
+
+2nd: https://www.geeksforgeeks.org/single-responsibility-principle/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=VtW0sK1rA54
+
+3️⃣ Official Documentation
+
+1st: https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html
+
+4️⃣ Courses / Tutorials
+
+1st: https://deviq.com/patterns/
+
+5️⃣ Practice Resources
+
+1st: https://refactoring.guru/
+
+6️⃣ Notes / PDFs
+
+1st: https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html
+
+✅ Checkpoint: Draw the Clean Architecture circles from memory and correctly label the four main layers.
+
+🔹 IF USER SELECTS: 1 WEEK (CORE PRINCIPLES)
+
+🎯 Outcome: Master the SOLID principles and understand how they enable architectural flexibility.
+
+🚀 Daily Action Steps:
+
+Day 1-3: Complete the 3-day path on architectural layers and the Dependency Rule.
+
+Day 4-5: Deep dive into the Open-Closed and Liskov Substitution principles.
+
+Day 6-7: Analyze Interface Segregation and Dependency Inversion to understand decoupling.
+
+Shutterstock [Educational diagram illustrating the Dependency Inversion Principle with an interface between High-level and Low-level modules]
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/solid-principle-in-programming/
+
+2nd: https://www.geeksforgeeks.org/open-closed-principle/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=1r_wf4ad6QM
+
+3️⃣ Official Documentation
+
+1st: https://enterprisecraftsmanship.com/posts/clean-architecture-solution
+
+4️⃣ Courses / Tutorials
+
+1st: https://www.coursera.org/learn/software-architecture
+
+5️⃣ Practice Resources
+
+1st: https://github.com/search?q=clean+architecture
+
+6️⃣ Notes / PDFs
+
+1st: https://www.netguru.com/blog/clean-architecture
+
+✅ Checkpoint: Refactor a small piece of code that violates the Single Responsibility Principle into a "Clean" version.
+
+🔹 IF USER SELECTS: 2 WEEKS (DOMAIN & USE CASES)
+
+🎯 Outcome: Implement the core business logic layer independently of external frameworks or databases.
+
+🚀 Action Steps:
+
+Week 1: Complete the 1-Week Core Principles path.
+
+Week 2: Focus on creating "Entities" (Enterprise business rules) and "Use Cases" (Application business rules). Implement Interactors and Input/Output boundary interfaces.
+
+Shutterstock [Educational flow diagram showing the communication between a Controller, Use Case Interactor, and Entity]
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/software-design-patterns/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=9e5f4yghf4Y
+
+3️⃣ Official Documentation
+
+1st: https://github.com/jasontaylordev/CleanArchitecture
+
+4️⃣ Courses / Tutorials
+
+1st: https://www.pluralsight.com/courses/clean-architecture-building-self-validating-objects
+
+5️⃣ Practice Resources
+
+1st: https://github.com/jasontaylordev/CleanArchitecture
+
+6️⃣ Notes / PDFs
+
+1st: https://enterprisecraftsmanship.com/wp-content/uploads/2019/07/CleanArchitectureNotes.pdf
+
+✅ Checkpoint: Create a "Domain" project that contains an Entity and a Use Case without referencing any external libraries.
+
+🔹 IF USER SELECTS: 3 WEEKS (INFRASTRUCTURE & ADAPTERS)
+
+🎯 Outcome: Connect business logic to Databases and UIs using the Repository pattern and Interface Adapters.
+
+🚀 Action Steps:
+
+Week 1-2: Master Domain logic and Use Case implementation.
+
+Week 3: Implement the "Infrastructure" layer (Database, File System) and "Web/API" layer. Apply the Repository Pattern to abstract data access from the Use Cases.
+
+Shutterstock [Educational visual showing the Repository Pattern acting as a buffer between Domain logic and Data mapping]
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/system-design-tutorial/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=kwJ-f22VWYc
+
+3️⃣ Official Documentation
+
+1st: https://ardalis.com/clean-architecture-solution-template/
+
+4️⃣ Courses / Tutorials
+
+1st: https://www.udemy.com/course/clean-architecture-with-net-core/
+
+5️⃣ Practice Resources
+
+1st: https://github.com/ardalis/CleanArchitecture
+
+6️⃣ Notes / PDFs
+
+1st: https://github.com/ivanpaulino/clean-architecture-manga
+
+✅ Checkpoint: Successfully swap an in-memory database implementation for a real SQL database without changing the Domain code.
+
+🔹 IF USER SELECTS: 4-5 WEEKS (ADVANCED MASTER & REFACTORING)
+
+🎯 Outcome: Design a production-ready system with testing, validation, and advanced decoupling patterns.
+
+🚀 Action Steps:
+
+Week 1-3: Complete the Infrastructure and Adapters integration path.
+
+Week 4: Learn about Cross-Cutting Concerns (Logging, Validation, Caching) using Decorators or Middleware. Focus on Unit Testing Use Cases using Mocks and Stubs for boundaries.
+
+Week 5: Capstone Project: Build a complete Web API following Clean Architecture, including full Test Coverage and MediatR (Command/Query separation).
+
+Shutterstock [Educational diagram showing a request flow through MediatR Handlers in a Clean Architecture setup]
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/software-design-patterns/
+
+2nd: https://www.geeksforgeeks.org/system-design-tutorial/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=9YpvM9p8Q1o
+
+3️⃣ Official Documentation
+
+1st: https://www.pluralsight.com/courses/refactoring-fundamentals
+
+4️⃣ Courses / Tutorials
+
+1st: https://jasontephson.com/CleanArchitecture
+
+5️⃣ Practice Resources
+
+1st: https://github.com/matthewclement/CleanArchitecture
+
+6️⃣ Notes / PDFs
+
+1st: https://www.oreilly.com/library/view/clean-architecture/9780134494272/
+
+Skill: Computer Vision
+🔹 IF USER SELECTS: 3 DAYS (CRASH COURSE) 🎯 Outcome: Understand image representation, color spaces, and basic pixel manipulations. 🚀 Daily Action Steps:
+
+Day 1: Learn how computers see images as matrices of pixels and explore RGB vs. Grayscale formats.
+
+Day 2: Install OpenCV and learn to load, display, and save images.
+
+Day 3: Master basic image transformations: Resizing, Cropping, and Rotating.
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/computer-vision/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=oXlwWbU8l2o
+
+3️⃣ Official Documentation
+
+1st: https://docs.opencv.org/master/
+
+4️⃣ Courses / Tutorials
+
+1st: https://www.coursera.org/learn/computer-vision-basics
+
+5️⃣ Practice Resources
+
+1st: https://github.com/spmallick/learnopencv
+
+6️⃣ Notes / PDFs
+
+1st: https://www.geeksforgeeks.org/wp-content/uploads/ComputerVision.pdf
+
+🔹 IF USER SELECTS: 1 WEEK (IMAGE PROCESSING) 🎯 Outcome: Apply filters for noise reduction, edge detection, and thresholding. 🚀 Action Steps:
+
+Day 1-3: Follow the 3-day path.
+
+Day 4-5: Learn Image Filtering (Blurring/Smoothing) and Thresholding techniques.
+
+Day 6-7: Master Edge Detection using Canny and Sobel operators.
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/opencv-edge-detection/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=ZDAx6uUU9TY
+
+3️⃣ Official Documentation
+
+1st: https://docs.opencv.org/4.x/
+
+4️⃣ Courses / Tutorials
+
+1st: https://scikit-image.org/docs/stable/
+
+5️⃣ Practice Resources
+
+1st: https://www.roboflow.com/
+
+6️⃣ Notes / PDFs
+
+1st: https://docs.opencv.org/master/opencv-Python-Tutorial.pdf
+
+🔹 IF USER SELECTS: 2 WEEKS (CONTOURS & FEATURE DETECTION) 🎯 Outcome: Extract shapes, find object outlines, and detect specific image features. 🚀 Action Steps:
+
+Week 1: Master basic processing and edge detection.
+
+Week 2: Learn Contour detection, shape approximation, and finding centroids. Explore feature descriptors like Harris Corner Detection.
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/opencv-python-program-to-find-image-type-contours-and-number-of-contours/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=FAke5hA7lHE
+
+3️⃣ Official Documentation
+
+1st: https://docs.opencv.org/master/
+
+4️⃣ Courses / Tutorials
+
+1st: https://opencv.org/courses/
+
+5️⃣ Practice Resources
+
+1st: https://huggingface.co/tasks/image-classification
+
+6️⃣ Notes / PDFs
+
+1st: https://www.tutorialspoint.com/computer_vision/computer_vision_tutorial.pdf
+
+🔹 IF USER SELECTS: 3 WEEKS (FACE & OBJECT DETECTION) 🎯 Outcome: Detect faces and objects in real-time using pre-trained Haar Cascades. 🚀 Action Steps:
+
+Week 1-2: Master feature extraction and contours.
+
+Week 3: Implement Face Detection using Haar Cascades and explore basic Eye/Smile detection. Apply these to live webcam streams.
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/face-detection-using-python-and-opencv-with-webcam/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=EqbAgxU6T6Q
+
+3️⃣ Official Documentation
+
+1st: https://docs.opencv.org/master/
+
+4️⃣ Courses / Tutorials
+
+1st: https://www.udemy.com/course/computer-vision-a-z/
+
+5️⃣ Practice Resources
+
+1st: https://paperswithcode.com/area/computer-vision
+
+6️⃣ Notes / PDFs
+
+1st: https://www.cs.cmu.edu/~16385/s17/Slides/13.1_CV.pdf
+
+🔹 IF USER SELECTS: 4 WEEKS (DEEP LEARNING INTEGRATION) 🎯 Outcome: Use Neural Networks (CNNs) for image classification and advanced segmentation. 🚀 Action Steps:
+
+Week 1-3: Advanced detection and real-time processing.
+
+Week 4: Introduction to Convolutional Neural Networks (CNNs). Use PyTorch or TensorFlow to classify images (e.g., MNIST or CIFAR-10).
+
+
+Shutterstock
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/image-inpainting-using-opencv/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=0tJq0hR9TqM
+
+3️⃣ Official Documentation
+
+1st: https://pytorch.org/vision/stable/index.html
+
+4️⃣ Courses / Tutorials
+
+1st: https://www.edx.org/learn/computer-vision
+
+5️⃣ Practice Resources
+
+1st: https://www.kaggle.com/competitions/computer-vision
+
+6️⃣ Notes / PDFs
+
+1st: https://www.robots.ox.ac.uk/~vgg/publications/bibtex/papers/Szeliski2010b.pdf
+
+🔹 IF USER SELECTS: 5 WEEKS (CAPSTONE PROJECT & DEPLOYMENT) 🎯 Outcome: Build and deploy a complete Computer Vision application (e.g., Virtual Painter or Drowsiness Detector). 🚀 Action Steps:
+
+Week 1-4: Integrated mastery from processing to deep learning.
+
+Week 5: Capstone Project: Develop a full pipeline application. Focus on optimization for real-time performance and explore deployment using Streamlit or Flask.
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/computer-vision/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=oXlwWbU8l2o (Advanced Project)
+
+5️⃣ Practice Resources
+
+1st: https://www.kaggle.com/competitions/computer-vision
+
+6️⃣ Notes / PDFs
+
+1st: https://www.geeksforgeeks.org/wp-content/uploads/ComputerVision.pdf
+
+2nd: https://docs.opencv.org/master/opencv-Python-Tutorial.pdf
+
+Skill: CSS
+🔹 IF USER SELECTS: 3 DAYS (CRASH COURSE)
+
+🎯 Outcome: Understand CSS syntax, how to link stylesheets, and apply basic text styling.
+
+🚀 Daily Action Steps:
+
+Day 1: Learn how to use Inline, Internal, and External CSS and understand basic selectors (Tag, Class, ID).
+
+Day 2: Master Colors, Fonts, and Text Properties like alignment, decoration, and line height.
+
+Day 3: Introduction to the Cascade and Specificity to understand which styles take precedence.
+
+Shutterstock [Educational diagram showing the CSS anatomy: Selector, Property, and Value]
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/css/
+
+2nd: https://www.geeksforgeeks.org/css-tutorial/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=yfoY53QXEnI
+
+3️⃣ Official Documentation
+
+1st: https://developer.mozilla.org/en-US/docs/Web/CSS
+
+4️⃣ Courses / Tutorials
+
+1st: https://www.codecademy.com/learn/learn-css
+
+5️⃣ Practice Resources
+
+1st: https://cssbattle.dev/
+
+6️⃣ Notes / PDFs
+
+1st: https://www.tutorialspoint.com/css/css_tutorial.pdf
+
+✅ Checkpoint: Create an HTML file and change the background color and font style of a heading using an external CSS file.
+
+🔹 IF USER SELECTS: 1 WEEK (THE BOX MODEL)
+
+🎯 Outcome: Master spacing and sizing using Padding, Margin, Border, and the Box Model.
+
+🚀 Daily Action Steps:
+
+Day 1-3: Complete the 3-day path on selectors and basic styling.
+
+Day 4-5: Deep dive into the Box Model: Content, Padding, Border, and Margin. Learn box-sizing: border-box.
+
+Day 6-7: Understand Display properties (Block, Inline, Inline-Block) and basic Positioning (Relative, Absolute).
+
+Shutterstock [Educational diagram illustrating the layers of the CSS Box Model]
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/css-box-model/
+
+2nd: https://www.geeksforgeeks.org/css-selectors/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=hhP1zOeIRBg
+
+3️⃣ Official Documentation
+
+1st: https://developer.mozilla.org/en-US/docs/Learn/CSS
+
+4️⃣ Courses / Tutorials
+
+1st: https://www.freecodecamp.org/learn/responsive-web-design/
+
+5️⃣ Practice Resources
+
+1st: https://cssbattle.dev/
+
+6️⃣ Notes / PDFs
+
+1st: https://internetsuperstar.net/wp-content/uploads/2019/03/CSS3-Cheat-Sheet.pdf
+
+✅ Checkpoint: Create a card component with specific padding, a border, and a margin that centers it on the page.
+
+🔹 IF USER SELECTS: 2 WEEKS (FLEXBOX & LAYOUTS)
+
+🎯 Outcome: Build complex, one-dimensional layouts easily using CSS Flexbox.
+
+🚀 Action Steps:
+
+Week 1: Complete the 1-Week Box Model path.
+
+Week 2: Master Flex Container properties (justify-content, align-items) and Flex Item properties (flex-grow, flex-shrink).
+
+Shutterstock [Educational visual showing the Main Axis and Cross Axis in a Flexbox layout]
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/css-flexbox/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=1PnVor36_40
+
+3️⃣ Official Documentation
+
+1st: https://css-tricks.com/
+
+4️⃣ Courses / Tutorials
+
+1st: https://flexboxfroggy.com/
+
+5️⃣ Practice Resources
+
+1st: https://flexbox.io/
+
+6️⃣ Notes / PDFs
+
+1st: https://css-tricks.com/snippets/css/complete-guide-to-flexbox/
+
+✅ Checkpoint: Build a responsive navigation bar and a multi-column feature section using only Flexbox.
+
+🔹 IF USER SELECTS: 3 WEEKS (CSS GRID & RESPONSIVENESS)
+
+🎯 Outcome: Create advanced two-dimensional layouts and make them responsive with Media Queries.
+
+🚀 Action Steps:
+
+Week 1-2: Complete the Box Model and Flexbox paths.
+
+Week 3: Learn CSS Grid: grid-template-columns, grid-areas, and the fractional unit (fr). Implement Media Queries to change layouts for Mobile, Tablet, and Desktop.
+
+Shutterstock [Educational diagram of a CSS Grid layout showing rows, columns, and gaps]
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/css-tutorial/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=dX45gy4aB4I
+
+3️⃣ Official Documentation
+
+1st: https://developer.mozilla.org/en-US/docs/Web/CSS
+
+4️⃣ Courses / Tutorials
+
+1st: https://cssgridgarden.com/
+
+5️⃣ Practice Resources
+
+1st: https://cssgrid.io/
+
+6️⃣ Notes / PDFs
+
+1st: https://www.smashingmagazine.com/2019/07/css-grid-layout-guide/
+
+✅ Checkpoint: Design a full website landing page that uses Grid for the main layout and changes to a single column on mobile.
+
+🔹 IF USER SELECTS: 4-5 WEEKS (ANIMATIONS & MASTERY)
+
+🎯 Outcome: Master CSS Transitions, Keyframe Animations, and modern professional workflows.
+
+🚀 Action Steps:
+
+Week 1-3: Complete the Layout and Responsiveness paths.
+
+Week 4: Learn CSS Transitions, Transforms (2D/3D), and Keyframe Animations to add movement.
+
+Week 5: Capstone Project: Build a high-fidelity portfolio website with custom animations, optimized with a CSS Cheat Sheet.
+
+Shutterstock [Educational diagram showing the timeline of a CSS @keyframes animation]
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/css/
+
+2nd: https://www.geeksforgeeks.org/css-flexbox/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=G3e-cpL7ofc
+
+3️⃣ Official Documentation
+
+1st: https://caniuse.com/
+
+4️⃣ Courses / Tutorials
+
+1st: https://scrimba.com/learn/learncss
+
+5️⃣ Practice Resources
+
+1st: https://www.codewars.com/kata/search/css
+
+6️⃣ Notes / PDFs
+
+1st: https://www.w3schools.com/css/css_tutorial.pdf
+
+Skill: Cryptography
+🔹 IF USER SELECTS: 3 DAYS (CRASH COURSE) 🎯 Outcome: Understand the core concepts of Confidentiality, Integrity, Availability (CIA) and master basic Classical Ciphers. 🚀 Daily Action Steps:
+
+Day 1: Learn the basics of encryption, decryption, and the CIA Triad.
+
+Day 2: Study Classical Ciphers: Implementation and cryptanalysis of the Caesar Cipher.
+
+Day 3: Understand Monoalphabetic vs. Polyalphabetic substitution and the concept of frequency analysis.
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/cryptography/
+
+2nd: https://www.geeksforgeeks.org/caesar-cipher-in-cryptography/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=jhXCTbFnK8o
+
+3️⃣ Official Documentation
+
+1st: https://cryptography.io/en/latest/
+
+4️⃣ Courses / Tutorials
+
+1st: https://www.udemy.com/course/cryptography-for-everyone/
+
+5️⃣ Practice Resources
+
+1st: https://cryptohack.org/
+
+6️⃣ Notes / PDFs
+
+1st: https://www.geeksforgeeks.org/wp-content/uploads/Cryptography.pdf
+
+🔹 IF USER SELECTS: 1 WEEK (SYMMETRIC ENCRYPTION) 🎯 Outcome: Master modern block ciphers and stream ciphers used for bulk data encryption. 🚀 Action Steps:
+
+Day 1-3: Follow the 3-day path.
+
+Day 4-5: Study the DES and AES algorithms, focusing on substitution-permutation networks.
+
+Day 6-7: Learn Block Cipher Modes of Operation (ECB, CBC, GCM) and the importance of IVs.
+
+
+Shutterstock
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/aes-encryption/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=8o2N4e3PQwM
+
+3️⃣ Official Documentation
+
+1st: https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.202.pdf
+
+4️⃣ Courses / Tutorials
+
+1st: https://cryptobook.us/
+
+5️⃣ Practice Resources
+
+1st: https://cryptopals.com/
+
+6️⃣ Notes / PDFs
+
+1st: https://www.tutorialspoint.com/cryptography/cryptography_tutorial.pdf
+
+🔹 IF USER SELECTS: 2 WEEKS (ASYMMETRIC & PUBLIC KEY) 🎯 Outcome: Understand Public Key Infrastructure (PKI) and secure key exchange mechanisms. 🚀 Action Steps:
+
+Week 1: Master Symmetric Encryption and foundations.
+
+Week 2: Deep dive into RSA and Diffie-Hellman. Learn how modular arithmetic enables secure communication over insecure channels.
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/rsa-algorithm-cryptography/
+
+2nd: https://www.geeksforgeeks.org/diffie-hellman-key-exchange-algorithm/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=2bRArnU8IE8
+
+3️⃣ Official Documentation
+
+1st: https://csrc.nist.gov/publications/detail/sp/800-57-part-1/rev-5/final
+
+4️⃣ Courses / Tutorials
+
+1st: https://www.coursera.org/learn/cryptography-i
+
+5️⃣ Practice Resources
+
+1st: https://overthewire.org/wargames/cryptohack/
+
+6️⃣ Notes / PDFs
+
+1st: https://crypto.stanford.edu/~dabo/cryptobook/BigPicture.pdf
+
+🔹 IF USER SELECTS: 3 WEEKS (HASH FUNCTIONS & SIGNATURES) 🎯 Outcome: Ensure data integrity and non-repudiation using cryptographic hashing and digital signatures. 🚀 Action Steps:
+
+Week 1-2: Master Symmetric and Asymmetric systems.
+
+Week 3: Study MD5, SHA-256, and HMAC. Implement Digital Signatures to verify the origin and integrity of messages.
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/cryptography/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=GsSKDyNFigU
+
+3️⃣ Official Documentation
+
+1st: https://gnupg.org/documentation/
+
+4️⃣ Courses / Tutorials
+
+1st: https://www.edx.org/learn/cryptography
+
+5️⃣ Practice Resources
+
+1st: https://ctftime.org/
+
+6️⃣ Notes / PDFs
+
+1st: https://cryptobook.us/files/0.6/Crypto101.pdf
+
+🔹 IF USER SELECTS: 4 WEEKS (SSL/TLS & PROTOCOLS) 🎯 Outcome: Secure internet communication by understanding how SSL/TLS certificates and handshakes work. 🚀 Action Steps:
+
+Week 1-3: Advanced cipher and hashing mastery.
+
+Week 4: Study the TLS Handshake protocol. Learn about Certificate Authorities (CAs) and X.509 certificate structures.
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=-yFZGF8FHSg
+
+3️⃣ Official Documentation
+
+1st: https://www.openssl.org/docs/
+
+5️⃣ Practice Resources
+
+1st: https://www.crypto101.io/
+
+6️⃣ Notes / PDFs
+
+1st: https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-57sp800-57-Part1v4.pdf
+
+🔹 IF USER SELECTS: 5 WEEKS (CAPSTONE & ADVANCED TOPICS) 🎯 Outcome: Explore Elliptic Curve Cryptography (ECC) and build a secure end-to-end encrypted messaging prototype. 🚀 Action Steps:
+
+Week 1-4: Integrated mastery of all cryptographic primitives.
+
+Week 5: Study ECC benefits for mobile security. Capstone: Build a tool that encrypts files using AES and securely shares the key using RSA/ECC.
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/cryptography/
+
+4️⃣ Courses / Tutorials
+
+1st: https://cryptobook.us/
+
+5️⃣ Practice Resources
+
+1st: https://cryptohack.org/ (Finish advanced categories)
+
+6️⃣ Notes / PDFs
+
+1st: https://www.crypto-textbook.com/
+
+Skill: Data Science
+🔹 IF USER SELECTS: 3 DAYS (CRASH COURSE)🎯 Outcome: Understand the Data Science lifecycle and set up a Python environment for data manipulation.🚀 Daily Action Steps:
+
+Day 1: Learn the Data Science workflow (Define, Collect, Clean, Analyze, Model, Deploy).
+
+Day 2: Set up Jupyter Notebooks and learn basic Python syntax for data handling.
+
+Day 3: Introduction to NumPy for numerical arrays and basic mathematical operations.
+
+
+Shutterstock
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/data-science-tutorial/
+
+2nd: https://www.geeksforgeeks.org/data-science-with-python/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=ua-CiD_baoc
+
+3️⃣ Official Documentation
+
+1st: https://pandas.pydata.org/docs/
+
+4️⃣ Courses / Tutorials
+
+1st: https://cognitiveclass.ai/
+
+5️⃣ Practice Resources
+
+1st: https://www.kaggle.com/datasets
+
+6️⃣ Notes / PDFs
+
+1st: https://www.geeksforgeeks.org/wp-content/uploads/DataScience.pdf
+
+🔹 IF USER SELECTS: 1 WEEK (DATA WRANGLING)🎯 Outcome: Master Pandas for cleaning, filtering, and transforming raw datasets into analysis-ready formats.🚀 Action Steps:
+
+Day 1-3: Follow the 3-day path.
+
+Day 4-5: Master Pandas Series and DataFrames, including handling missing data and merging datasets.
+
+Day 6-7: Practice Exploratory Data Analysis (EDA) to find patterns and outliers.
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/data-analysis-with-python/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=TjZBTDzGeGg
+
+3️⃣ Official Documentation
+
+1st: https://pandas.pydata.org/docs/
+
+4️⃣ Courses / Tutorials
+
+1st: https://www.datacamp.com/
+
+5️⃣ Practice Resources
+
+1st: https://www.kaggle.com/datasets (Project: Clean a dirty dataset)
+
+6️⃣ Notes / PDFs
+
+1st: https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf
+
+🔹 IF USER SELECTS: 2 WEEKS (VISUALIZATION & STATS)🎯 Outcome: Create impactful charts and use statistical methods to validate data insights.🚀 Action Steps:
+
+Week 1: Master Python environment and Pandas data wrangling.
+
+Week 2: Learn Matplotlib and Seaborn for static plots. Study core statistics: Probability, Distributions, and Hypothesis Testing.
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/data-visualization-with-python/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=LXb3EKWsInQ
+
+3️⃣ Official Documentation
+
+1st: https://matplotlib.org/stable/contents.html
+
+2nd: https://seaborn.pydata.org/
+
+4️⃣ Courses / Tutorials
+
+1st: https://www.udacity.com/course/data-analyst-nanodegree--nd002
+
+6️⃣ Notes / PDFs
+
+1st: https://seaborn.pydata.org/tutorial.pdf
+
+🔹 IF USER SELECTS: 3 WEEKS (MACHINE LEARNING BASICS)🎯 Outcome: Build and evaluate predictive models using Supervised Learning algorithms.🚀 Action Steps:
+
+Week 1-2: Master data cleaning, stats, and visualization.
+
+Week 3: Learn Scikit-Learn. Implement Linear Regression, Logistic Regression, and Decision Trees. Understand Train/Test splitting.
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/machine-learning/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=_PwhiVZRPHs
+
+3️⃣ Official Documentation
+
+1st: https://scikit-learn.org/stable/documentation.html
+
+4️⃣ Courses / Tutorials
+
+1st: https://www.edx.org/learn/data-science
+
+5️⃣ Practice Resources
+
+1st: https://www.kaggle.com/competitions (Project: Titanic survival prediction)
+
+6️⃣ Notes / PDFs
+
+1st: https://www.datacamp.com/cheat-sheet/python-cheat-sheet-data-analysis
+
+🔹 IF USER SELECTS: 4 WEEKS (MODEL TUNING & EVALUATION)🎯 Outcome: Optimize model performance using advanced metrics and cross-validation techniques.🚀 Action Steps:
+
+Week 1-3: Master data pipeline and basic ML modeling.
+
+Week 4: Study Overfitting vs. Underfitting. Implement K-Fold Cross-Validation and Hyperparameter tuning using GridSearch.
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=6JhfqQEcqYc
+
+3️⃣ Official Documentation
+
+1st: https://plotly.com/python/
+
+4️⃣ Courses / Tutorials
+
+1st: https://www.coursera.org/specializations/data-science
+
+5️⃣ Practice Resources
+
+1st: https://drivendata.org/competitions/
+
+6️⃣ Notes / PDFs
+
+1st: https://www.tutorialspoint.com/data_science/data_science_tutorial.pdf
+
+🔹 IF USER SELECTS: 5 WEEKS (DEPLOYMENT & CAPSTONE)🎯 Outcome: Complete a full-stack Data Science project and deploy it as a web application.🚀 Action Steps:
+
+Week 1-4: Integrated mastery of analysis and modeling.
+
+Week 5: Capstone Project: Build a complete end-to-end model. Use Streamlit or Flask to deploy the model as a searchable web interface.
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/data-science-tutorial/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=ua-CiD_baoc (Advanced Project focus)
+
+5️⃣ Practice Resources
+
+1st: https://www.kaggle.com/competitions
+
+2nd: https://signate.jp/
+
+6️⃣ Notes / PDFs
+
+1st: https://www.geeksforgeeks.org/wp-content/uploads/DataScience.pdf
+
+Skill: Deep Learning
+🔹 IF USER SELECTS: 3 DAYS (CRASH COURSE)
+
+🎯 Outcome: Understand the basic concept of Artificial Neural Networks (ANNs) and the core mechanics of how they learn.
+
+🚀 Daily Action Steps:
+
+Day 1: Learn the difference between Machine Learning and Deep Learning and the structure of a Perceptron.
+
+Day 2: Understand Activation Functions (ReLU, Sigmoid, Tanh) and the forward propagation process.
+
+Day 3: Grasp the fundamentals of Loss Functions and the Optimizer's role in minimizing error.
+
+Shutterstock [Educational diagram showing an Artificial Neural Network with Input, Hidden, and Output layers]
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/introduction-deep-learning/
+
+2nd: https://www.geeksforgeeks.org/introduction-to-neural-networks/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=IHZwWFHWa-w
+
+3️⃣ Official Documentation
+
+1st: https://pytorch.org/docs/stable/index.html
+
+4️⃣ Courses / Tutorials
+
+1st: https://www.coursera.org/specializations/deep-learning
+
+5️⃣ Practice Resources
+
+1st: https://pytorch.org/tutorials/
+
+6️⃣ Notes / PDFs
+
+1st: https://pytorch.org/tutorials/beginner/deep_learning_60min_blitz.pdf
+
+✅ Checkpoint: Explain the purpose of backpropagation and why non-linear activation functions are necessary.
+
+🔹 IF USER SELECTS: 1 WEEK (NEURAL NETWORK BASICS)
+
+🎯 Outcome: Build and train a simple multi-layer neural network using a framework like PyTorch or TensorFlow.
+
+🚀 Daily Action Steps:
+
+Day 1-3: Complete the 3-day path on Neural Network theory.
+
+Day 4-5: Learn about Backpropagation, Gradient Descent, and the chain rule for weight updates.
+
+Day 6-7: Set up your environment and code a basic network to classify digits (MNIST dataset).
+
+Shutterstock [Educational diagram illustrating the Gradient Descent algorithm descending to a global minimum]
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/introduction-to-neural-networks/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=aircAruvnKk
+
+3️⃣ Official Documentation
+
+1st: https://www.tensorflow.org/guide
+
+4️⃣ Courses / Tutorials
+
+1st: https://www.fast.ai/
+
+5️⃣ Practice Resources
+
+1st: https://github.com/udacity/deep-learning
+
+6️⃣ Notes / PDFs
+
+1st: https://www.tutorialspoint.com/deep_learning/deep_learning_tutorial.pdf
+
+✅ Checkpoint: Successfully train a model on the MNIST dataset and achieve an accuracy of at least 90%.
+
+🔹 IF USER SELECTS: 2 WEEKS (COMPUTER VISION)
+
+🎯 Outcome: Master Convolutional Neural Networks (CNNs) for image classification and feature extraction.
+
+🚀 Action Steps:
+
+Week 1: Complete the 1-Week Neural Network Basics path.
+
+Week 2: Learn CNN components: Convolution layers, Pooling (Max/Average), and Padding. Implement a CNN using PyTorch to classify color images (CIFAR-10).
+
+Shutterstock [Educational visual showing a CNN architecture: Convolution, ReLU, Pooling, and Fully Connected layers]
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/cnn-introduction-to-pytorch/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=WFeqOABXXDY
+
+3️⃣ Official Documentation
+
+1st: https://keras.io/
+
+4️⃣ Courses / Tutorials
+
+1st: https://cs231n.stanford.edu/
+
+5️⃣ Practice Resources
+
+1st: https://www.kaggle.com/competitions?sortBy=hotness
+
+6️⃣ Notes / PDFs
+
+1st: https://cs231n.stanford.edu/slides/2023/cs231n2023.pdf
+
+✅ Checkpoint: Build a CNN model and visualize the feature maps to see what the network is "seeing."
+
+🔹 IF USER SELECTS: 3 WEEKS (SEQUENCE MODELING)
+
+🎯 Outcome: Understand Recurrent Neural Networks (RNNs) and LSTMs for processing time-series and text data.
+
+🚀 Action Steps:
+
+Week 1-2: Complete the Computer Vision path.
+
+Week 3: Learn about RNNs, the Vanishing Gradient problem, and how LSTMs/GRUs solve it. Apply sequence modeling to a simple text generation or sentiment analysis task.
+
+Shutterstock [Educational diagram showing an unrolled RNN and the internal gate structure of an LSTM cell]
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/rnn-introduction-to-pytorch/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=j-GcZlmTJk0
+
+3️⃣ Official Documentation
+
+1st: https://pytorch.org/docs/stable/index.html
+
+4️⃣ Courses / Tutorials
+
+1st: https://d2l.ai/
+
+5️⃣ Practice Resources
+
+1st: https://fastai.com/practical/
+
+6️⃣ Notes / PDFs
+
+1st: https://d2l.ai/d2l-en.pdf
+
+✅ Checkpoint: Create a model that predicts the next character or word in a given sequence of text.
+
+🔹 IF USER SELECTS: 4-5 WEEKS (ADVANCED ARCHITECTURES & PROJECTS)
+
+🎯 Outcome: Master Transfer Learning, Transformers, and deploy a state-of-the-art Deep Learning project.
+
+🚀 Action Steps:
+
+Week 1-3: Complete the CV and Sequence Modeling paths.
+
+Week 4: Learn Transfer Learning and use pre-trained models (ResNet, VGG). Explore Attention mechanisms and Transformers.
+
+Week 5: Capstone Project: Build a custom end-to-end application using HuggingFace or a Kaggle competition dataset.
+
+Shutterstock [Educational diagram of the Transformer architecture showing the Encoder and Decoder with Self-Attention]
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/transfer-learning-for-computer-vision/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=ISF5dAr6Fxc
+
+3️⃣ Official Documentation
+
+1st: https://huggingface.co/docs/transformers/index
+
+4️⃣ Courses / Tutorials
+
+1st: https://www.udacity.com/course/deep-learning-nanodegree--nd101
+
+5️⃣ Practice Resources
+
+1st: https://huggingface.co/models?pipeline_tag=image-classification
+
+6️⃣ Notes / PDFs
+
+1st: https://www.deeplearningbook.org/contents/toc.html
+
+Skill: Design Patterns
+🔹 IF USER SELECTS: 3 DAYS (CRASH COURSE)🎯 Outcome: Understand the core philosophy of design patterns and master the Singleton pattern.🚀 Daily Action Steps:
+
+Day 1: Learn the "Why" behind patterns: Code reusability, maintenance, and the SOLID principles.
+
+Day 2: Study Creational patterns and implement the Singleton pattern (Thread-safe vs. Lazy).
+
+Day 3: Introduction to basic UML notation used to describe pattern structures.
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/software-design-patterns/
+
+2nd: https://www.geeksforgeeks.org/singleton-design-pattern/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=v9ejT8FO-7I
+
+3️⃣ Official Documentation
+
+1st: https://refactoring.guru/design-patterns
+
+4️⃣ Courses / Tutorials
+
+1st: https://refactoring.guru/learn-design-patterns
+
+5️⃣ Practice Resources
+
+1st: https://github.com/iluwatar/java-design-patterns
+
+6️⃣ Notes / PDFs
+
+1st: https://refactoring.guru/design-patterns/pdfs/DesignPatterns.pdf
+
+🔹 IF USER SELECTS: 1 WEEK (CREATIONAL PATTERNS)🎯 Outcome: Master object creation mechanisms to make systems independent of how objects are created.🚀 Action Steps:
+
+Day 1-3: Follow the 3-day path.
+
+Day 4-5: Master the Factory Method and Abstract Factory patterns for creating object families.
+
+Day 6-7: Learn the Builder pattern for complex object construction and the Prototype pattern.
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/factory-method-design-pattern/
+
+2nd: https://www.geeksforgeeks.org/abstract-factory-pattern/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=wfytuiVCsN8
+
+3️⃣ Official Documentation
+
+1st: https://sourcemaking.com/design_patterns
+
+4️⃣ Courses / Tutorials
+
+1st: https://www.coursera.org/learn/design-patterns-uml
+
+5️⃣ Practice Resources
+
+1st: https://refactoring.guru/design-patterns/java
+
+6️⃣ Notes / PDFs
+
+1st: https://sourcemaking.com/files/patterns/GoF_DesignPatterns.pdf
+
+🔹 IF USER SELECTS: 2 WEEKS (STRUCTURAL PATTERNS)🎯 Outcome: Learn to assemble objects and classes into larger structures while keeping them flexible.🚀 Action Steps:
+
+Week 1: Master all Creational Patterns.
+
+Week 2: Study Adapter, Decorator, Facade, and Proxy patterns. Focus on how these patterns simplify complex interfaces.
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/software-design-patterns/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=Da7BuI2IoHg
+
+3️⃣ Official Documentation
+
+1st: https://www.oodesign.com/
+
+4️⃣ Courses / Tutorials
+
+1st: https://www.udemy.com/course/design-patterns-csharp-dotnet/
+
+5️⃣ Practice Resources
+
+1st: https://exercism.org/tracks/design-patterns
+
+6️⃣ Notes / PDFs
+
+1st: https://www.tutorialspoint.com/design_pattern/design_pattern_tutorial.pdf
+
+🔹 IF USER SELECTS: 3 WEEKS (BEHAVIORAL PATTERNS)🎯 Outcome: Manage communication between objects and define how they distribute responsibility.🚀 Action Steps:
+
+Week 1-2: Master Creational and Structural patterns.
+
+Week 3: Learn the Observer, Strategy, State, and Command patterns to handle dynamic behavior and events.
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/observer-pattern-set-1-introduction/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=q9gO0XSiEOk
+
+3️⃣ Official Documentation
+
+1st: https://gameprogrammingpatterns.com/
+
+4️⃣ Courses / Tutorials
+
+1st: https://www.pluralsight.com/courses/design-patterns-csharp-dotnet
+
+5️⃣ Practice Resources
+
+1st: https://www.codewars.com/kata/search/design%20patterns
+
+6️⃣ Notes / PDFs
+
+1st: https://gameprogrammingpatterns.com/contents.html
+
+🔹 IF USER SELECTS: 4 WEEKS (ARCHITECTURAL & COMPLEX PATTERNS)🎯 Outcome: Apply complex logic with Iterator, Mediator, and Memento patterns and explore MVC/MVVM basics.🚀 Action Steps:
+
+Week 1-3: Advanced GoF (Gang of Four) pattern mastery.
+
+Week 4: Study patterns that manage system-wide logic and history. Learn to choose the right pattern for a given business problem.
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=8y4y9YJixW4
+
+3️⃣ Official Documentation
+
+1st: https://www.blackwasp.co.uk/ObjectOrientedPatterns.aspx
+
+4️⃣ Courses / Tutorials
+
+1st: https://www.edx.org/learn/computer-science
+
+5️⃣ Practice Resources
+
+1st: https://github.com/tmr232/Design-Patterns-Java
+
+6️⃣ Notes / PDFs
+
+1st: https://refactoring.guru/design-patterns/pdfs/DesignPatterns.pdf
+
+🔹 IF USER SELECTS: 5 WEEKS (SYSTEM DESIGN & REFACTORING)🎯 Outcome: Refactor legacy code using patterns and design a production-grade system architecture.🚀 Action Steps:
+
+Week 1-4: Integrated mastery across all 23 GoF patterns.
+
+Week 5: Capstone Project: Take a "messy" codebase and refactor it using at least 5 different patterns to improve extensibility and testability.
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/software-design-patterns/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=v9ejT8FO-7I (Review section)
+
+3️⃣ Official Documentation
+
+1st: https://refactoring.guru/design-patterns
+
+5️⃣ Practice Resources
+
+1st: https://github.com/iluwatar/java-design-patterns
+
+6️⃣ Notes / PDFs
+
+1st: https://sourcemaking.com/files/patterns/GoF_DesignPatterns.pdf
+
+Skill: Django
+🔹 IF USER SELECTS: 3 DAYS (CRASH COURSE)
+
+🎯 Outcome: Understand the MVT architecture and successfully run a local development server with a "Hello World" page.
+
+🚀 Daily Action Steps:
+
+Day 1: Install Python and Django, create your first project, and understand the project file structure.
+
+Day 2: Create a new App and learn how to map URLs to Views to display content.
+
+Day 3: Introduction to Django Templates and rendering basic HTML pages.
+
+Shutterstock [Educational diagram showing the Django MVT (Model-View-Template) architecture and request-response cycle]
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/django-tutorial/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=doAnSsgYqAg
+
+3️⃣ Official Documentation
+
+1st: https://docs.djangoproject.com/en/5.1/intro/tutorial01/
+
+4️⃣ Courses / Tutorials
+
+1st: https://www.djangoproject.com/start/
+
+5️⃣ Practice Resources
+
+1st: https://www.djangoproject.com/weblog/
+
+6️⃣ Notes / PDFs
+
+1st: https://realpython.com/django-cheatsheet.pdf
+
+✅ Checkpoint: Successfully run python manage.py runserver and view your custom "Hello World" message in the browser.
+
+🔹 IF USER SELECTS: 1 WEEK (CORE DATABASE)
+
+🎯 Outcome: Define database schemas using Django Models and perform basic CRUD operations via the Django Admin.
+
+🚀 Daily Action Steps:
+
+Day 1-3: Complete the 3-day path on project setup and Views/URLs.
+
+Day 4-5: Learn Django Models: Define fields, run migrations, and understand the database abstraction layer.
+
+Day 6-7: Register models in the Admin panel and use the Django Shell to query data.
+
+Shutterstock [Educational diagram illustrating the Django Migration process: Model change -> MakeMigrations -> Migrate]
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/django-models/
+
+2nd: https://www.geeksforgeeks.org/django-migrations/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=SPM_A6wMqSw
+
+3️⃣ Official Documentation
+
+1st: https://docs.djangoproject.com/en/5.1/topics/
+
+4️⃣ Courses / Tutorials
+
+1st: https://www.codecademy.com/learn/paths/web-development
+
+5️⃣ Practice Resources
+
+1st: https://github.com/rosarior/awesome-django
+
+6️⃣ Notes / PDFs
+
+1st: https://www.geeksforgeeks.org/django-notes/
+
+✅ Checkpoint: Create a Model, run migrations, and add at least three entries through the Django Admin interface.
+
+🔹 IF USER SELECTS: 2 WEEKS (FORMS & DYNAMIC CONTENT)
+
+🎯 Outcome: Build interactive websites using Django Forms and Class-Based Views (CBVs).
+
+🚀 Action Steps:
+
+Week 1: Complete the 1-Week Core Database path.
+
+Week 2: Master Django Forms and ModelForms for user input. Transition from Function-Based Views to Class-Based Views for cleaner code.
+
+Shutterstock [Educational flow diagram showing data moving from a user-submitted Form to a Django Model]
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/django-forms/
+
+2nd: https://www.geeksforgeeks.org/django-views/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=hyFYEakeK1g
+
+3️⃣ Official Documentation
+
+1st: https://docs.djangoproject.com/en/5.1/ref/
+
+4️⃣ Courses / Tutorials
+
+1st: https://www.udemy.com/course/python-and-django-full-stack-web-developer-bootcamp/
+
+5️⃣ Practice Resources
+
+1st: https://www.saaspegasus.com/
+
+6️⃣ Notes / PDFs
+
+1st: https://www.tutorialspoint.com/django/django_tutorial.pdf
+
+✅ Checkpoint: Build a "Contact Us" form that validates user input and saves it to the database.
+
+🔹 IF USER SELECTS: 3 WEEKS (AUTHENTICATION & TEMPLATES)
+
+🎯 Outcome: Implement user registration, login, and advanced template inheritance for professional UI.
+
+🚀 Action Steps:
+
+Week 1-2: Master Models, Views, and Forms.
+
+Week 3: Use Django’s built-in Authentication system. Learn advanced Template tags and Filter inheritance to create a consistent look across the site.
+
+Shutterstock [Educational diagram showing the Template Inheritance hierarchy: base.html -> layout.html -> page.html]
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/django-tutorial/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=rHux0gQGH2k
+
+3️⃣ Official Documentation
+
+1st: https://docs.djangoproject.com/en/5.1/howto/
+
+4️⃣ Courses / Tutorials
+
+1st: https://cs50.harvard.edu/web/50/
+
+5️⃣ Practice Resources
+
+1st: https://wagtail.org/
+
+6️⃣ Notes / PDFs
+
+1st: https://djangobook.com/django_2.0.pdf
+
+✅ Checkpoint: Create a member-only area where users must be logged in to view specific dynamic content.
+
+🔹 IF USER SELECTS: 4-5 WEEKS (ENTERPRISE MASTERY)
+
+🎯 Outcome: Deploy a secure, production-ready application with a custom user model and REST APIs.
+
+🚀 Action Steps:
+
+Week 1-3: Complete the Authentication and Template paths.
+
+Week 4: Learn to customize the User Model and explore Django REST Framework (DRF) for building APIs. Master static and media file handling.
+
+Week 5: Capstone Project: Build a complete Blog or E-commerce site and deploy it to a platform like Heroku or PythonAnywhere.
+
+Shutterstock [Educational diagram showing a production deployment stack: Nginx -> Gunicorn -> Django -> PostgreSQL]
+
+1️⃣ GeeksforGeeks
+
+1st: https://www.geeksforgeeks.org/django-tutorial/
+
+2nd: https://www.geeksforgeeks.org/django-models/
+
+2️⃣ YouTube Tutorials
+
+1st: https://www.youtube.com/watch?v=F5mRW0jo-U4
+
+3️⃣ Official Documentation
+
+1st: https://docs.djangoproject.com/en/5.1/
+
+4️⃣ Courses / Tutorials
+
+1st: https://testdriven.io/courses/django/
+
+5️⃣ Practice Resources
+
+1st: https://mezzanine.jupo.org/
+
+6️⃣ Notes / PDFs
+
+1st: https://docs.djangoproject.com/en/5.1/_downloads/DjangoTutorial.pdf
+
