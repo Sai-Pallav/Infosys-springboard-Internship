@@ -91,27 +91,37 @@ router.post('/upload', upload.single('file'), (req, res) => {
     // code_files is in ../code_files relative to server/
     const pythonScriptPath = path.join(__dirname, '../../code_Files/ingest.py');
 
-    const pythonProcess = spawn('python', [pythonScriptPath, filePath]);
+    // Use python3 (standard for Render/Linux)
+    const pythonCommand = process.platform === 'win32' ? 'python' : 'python3';
+    const pythonProcess = spawn(pythonCommand, [pythonScriptPath, filePath]);
+
+    // Add a timeout for uploads (60 seconds)
+    const timeout = setTimeout(() => {
+        pythonProcess.kill();
+        console.error(`[Upload] Python script timed out for file: ${filePath}`);
+    }, 60000);
 
     let output = "";
     let errorOutput = "";
 
     pythonProcess.stdout.on('data', (data) => {
         output += data.toString();
-        // console.log(`[Ingest Output]: ${data}`); // Optional logging
     });
 
     pythonProcess.stderr.on('data', (data) => {
         errorOutput += data.toString();
-        // Don't log every chunk, wait for close or error
     });
 
     pythonProcess.on('error', (err) => {
+        clearTimeout(timeout);
         console.error(`[Ingest Spawn Error]: ${err.message}`);
         errorOutput += `\nSpawn Error: ${err.message}`;
     });
 
     pythonProcess.on('close', (code) => {
+        clearTimeout(timeout);
+        const exitMessage = code === 0 ? "success" : `failed with code ${code}`;
+        console.log(`[Upload] Python process finished with: ${exitMessage}`);
         // Clean up file after processing (optional, but good for saving space)
         // fs.unlinkSync(filePath); 
 
