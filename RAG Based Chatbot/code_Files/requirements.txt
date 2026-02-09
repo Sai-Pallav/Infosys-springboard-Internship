@@ -1,0 +1,7 @@
+groq
+sentence-transformers
+numpy
+load_dotenv
+pymongo
+pdfplumber
+docx2txt

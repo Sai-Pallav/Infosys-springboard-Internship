@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAG Chatbot</title>
+    <link rel="icon" href="https://fav.farm/🤖" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.0.6/purify.min.js"></script>
+</head>
+
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>History</h2>
+            </div>
+            <div class="history-list" id="history-list">
+                <div class="history-item active">Current Session</div>
+            </div>
+            <div class="sidebar-footer">
+                <button id="new-chat-btn" class="btn secondary">New Chat</button>
+            </div>
+        </aside>
+
+        <main class="chat-container">
+            <header class="chat-header">
+                <h1>RAG Assistant</h1>
+                <div class="status-indicator" id="status-indicator">
+                    <span class="dot"></span> <span id="status-text">Connecting...</span>
+                </div>
+            </header>
+
+            <div class="messages-area" id="messages-area">
+                <div class="message assistant">
+                    <div class="bubble">
+                        Hello! I am your AI assistant. I can answer questions using my knowledge base. 
+                        Note: I may take up to 50 seconds to wake up if I haven't been used in a while (Free Tier).
+                    </div>
+                </div>
+            </div>
+
+            <div class="input-area">
+                <div class="input-wrapper">
+                    <textarea id="user-input" placeholder="Type a message..." rows="1"></textarea>
+                    <button id="send-btn" class="icon-btn send-btn" title="Send">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22 2L11 13M22 2L15 22L11 13M22 2L2 9L11 13" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="api-config" style="margin-top: 10px; font-size: 0.8rem; color: #666;">
+                   <label for="api-url">Backend URL:</label>
+                   <input type="text" id="api-url" placeholder="https://your-render-app.onrender.com" style="width: 100%; max-width: 300px; padding: 4px; border: 1px solid #ccc; border-radius: 4px;">
+                   <button id="save-url-btn" style="padding: 4px 8px; cursor: pointer;">Set</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
