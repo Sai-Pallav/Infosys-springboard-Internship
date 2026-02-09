@@ -19,19 +19,18 @@ This project uses a **Hybrid Architecture** where a Node.js server spawns Python
 
 3.  **Configuration**:
     - **Name**: `rag-backend-hybrid`
-    - **Root Directory**: `RAG Based Chatbot`
+    - **Root Directory**: `RAG Based Chatbot/server`
     - **Runtime**: `Node`
-    - **Build Command**: `npm install --prefix server && pip install -r code_files/requirements.txt`
-    - **Start Command**: `node server/index.js`
+    - **Build Command**: `npm install && pip install -r ../code_Files/requirements.txt`
+    - **Start Command**: `node index.js`
     - **Plan**: Free
 
-    > **Note**: Render's Node runtime includes Python, so we can install dependencies for both.
+    > **Note**: Setting the **Root Directory** to `RAG Based Chatbot/server` tells Render where the Node.js project is. We then use `../` in the build command to reach the Python `requirements.txt`.
 
 4.  **Environment Variables**:
-    - Add the following:
-        - `MONGODB_URI`: (Your actual MongoDB connection string)
+    - Add the following in the **Environment Variables** section:
+        - `MONGODB_URI`: `mongodb+srv://kotasaipallav123_db_user:i7zpzvTEtzhzT5g7@cluster0.l6zwnxg.mongodb.net/rag_chatbot?appName=Cluster0`
         - `GROQ_API_KEY`: (Your actual Groq API key)
-        - `PYTHON_PATH`: `/opt/render/project/src/.venv/bin/python` (Optional, usually just `python` works)
 
 5.  **Deploy**:
     - Click **Create Web Service**.
