@@ -2,7 +2,7 @@ const { spawn } = require('child_process');
 const path = require('path');
 
 // Determine paths to python scripts
-const PYTHON_SCRIPT_DIR = path.join(__dirname, '../../');
+const PYTHON_SCRIPT_DIR = path.join(__dirname, '../../code_Files');
 const INGEST_SCRIPT = path.join(PYTHON_SCRIPT_DIR, 'ingest.py');
 const RETRIEVAL_SCRIPT = path.join(PYTHON_SCRIPT_DIR, 'retrieval.py');
 const GENERATION_SCRIPT = path.join(PYTHON_SCRIPT_DIR, 'generation.py');
