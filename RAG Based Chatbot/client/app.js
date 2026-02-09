@@ -7,7 +7,23 @@ const apiUrlInput = document.getElementById('api-url');
 const saveUrlBtn = document.getElementById('save-url-btn');
 
 // Default API URL (Fallback to localhost for dev, but configurable)
-let API_BASE_URL = localStorage.getItem('api_base_url') || 'http://localhost:5000';
+// Default API URL (Use current origin if served from same domain, otherwise localhost:5000)
+const DEFAULT_API_URL = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
+    ? window.location.origin // usage logic: if served from backend, origin is correct. If served via LiveServer, origin is wrong (port 5500 vs 5000).
+    : window.location.origin;
+
+// Improved logic: If we are on port 5500 (VS Code Live Server), default to localhost:5000.
+// If we are on port 5000 (served by backend) or production (Render), use relative path or origin.
+let API_BASE_URL = localStorage.getItem('api_base_url');
+
+if (!API_BASE_URL) {
+    if (window.location.port === '5500') {
+        API_BASE_URL = 'http://localhost:5000';
+    } else {
+        API_BASE_URL = window.location.origin;
+    }
+}
+
 apiUrlInput.value = API_BASE_URL;
 
 let sessionId = localStorage.getItem('chat_session_id') || generateSessionId();
@@ -68,27 +84,12 @@ async function sendMessage() {
     statusText.textContent = "Thinking...";
     const loadingId = addLoadingMessage();
 
-    // Start a timer to warn about Cold Start if it takes too long
-    const coldStartTimer = setTimeout(() => {
-        const loadingElem = document.getElementById(loadingId);
-        if (loadingElem) {
-            const warning = document.createElement('div');
-            warning.style.fontSize = "0.8em";
-            warning.style.color = "#888";
-            warning.style.marginTop = "5px";
-            warning.textContent = "(Server might be waking up... please wait up to 50s)";
-            loadingElem.appendChild(warning);
-        }
-    }, 5000);
-
     try {
         const response = await fetch(`${API_BASE_URL}/api/chat`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ query, sessionId })
         });
-
-        clearTimeout(coldStartTimer);
 
         if (response.ok) {
             const data = await response.json();
@@ -99,7 +100,6 @@ async function sendMessage() {
             throw new Error(`Backend returned ${response.status}`);
         }
     } catch (err) {
-        clearTimeout(coldStartTimer);
         console.error("API call failed", err);
         removeMessage(loadingId);
         addMessage(`**Error:** Could not connect to backend at \`${API_BASE_URL}\`.\n\nPossible reasons:\n1. Backend is down or waking up.\n2. URL is incorrect.\n3. CORS is blocking the request.`, 'assistant');
@@ -111,25 +111,34 @@ function addMessage(content, role, sources = []) {
     const messageDiv = document.createElement('div');
     messageDiv.className = `message ${role}`;
 
+    // Avatar
+    const avatar = document.createElement('div');
+    avatar.className = 'avatar';
+    avatar.textContent = role === 'user' ? '👤' : '🤖';
+
+    const contentDiv = document.createElement('div');
+    contentDiv.className = 'message-content';
+
     const bubble = document.createElement('div');
     bubble.className = 'bubble';
 
     if (role === 'assistant') {
         bubble.innerHTML = DOMPurify.sanitize(marked.parse(content));
+        contentDiv.appendChild(bubble);
 
         if (sources && sources.length > 0) {
             const sourcesDiv = document.createElement('div');
             sourcesDiv.className = 'sources';
             sourcesDiv.innerHTML = 'Sources: ' + sources.map(s => `<span class="source-tag">${s}</span>`).join('');
-            messageDiv.appendChild(bubble);
-            messageDiv.appendChild(sourcesDiv);
-        } else {
-            messageDiv.appendChild(bubble);
+            contentDiv.appendChild(sourcesDiv);
         }
     } else {
         bubble.textContent = content;
-        messageDiv.appendChild(bubble);
+        contentDiv.appendChild(bubble);
     }
+
+    messageDiv.appendChild(avatar);
+    messageDiv.appendChild(contentDiv);
 
     messagesArea.appendChild(messageDiv);
     scrollToBottom();
@@ -141,6 +150,13 @@ function addLoadingMessage() {
     messageDiv.className = 'message assistant';
     messageDiv.id = id;
 
+    const avatar = document.createElement('div');
+    avatar.className = 'avatar';
+    avatar.textContent = '🤖';
+
+    const contentDiv = document.createElement('div');
+    contentDiv.className = 'message-content';
+
     const bubble = document.createElement('div');
     bubble.className = 'bubble';
     bubble.innerHTML = `
@@ -150,7 +166,10 @@ function addLoadingMessage() {
             <span></span>
         </div>`;
 
-    messageDiv.appendChild(bubble);
+    contentDiv.appendChild(bubble);
+    messageDiv.appendChild(avatar);
+    messageDiv.appendChild(contentDiv);
+
     messagesArea.appendChild(messageDiv);
     scrollToBottom();
     return id;
@@ -163,6 +182,76 @@ function removeMessage(id) {
 
 function scrollToBottom() {
     messagesArea.scrollTop = messagesArea.scrollHeight;
+}
+
+// --- File Upload Logic ---
+const uploadBtn = document.getElementById('upload-btn');
+const fileInput = document.getElementById('file-input');
+
+if (uploadBtn && fileInput) {
+    uploadBtn.addEventListener('click', () => {
+        fileInput.click();
+    });
+
+    fileInput.addEventListener('change', async (e) => {
+        const file = e.target.files[0];
+        if (!file) return;
+
+        const statusContainer = document.getElementById('upload-status-container');
+
+        // Show uploading status
+        const originalPlaceholder = userInput.placeholder;
+        userInput.placeholder = "Uploading and processing file...";
+        userInput.disabled = true;
+        uploadBtn.disabled = true;
+
+        statusContainer.className = 'upload-status-container uploading';
+        statusContainer.innerHTML = `<div class="spinner"></div> <span>Processing "${file.name}"...</span>`;
+
+        const formData = new FormData();
+        formData.append('file', file);
+
+        try {
+            const response = await fetch(`${API_BASE_URL}/api/upload`, {
+                method: 'POST',
+                body: formData
+            });
+
+            const data = await response.json();
+
+            if (!response.ok) {
+                throw new Error(data.details || 'Upload failed');
+            }
+
+            // Success UI
+            statusContainer.className = 'upload-status-container success';
+            statusContainer.innerHTML = `✅ <span>"${file.name}" ready for chat.</span>`;
+
+            addMessage(`File "${file.name}" uploaded and processed successfully.`, 'assistant');
+
+            // Auto-hide success after 5 seconds
+            setTimeout(() => {
+                if (statusContainer.className.includes('success')) {
+                    statusContainer.innerHTML = '';
+                    statusContainer.className = 'upload-status-container';
+                }
+            }, 5000);
+
+        } catch (error) {
+            console.error('Error uploading file:', error);
+            // Error UI
+            statusContainer.className = 'upload-status-container error';
+            statusContainer.innerHTML = `❌ <span>Failed: ${error.message}</span>`;
+
+            alert(`Error uploading file: ${error.message}`);
+        } finally {
+            // Reset UI
+            fileInput.value = ''; // Clear input
+            userInput.placeholder = originalPlaceholder;
+            userInput.disabled = false;
+            uploadBtn.disabled = false;
+        }
+    });
 }
 
 sendBtn.addEventListener('click', sendMessage);
@@ -179,5 +268,5 @@ newChatBtn.addEventListener('click', () => {
     localStorage.setItem('chat_session_id', sessionId);
     messagesArea.innerHTML = '';
     // Re-add welcome message
-    addMessage(`Hello! I am your AI assistant. I can answer questions using my knowledge base.\nNote: I may take up to 50 seconds to wake up if I haven't been used in a while (Free Tier).`, 'assistant');
+    addMessage(`Greetings! ✨ I'm your Personal Knowledge Assistant. \n\nI've analyzed your documents and I'm ready to help you find answers, summarize content, or brainstorm ideas based on your data. What's on your mind today?`, 'assistant');
 });

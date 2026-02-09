@@ -17,10 +17,14 @@ def retrieve_chunks(query, chunks, top_k=5):
     query_embedding = model.encode(query, convert_to_tensor=True)
 
     # Prepare corpus embeddings
+    # MongoDB stores embeddings as lists, but semantic_search expects tensors
+    import torch
     corpus_embeddings = [chunk['embedding'] for chunk in chunks if 'embedding' in chunk]
     
     if not corpus_embeddings:
         return []
+
+    corpus_embeddings = torch.tensor(corpus_embeddings)
 
     # Calculate similarity
     hits = util.semantic_search(query_embedding, corpus_embeddings, top_k=top_k)

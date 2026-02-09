@@ -41,8 +41,15 @@ app.get('/health', (req, res) => {
     });
 });
 
-app.get('/', (req, res) => {
-    res.send('RAG Chatbot Backend is Running. Use POST /api/chat to interact.');
+// Serve static files from the client directory
+app.use(express.static(path.join(__dirname, '../client')));
+
+// Catch-all route to serve index.html for any non-API request
+app.get('*', (req, res) => {
+    if (req.path.startsWith('/api')) {
+        return res.status(404).json({ error: 'API endpoint not found' });
+    }
+    res.sendFile(path.join(__dirname, '../client/index.html'));
 });
 
 // Start Server

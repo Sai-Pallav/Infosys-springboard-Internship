@@ -39,7 +39,34 @@ class RagService {
                     });
                 } else {
                     try {
-                        const result = JSON.parse(outputData);
+                        // Robust JSON parsing: Find the last valid JSON line
+                        // This handles cases where Python might print warnings/debug info before the JSON
+                        const lines = outputData.trim().split('\n');
+                        let result = null;
+
+                        // Try to parse lines from end to start until a valid JSON is found
+                        for (let i = lines.length - 1; i >= 0; i--) {
+                            try {
+                                const parsed = JSON.parse(lines[i]);
+                                if (parsed && (parsed.answer || parsed.error || parsed.message)) {
+                                    result = parsed;
+                                    break;
+                                }
+                            } catch (e) {
+                                // Continue if line is not JSON
+                            }
+                        }
+
+                        if (!result) {
+                            // If no valid JSON found line-by-line, try parsing the whole output (stripped of potential headers)
+                            // Or fallback to error
+                            try {
+                                result = JSON.parse(outputData);
+                            } catch (e) {
+                                throw new Error("No valid JSON found in Python output");
+                            }
+                        }
+
                         resolve({
                             answer: result.answer || "No answer generated.",
                             sources: result.sources || []
