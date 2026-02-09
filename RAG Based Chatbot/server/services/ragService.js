@@ -7,7 +7,7 @@ class RagService {
 
         return new Promise((resolve, reject) => {
             // Path to python script
-            const pythonScriptPath = path.join(__dirname, '../../code_files/generation.py');
+            const pythonScriptPath = path.join(__dirname, '../../code_Files/generation.py');
 
             // Spawn Python process
             const pythonProcess = spawn('python', [pythonScriptPath]);

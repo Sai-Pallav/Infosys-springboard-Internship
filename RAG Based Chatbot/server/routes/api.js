@@ -89,7 +89,7 @@ router.post('/upload', upload.single('file'), (req, res) => {
     // Spawn Python ingestion script
     // Note: Assuming we are in server/ directory when running node, 
     // code_files is in ../code_files relative to server/
-    const pythonScriptPath = path.join(__dirname, '../../code_files/ingest.py');
+    const pythonScriptPath = path.join(__dirname, '../../code_Files/ingest.py');
 
     const pythonProcess = spawn('python', [pythonScriptPath, filePath]);
 
