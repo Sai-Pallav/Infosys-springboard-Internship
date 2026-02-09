@@ -6,21 +6,16 @@ const newChatBtn = document.getElementById('new-chat-btn');
 const apiUrlInput = document.getElementById('api-url');
 const saveUrlBtn = document.getElementById('save-url-btn');
 
-// Default API URL (Fallback to localhost for dev, but configurable)
-// Default API URL (Use current origin if served from same domain, otherwise localhost:5000)
-const DEFAULT_API_URL = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
-    ? window.location.origin // usage logic: if served from backend, origin is correct. If served via LiveServer, origin is wrong (port 5500 vs 5000).
-    : window.location.origin;
+// Default Render Backend URL
+const RENDER_BACKEND_URL = 'https://rag-backend-hybrid.onrender.com';
 
-// Improved logic: If we are on port 5500 (VS Code Live Server), default to localhost:5000.
-// If we are on port 5000 (served by backend) or production (Render), use relative path or origin.
 let API_BASE_URL = localStorage.getItem('api_base_url');
 
 if (!API_BASE_URL) {
-    if (window.location.port === '5500') {
+    if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
         API_BASE_URL = 'http://localhost:5000';
     } else {
-        API_BASE_URL = window.location.origin;
+        API_BASE_URL = RENDER_BACKEND_URL;
     }
 }
 
