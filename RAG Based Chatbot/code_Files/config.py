@@ -2,7 +2,12 @@ import os
 from dotenv import load_dotenv
 
 # Load environment variables
-load_dotenv()
+# Load environment variables
+dotenv_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), '.env')
+load_dotenv(dotenv_path)
+# Debug prints removed to prevent JSON parsing errors in Node.js
+# print(f"DEBUG: Loaded .env from {dotenv_path}")
+# print(f"DEBUG: MONGODB_URI is {'Set' if os.getenv('MONGODB_URI') else 'Not Set'}")
 
 # Configuration
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")

@@ -19,7 +19,7 @@ This project uses a **Hybrid Architecture** where a Node.js server spawns Python
 
 3.  **Configuration**:
     - **Name**: `rag-backend-hybrid`
-    - **Root Directory**: `.` (Root of the repo)
+    - **Root Directory**: `RAG Based Chatbot`
     - **Runtime**: `Node`
     - **Build Command**: `npm install --prefix server && pip install -r code_files/requirements.txt`
     - **Start Command**: `node server/index.js`

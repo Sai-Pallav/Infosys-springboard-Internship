@@ -1,7 +1,8 @@
 groq
 sentence-transformers
 numpy
-load_dotenv
+python-dotenv
 pymongo
 pdfplumber
 docx2txt
+PyMuPDF

@@ -23,8 +23,8 @@
       firebase init hosting
       ```
     - **Select**: "Use an existing project" (or create new).
-    - **Public directory**: `code_Files/client`  <-- **IMPORTANT**
-    - **Configure as single-page app?**: `No`
+    - **Public directory**: `client`
+    - **Configure as single-page app?**: `Yes`
     - **Set up automatic builds/deploys?**: `No` (unless you want GitHub Actions)
 
 4.  **Deploy**:

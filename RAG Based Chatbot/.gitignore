@@ -6,11 +6,10 @@ node_modules/
 .env.local
 
 # Local Data (Vector Store and Uploads)
-# Keep this if you want to share data, IGNORE if you want clean repo
-# For internship demo, maybe okay to commit sample data, but standard practice is ignore.
-# Un-comment the next lines to be "Cloud Native" correct:
-# data/
-# *.pdf
+data/
+server/uploads/
+*.pdf
+*.txt
 
 # Logs
 npm-debug.log
