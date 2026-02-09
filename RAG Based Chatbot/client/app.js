@@ -11,12 +11,13 @@ const RENDER_BACKEND_URL = 'https://rag-backend-hybrid.onrender.com';
 
 let API_BASE_URL = localStorage.getItem('api_base_url');
 
-if (!API_BASE_URL) {
-    if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
-        API_BASE_URL = 'http://localhost:5000';
-    } else {
-        API_BASE_URL = RENDER_BACKEND_URL;
-    }
+// If we are on Firebase (or any production domain) but the saved URL is localhost, 
+// OR if the URL is not set at all, use the Render Backend.
+const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+
+if (!API_BASE_URL || (!isLocal && API_BASE_URL.includes('localhost'))) {
+    API_BASE_URL = isLocal ? 'http://localhost:5000' : RENDER_BACKEND_URL;
+    localStorage.setItem('api_base_url', API_BASE_URL);
 }
 
 apiUrlInput.value = API_BASE_URL;
