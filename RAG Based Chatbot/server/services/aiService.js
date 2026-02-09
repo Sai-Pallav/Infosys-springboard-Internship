@@ -50,7 +50,15 @@ class AIService {
      */
     async runPythonScript(scriptPath, args = [], inputJson = null) {
         return new Promise((resolve, reject) => {
-            const process = spawn('python', [scriptPath, ...args]);
+            // Use python3 on Render/Linux
+            const pythonCommand = process.platform === 'win32' ? 'python' : 'python3';
+            const process = spawn(pythonCommand, [scriptPath, ...args]);
+
+            // Timeout to prevent hanging (45 seconds)
+            const timeout = setTimeout(() => {
+                process.kill();
+                reject(new Error(`Python script timed out after 45 seconds: ${scriptPath}`));
+            }, 45000);
 
             let stdoutData = "";
             let stderrData = "";
@@ -65,7 +73,14 @@ class AIService {
                 console.error(`[Python Log]: ${msg}`);
             });
 
+            process.on('error', (err) => {
+                clearTimeout(timeout);
+                console.error(`[Python Spawn Error]: ${err.message}`);
+                reject(err);
+            });
+
             process.on('close', (code) => {
+                clearTimeout(timeout);
                 if (code !== 0) {
                     console.error(`Python script error (${scriptPath}):`, stderrData);
                     reject(new Error(`Script exited with code ${code}: ${stderrData}`));

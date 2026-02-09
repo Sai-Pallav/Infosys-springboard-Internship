@@ -6,17 +6,30 @@ class RagService {
         console.log("[RAG] Calling Python Generation Script...");
 
         return new Promise((resolve, reject) => {
-            // Path to python script
-            const pythonScriptPath = path.join(__dirname, '../../code_Files/generation.py');
+            // Use python3 (standard for Render/Linux)
+            const pythonCommand = process.platform === 'win32' ? 'python' : 'python3';
 
             // Spawn Python process
-            const pythonProcess = spawn('python', [pythonScriptPath]);
+            const pythonProcess = spawn(pythonCommand, [pythonScriptPath]);
+
+            // Add a timeout to prevent infinite hangs (e.g., 30 seconds)
+            const timeout = setTimeout(() => {
+                pythonProcess.kill();
+                reject(new Error("Python script timed out after 30 seconds"));
+            }, 30000);
 
             let outputData = "";
             let errorData = "";
 
+            // Handle spawn errors (e.g., python not found)
+            pythonProcess.on('error', (err) => {
+                clearTimeout(timeout);
+                console.error(`[RAG] Failed to start Python process: ${err.message}`);
+                reject(err);
+            });
+
             // Send data to Python via functions stdin
-            const inputPayload = JSON.stringify({ query, context: "" }); // Context retrieval handled in Python if extended
+            const inputPayload = JSON.stringify({ query, context: "" });
             pythonProcess.stdin.write(inputPayload);
             pythonProcess.stdin.end();
 
@@ -30,6 +43,7 @@ class RagService {
             });
 
             pythonProcess.on('close', (code) => {
+                clearTimeout(timeout);
                 if (code !== 0) {
                     console.error(`Python script exited with code ${code}: ${errorData}`);
                     // Fallback if Python fails
