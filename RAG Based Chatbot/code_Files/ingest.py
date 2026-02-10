@@ -1,6 +1,7 @@
 import os
+import sys
 import pdfplumber
-import fitz  # PyMuPDF
+# import fitz  # PyMuPDF (Unused)
 from sentence_transformers import SentenceTransformer
 from pymongo import MongoClient
 from config import MONGODB_URI, EMBEDDING_MODEL
@@ -64,7 +65,7 @@ def ingest_file(file_path):
     else:
         print("No chunks to store.", file=sys.stderr)
 
-import sys
+
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:

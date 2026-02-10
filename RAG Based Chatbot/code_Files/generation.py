@@ -37,18 +37,31 @@ def generate_answer(query):
             context = "\n\n".join([chunk.get('text', '') for chunk in relevant_chunks])
             sources = list(set([chunk.get('source', 'Unknown') for chunk in relevant_chunks]))
 
-        # 3. Generate Answer
+        # 3. Generate Answer with Retry Logic
         system_prompt = f"You are a helpful assistant. Use the following context to answer the user's question. If the answer is not in the context, say you don't know.\n\nContext:\n{context}"
         
-        completion = client.chat.completions.create(
-            messages=[
-                {"role": "system", "content": system_prompt},
-                {"role": "user", "content": query}
-            ],
-            model=LLM_MODEL,
-        )
-        
-        return completion.choices[0].message.content, sources
+        max_retries = 3
+        retry_delay = 2
+
+        for attempt in range(max_retries):
+            try:
+                completion = client.chat.completions.create(
+                    messages=[
+                        {"role": "system", "content": system_prompt},
+                        {"role": "user", "content": query}
+                    ],
+                    model=LLM_MODEL,
+                )
+                return completion.choices[0].message.content, sources
+                
+            except Exception as api_err:
+                if attempt < max_retries - 1:
+                    import time
+                    print(f"API Error (Attempt {attempt+1}/{max_retries}): {str(api_err)}. Retrying in {retry_delay}s...", file=sys.stderr)
+                    time.sleep(retry_delay)
+                    retry_delay *= 2  # Exponential backoff
+                else:
+                    raise api_err
         
     except Exception as e:
         return f"Error generating answer: {str(e)}", []
@@ -69,5 +82,10 @@ if __name__ == "__main__":
         print(json.dumps({"answer": answer, "sources": sources}))
         
     except Exception as e:
-        print(json.dumps({"error": str(e)}))
+        # Use str(e) to capture the error message safely
+        error_msg = str(e)
+        # Print JSON error to stdout so Node.js can parse it
+        print(json.dumps({"error": error_msg}))
+        # Exit with 0 to allow Node.js to read stdout, or 1 if you handle it in Node
+        # Using 1 here, but ensure Node reads stdout before checking exit code
         sys.exit(1)

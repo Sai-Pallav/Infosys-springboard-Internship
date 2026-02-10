@@ -19,6 +19,11 @@ router.post('/chat', async (req, res) => {
         const { query, sessionId } = req.body;
         if (!query) return res.status(400).json({ error: 'Query is required' });
 
+        // Input Validation: Prevent huge payloads
+        if (query.length > 2000) {
+            return res.status(400).json({ error: 'Query too long. Max 2000 characters.' });
+        }
+
         // 1. Retrieve or Create Conversation
         let conversation;
         if (sessionId) {
@@ -91,8 +96,8 @@ router.post('/upload', upload.single('file'), (req, res) => {
     // code_files is in ../code_files relative to server/
     const pythonScriptPath = path.join(__dirname, '../../code_Files/ingest.py');
 
-    // Use python3 (standard for Render/Linux)
-    const pythonCommand = process.platform === 'win32' ? 'python' : 'python3';
+    // Use python3 (standard for Render/Linux) or custom path
+    const pythonCommand = process.env.PYTHON_PATH || (process.platform === 'win32' ? 'python' : 'python3');
     const pythonProcess = spawn(pythonCommand, [pythonScriptPath, filePath]);
 
     // Add a timeout for uploads (60 seconds)
@@ -122,8 +127,16 @@ router.post('/upload', upload.single('file'), (req, res) => {
         clearTimeout(timeout);
         const exitMessage = code === 0 ? "success" : `failed with code ${code}`;
         console.log(`[Upload] Python process finished with: ${exitMessage}`);
-        // Clean up file after processing (optional, but good for saving space)
-        // fs.unlinkSync(filePath); 
+
+        // Clean up file after processing
+        try {
+            if (fs.existsSync(filePath)) {
+                fs.unlinkSync(filePath);
+                console.log(`[Upload] Cleaned up file: ${filePath}`);
+            }
+        } catch (cleanupErr) {
+            console.error(`[Upload] Failed to delete file: ${filePath}`, cleanupErr);
+        }
 
         if (code === 0) {
             res.json({ message: "File processed successfully", details: output });

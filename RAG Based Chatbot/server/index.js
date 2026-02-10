@@ -11,12 +11,28 @@ const PORT = process.env.PORT || 5000;
 const MONGODB_URI = process.env.MONGODB_URI;
 
 // Middleware
+const helmet = require('helmet');
+const rateLimit = require('express-rate-limit');
+
+// 1. Security Headers
+app.use(helmet({
+    contentSecurityPolicy: false, // Disable CSP for now to allow inline scripts/styles if needed (dev mode)
+}));
+
+// 2. Rate Limiting (Limit to 100 requests per 15 minutes)
+const limiter = rateLimit({
+    windowMs: 15 * 60 * 1000, // 15 minutes
+    max: 100, // limit each IP to 100 requests per windowMs
+    message: { error: 'Too many requests, please try again later.' }
+});
+app.use('/api', limiter);
+
 app.use(cors({
     origin: '*', // Allow all origins for initial setup/testing. Ideally restrict to Firebase domain later.
     methods: ['GET', 'POST', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization']
 }));
-app.use(express.json());
+app.use(express.json({ limit: '10mb' })); // Limit JSON body size
 
 // MongoDB Connection
 if (!MONGODB_URI) {

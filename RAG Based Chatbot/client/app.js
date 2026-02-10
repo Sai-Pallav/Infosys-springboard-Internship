@@ -5,6 +5,14 @@ const statusText = document.getElementById('status-text');
 const newChatBtn = document.getElementById('new-chat-btn');
 const apiUrlInput = document.getElementById('api-url');
 const saveUrlBtn = document.getElementById('save-url-btn');
+const menuBtn = document.getElementById('menu-btn');
+const sidebar = document.querySelector('.sidebar');
+
+if (menuBtn && sidebar) {
+    menuBtn.addEventListener('click', () => {
+        sidebar.classList.toggle('open');
+    });
+}
 
 // Default Render Backend URL
 const RENDER_BACKEND_URL = 'https://rag-backend-hybrid.onrender.com';
@@ -66,6 +74,20 @@ userInput.addEventListener('input', function () {
     this.style.height = 'auto';
     this.style.height = (this.scrollHeight) + 'px';
     if (this.value === '') this.style.height = 'auto';
+
+    // Character Count Logic
+    const charCount = this.value.length;
+    const charCountElem = document.getElementById('char-count');
+    if (charCountElem) {
+        charCountElem.textContent = `${charCount} / 2000`;
+        if (charCount > 2000) {
+            charCountElem.style.color = 'red';
+            sendBtn.disabled = true;
+        } else {
+            charCountElem.style.color = '#888';
+            sendBtn.disabled = false;
+        }
+    }
 });
 
 async function sendMessage() {

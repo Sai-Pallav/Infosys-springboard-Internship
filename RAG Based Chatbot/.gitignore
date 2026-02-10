@@ -16,6 +16,12 @@ npm-debug.log
 logs/
 *.log
 
+# Python
+__pycache__/
+*.pyc
+.venv/
+.venv_broken/
+
 # OS
 .DS_Store
 Thumbs.db

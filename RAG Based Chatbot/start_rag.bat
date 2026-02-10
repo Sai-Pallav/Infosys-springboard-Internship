@@ -23,6 +23,9 @@ if %errorlevel% neq 0 (
 )
 cd ..
 
+:: Set Python Encoding to UTF-8 to avoid Windows emoji crashes
+set PYTHONIOENCODING=utf-8
+
 echo [3/3] Starting Server...
 echo.
 echo Open your browser to: http://localhost:5000

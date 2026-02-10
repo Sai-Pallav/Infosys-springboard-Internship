@@ -6,8 +6,11 @@ class RagService {
         console.log("[RAG] Calling Python Generation Script...");
 
         return new Promise((resolve, reject) => {
-            // Use python3 (standard for Render/Linux)
-            const pythonCommand = process.platform === 'win32' ? 'python' : 'python3';
+            // Use python3 (standard for Render/Linux) or custom path
+            const pythonCommand = process.env.PYTHON_PATH || (process.platform === 'win32' ? 'python' : 'python3');
+
+            // Define path to generation.py
+            const pythonScriptPath = path.join(__dirname, '../../code_Files/generation.py');
 
             // Spawn Python process
             const pythonProcess = spawn(pythonCommand, [pythonScriptPath]);

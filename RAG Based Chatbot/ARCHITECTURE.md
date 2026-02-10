@@ -43,3 +43,13 @@ Render's free instance spins down after 15 minutes of inactivity. The first requ
 
 - **Frontend**: Shows a "Connecting..." status and a textual warning if the request takes >5 seconds: *(Server might be waking up...)*.
 - **Backend**: Has a lightweight `/health` endpoint to quickly check status without triggering a full RAG pipeline.
+
+---
+
+## ⚠️ Known Limitations & Performance
+### "Spawn-per-Request" Overhead
+Currently, the backend spawns a **new Python process** for every chat request (`generation.py`).
+- **Impact**: This causes a delay of 2-5 seconds per request as Python must import heavy libraries (`sentence-transformers`, `torch`) and load the ML model into memory *every single time*.
+- **Reason**: This simple architecture fits within Render's free tier limits and simpler deployment model (stateless).
+- **Future Optimization**: For production, the Python logic should be converted to a persistent microservice (Flash/FastAPI) to load the model once and keep it in memory.
+

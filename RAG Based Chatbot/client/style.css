@@ -505,4 +505,12 @@ textarea {
     .sidebar.open {
         transform: translateX(0);
     }
+    
+    .menu-btn {
+        display: flex !important; /* Show hamburger only on mobile */
+    }
+    
+    .chat-header {
+        padding: 20px; /* Reduce padding on mobile */
+    }
 }

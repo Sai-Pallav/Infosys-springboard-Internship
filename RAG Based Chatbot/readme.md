@@ -5,11 +5,14 @@ A secure, decoupled RAG (Retrieval Augmented Generation) chatbot built with **No
 ## 🚀 Features
 - **RAG Architecture**: Retrieves relevant context from MongoDB Vector Search.
 - **Graceful Fallback**: If the AI API (Groq) fails or quota is exceeded, the system automatically falls back to displaying raw database results.
-- **Secure Design**: 
-  - Frontend is static and contains **NO API keys**.
-  - Backend handles all logic and secrets.
-  - Full CORS configuration.
-- **Modern UI**: Clean interface with Markdown support, responsive design, and cold-start indicators.
+- **Enterprise Security**:
+  - **Helmet**: Secures HTTP headers.
+  - **Rate Limiting**: Protects against DDoS with IP-based limits (100 req/15min).
+  - **Input Validation**: Prevents large payload attacks.
+- **Reliability**:
+  - **Auto-Retry**: Exponential backoff for AI API calls.
+  - **Fail-Fast**: Validates environment variables on startup.
+- **Modern UI**: Clean interface with Markdown support, responsive design (Mobile Support), and cold-start indicators.
 
 ## 📂 Project Structure
 ```

@@ -18,30 +18,40 @@ class AIService {
      */
     parsePythonOutput(output) {
         try {
-            // Try direct parse first
+            // 1. Try direct parse first (cleanest case)
             return JSON.parse(output);
         } catch (e) {
             console.warn("Direct JSON parse failed, attempting extraction from:", output);
-            // Try to find the last JSON object-like structure
-            // This regex matches a structure starting with { and ending with }
-            // It's basic but handles simple cases where logs precede JSON
-            const jsonMatch = output.match(/\{[\s\S]*\}/);
-            if (jsonMatch) {
-                try {
-                    // Try to parse the last match (often the result)
-                    // If multiple matches, we might want the last one, but match() returns the first usually.
-                    // Let's iterate if needed, but for now take the found block.
-                    // Actually, let's find the last occurrence of '}' and the matching '{'
-                    const lastClose = output.lastIndexOf('}');
-                    if (lastClose !== -1) {
-                        const candidate = output.substring(output.indexOf('{'), lastClose + 1);
-                        return JSON.parse(candidate);
+
+            // 2. Scan from the end of the string to find the last valid JSON object
+            // This is useful because Python scripts often print logs before the final JSON result
+            const lines = output.trim().split('\n');
+            for (let i = lines.length - 1; i >= 0; i--) {
+                const line = lines[i].trim();
+                // Optimization: Only try to parse if it looks like an object
+                if (line.startsWith('{') && line.endsWith('}')) {
+                    try {
+                        return JSON.parse(line);
+                    } catch (lineError) {
+                        // Continue searching
                     }
-                } catch (e2) {
-                    console.error("Extraction parse failed:", e2);
                 }
             }
-            throw new Error(`Failed to parse Python output: ${output}`);
+
+            // 3. Last Desperate Resort: Regex extraction of the last {...} block
+            // This handles cases where JSON is embedded in a line or spans multiple lines
+            try {
+                const lastOpen = output.lastIndexOf('{');
+                const lastClose = output.lastIndexOf('}');
+                if (lastOpen !== -1 && lastClose !== -1 && lastClose > lastOpen) {
+                    const candidate = output.substring(lastOpen, lastClose + 1);
+                    return JSON.parse(candidate);
+                }
+            } catch (regexError) {
+                console.error("Regex extraction failed:", regexError);
+            }
+
+            throw new Error(`Failed to parse Python output. No valid JSON found in: ${output.substring(0, 100)}...`);
         }
     }
 
@@ -50,8 +60,8 @@ class AIService {
      */
     async runPythonScript(scriptPath, args = [], inputJson = null) {
         return new Promise((resolve, reject) => {
-            // Use python3 on Render/Linux
-            const pythonCommand = process.platform === 'win32' ? 'python' : 'python3';
+            // Use python3 on Render/Linux or custom path
+            const pythonCommand = process.env.PYTHON_PATH || (process.platform === 'win32' ? 'python' : 'python3');
             const process = spawn(pythonCommand, [scriptPath, ...args]);
 
             // Timeout to prevent hanging (45 seconds)
