@@ -43,8 +43,6 @@ if %errorlevel% neq 0 (
     exit /b
 )
 
-echo.
 echo ===================================================
 echo   Deployment Complete!
 echo ===================================================
-pause

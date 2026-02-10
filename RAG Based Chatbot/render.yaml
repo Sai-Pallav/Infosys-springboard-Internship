@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: rag-chatbot-backend
+    env: docker
+    rootCommand: ./
+    plan: free
+    branch: main
+    repo: https://github.com/Sai-Pallav/Infosys-springboard-Internship
+    # We specify the sub-directory as the context
+    rootDir: RAG Based Chatbot
+    envVars:
+      - key: PORT
+        value: 5000
+      - key: MONGODB_URI
+        sync: false
+      - key: GROQ_API_KEY
+        sync: false
