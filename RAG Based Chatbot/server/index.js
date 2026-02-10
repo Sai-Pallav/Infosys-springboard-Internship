@@ -30,7 +30,7 @@ app.use('/api', limiter);
 // 3. CORS Configuration
 const allowedOrigins = [
     'https://rag-based-chatbot-eacf7.web.app',
-    'https://rag-backend-hybrid.onrender.com',
+    'https://rag-based-chatbot-8huy.onrender.com',
     'http://localhost:5000',
     'http://localhost:3000'
 ];

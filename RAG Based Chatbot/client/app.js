@@ -16,7 +16,7 @@ if (menuBtn && sidebar) {
 
 // Default Render Backend URL
 // Default to relative path for same-origin deployment (Render)
-const RENDER_BACKEND_URL = '';
+const RENDER_BACKEND_URL = 'https://rag-based-chatbot-8huy.onrender.com';
 
 let API_BASE_URL = localStorage.getItem('api_base_url');
 
