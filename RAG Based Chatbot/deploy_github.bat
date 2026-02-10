@@ -19,20 +19,17 @@ git remote -v
 :: Ensure we are on main branch
 git branch -M main
 
-:: Sync with Remote (Pull first to avoid rejection)
-echo [1/4] Pulling remote changes...
-git pull origin main --rebase --allow-unrelated-histories
-
-:: Stage the changes (including deletion of debug files)
-echo [2/4] Staging changes...
+:: 1. Stage and Commit local changes FIRST (Required for rebase)
+echo [1/4] Staging and Committing local changes...
 git add "RAG Based Chatbot"
-
-:: Commit (if there are changes)
-echo [3/4] Committing changes...
 git commit -m "Update RAG Chatbot: Production Ready (Security, UX, Stability fixes)"
 
-:: Push
-echo [4/4] Pushing to GitHub...
+:: 2. Sync with Remote (Pull with rebase)
+echo [2/4] Pulling remote changes...
+git pull origin main --rebase --allow-unrelated-histories
+
+:: 3. Push
+echo [3/4] Pushing to GitHub...
 git push origin main
 
 if %errorlevel% neq 0 (
