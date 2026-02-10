@@ -15,11 +15,11 @@ class RagService {
             // Spawn Python process
             const pythonProcess = spawn(pythonCommand, [pythonScriptPath]);
 
-            // Add a timeout to prevent infinite hangs (e.g., 30 seconds)
+            // Add a timeout to prevent infinite hangs (e.g., 120 seconds for slow model loading)
             const timeout = setTimeout(() => {
                 pythonProcess.kill();
-                reject(new Error("Python script timed out after 30 seconds"));
-            }, 30000);
+                reject(new Error("Python script timed out after 120 seconds"));
+            }, 120000);
 
             let outputData = "";
             let errorData = "";
@@ -42,7 +42,9 @@ class RagService {
             });
 
             pythonProcess.stderr.on('data', (data) => {
-                errorData += data.toString();
+                const msg = data.toString();
+                errorData += msg;
+                console.error(`[PYTHON STDERR]: ${msg}`);
             });
 
             pythonProcess.on('close', (code) => {
