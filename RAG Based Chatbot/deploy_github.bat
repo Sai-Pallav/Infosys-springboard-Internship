@@ -16,8 +16,9 @@ git remote add origin https://github.com/Sai-Pallav/Infosys-springboard-Internsh
 echo [Debug] Remote URL:
 git remote -v
 
-:: Ensure we are on main branch
-git branch -M main
+:: Ensure we are on main branch (force creation if needed)
+git checkout main 2>NUL || git checkout -b main
+
 
 :: 1. Stage and Commit local changes FIRST (Required for rebase)
 echo [1/4] Staging and Committing local changes...
