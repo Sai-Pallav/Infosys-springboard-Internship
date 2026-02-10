@@ -24,7 +24,15 @@ let API_BASE_URL = localStorage.getItem('api_base_url');
 // If on production (Render), default to relative path (empty string)
 const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
 
-if (!API_BASE_URL || (!isLocal && API_BASE_URL.includes('localhost')) || API_BASE_URL.includes('rag-backend-hybrid')) {
+// Agresively force the correct Backend URL if it's the old one
+if (API_BASE_URL && API_BASE_URL.includes('onrender.com') && !API_BASE_URL.includes('rag-based-chatbot-8huy')) {
+    console.log("Forcing update to new Render URL...");
+    API_BASE_URL = RENDER_BACKEND_URL;
+    localStorage.setItem('api_base_url', API_BASE_URL);
+}
+
+// If no URL at all, or local mismatch
+if (!API_BASE_URL || (isLocal && !API_BASE_URL.includes('localhost')) || (!isLocal && API_BASE_URL.includes('localhost'))) {
     API_BASE_URL = isLocal ? 'http://localhost:5000' : RENDER_BACKEND_URL;
     localStorage.setItem('api_base_url', API_BASE_URL);
 }
