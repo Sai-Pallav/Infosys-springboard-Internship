@@ -29,8 +29,10 @@ Scroll down to the **Environment Variables** section and add the following keys.
 | :--- | :--- |
 | `GROQ_API_KEY` | *(Paste your actual API Key)* |
 | `MONGODB_URI` | *(Paste your actual MongoDB Connection String)* |
+| `HF_API_KEY` | *(Paste your actual Hugging Face Classic Token)* |
 | `PYTHON_PATH` | `python3` |
 | `PORT` | `5000` |
+| `NODE_ENV` | `production` |
 
 ## 4. Deploy
 1.  Click **"Create Web Service"**.
@@ -39,4 +41,4 @@ Scroll down to the **Environment Variables** section and add the following keys.
 
 ## 5. Verification
 -   Your URL will look like: `https://rag-chatbot-backend.onrender.com`
--   Visit `https://rag-chatbot-backend.onrender.com/status` to confirm the API is running.
+-   Visit `https://rag-chatbot-backend.onrender.com/health` to confirm the API is running.
