@@ -1,6 +1,7 @@
 groq
-# sentence-transformers (Removed for Render Optimization)
-# numpy (Removed for Render Optimization)
+# sentence-transformers (Internal Inference)
+numpy
+scipy
 python-dotenv
 pymongo
 pdfplumber
