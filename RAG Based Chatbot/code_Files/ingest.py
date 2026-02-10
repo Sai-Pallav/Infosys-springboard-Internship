@@ -1,18 +1,14 @@
 import os
 import sys
 import pdfplumber
-# import fitz  # PyMuPDF (Unused)
-from sentence_transformers import SentenceTransformer
 from pymongo import MongoClient
-from config import MONGODB_URI, EMBEDDING_MODEL
+from config import MONGODB_URI
+from utils import get_embedding # Shared Utility with Retry Logic
 
 # Initialize MongoDB
 client = MongoClient(MONGODB_URI)
 db = client['rag_chatbot']
 collection = db['documents']
-
-# Initialize Model
-model = SentenceTransformer(EMBEDDING_MODEL)
 
 def extract_text(file_path):
     if file_path.endswith('.pdf'):
@@ -39,33 +35,58 @@ def ingest_file(file_path):
         text = extract_text(file_path)
     except Exception as e:
         print(f"Error reading file: {e}", file=sys.stderr)
-        raise
+        sys.exit(1) # CRITICAL: Exit with error so backend knows
 
     if not text.strip():
         print("Warning: No text extracted from file.", file=sys.stderr)
-        return
+        sys.exit(1) # Treat empty file as failure to alert user
 
+    # Create chunks
     chunks = chunk_text(text)
     
-    # Generate Embeddings
-    embeddings = model.encode(chunks)
+    # Generate Embeddings (via Utils)
+    try:
+        # Utils uses InferenceClient. Logic handles retries and returns list.
+        embeddings = get_embedding(chunks)
+        
+        # Robust Normalization: Ensure we have a 2D list [[...], [...]]
+        # If result is [[[...]]], flatten it by one level.
+        if isinstance(embeddings, list) and len(embeddings) > 0 and isinstance(embeddings[0], list) and isinstance(embeddings[0][0], list):
+             embeddings = embeddings[0]
+
+    except Exception as e:
+        print(f"Embedding generation failed: {e}", file=sys.stderr)
+        sys.exit(1)
     
     # Store in MongoDB
     documents = []
     for i, chunk in enumerate(chunks):
         documents.append({
             "text": chunk,
-            "embedding": embeddings[i].tolist(),
+            # Handle possible nesting from HF API
+            "embedding": embeddings[i] if isinstance(embeddings[i], list) else embeddings, 
             "source": os.path.basename(file_path)
         })
     
+    # Correction: If len(chunks) == 1, HF API returns 1D list?
+    # Actually, if inputs is list, it returns list of 1D lists (embeddings).
+    # Let's be safe.
+    if len(documents) > 0 and isinstance(documents[0]['embedding'], float):
+        # Result was a single embedding (1D list), but we treated it as list of embeddings
+        # Wait, if inputs=["text"], result = [[0.1, ...]] usually.
+        # But let's trust standard behavior for now.
+        pass
+
     if documents:
-        collection.insert_many(documents)
-        print(f"Successfully stored {len(documents)} chunks from {file_path}")
+        try:
+            collection.insert_many(documents)
+            print(f"Successfully stored {len(documents)} chunks from {file_path}")
+        except Exception as db_err:
+            print(f"Database insertion failed: {db_err}", file=sys.stderr)
+            sys.exit(1)
     else:
         print("No chunks to store.", file=sys.stderr)
-
-
+        sys.exit(1)
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
@@ -78,8 +99,4 @@ if __name__ == "__main__":
         print(f"Error: File not found at {file_path}", file=sys.stderr)
         sys.exit(1)
         
-    try:
-        ingest_file(file_path)
-    except Exception as e:
-        print(f"Error during ingestion: {str(e)}", file=sys.stderr)
-        sys.exit(1)
+    ingest_file(file_path)

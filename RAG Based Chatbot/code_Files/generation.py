@@ -20,36 +20,50 @@ def get_all_chunks():
     # instead of fetching all chunks to memory. For this MVP, in-memory search is fine.
     return list(collection.find({}))
 
-def generate_answer(query):
+def generate_answer(query, history=[]):
     """
-    Generates an answer using Groq API based on the retrieved context.
+    Generates an answer using Groq API based on the retrieved context and chat history.
     """
     try:
         # 1. Retrieve relevant chunks
-        all_chunks = get_all_chunks()
-        relevant_chunks = retrieve_chunks(query, all_chunks)
+        relevant_chunks = retrieve_chunks(query)
         
         # 2. Formulate Context
         if not relevant_chunks:
-            context = "No relevant context found."
+            context_text = "No relevant documents found. Answer based on general knowledge."
             sources = []
         else:
-            context = "\n\n".join([chunk.get('text', '') for chunk in relevant_chunks])
+            context_text = "\n\n".join([chunk.get('text', '') for chunk in relevant_chunks])
             sources = list(set([chunk.get('source', 'Unknown') for chunk in relevant_chunks]))
 
-        # 3. Generate Answer with Retry Logic
-        system_prompt = f"You are a helpful assistant. Use the following context to answer the user's question. If the answer is not in the context, say you don't know.\n\nContext:\n{context}"
+        # 3. Construct Messages with History
+        # System Prompt
+        system_msg = {
+            "role": "system", 
+            "content": f"You are a helpful assistant. Use the following context to answer the user's question. If the answer is not in the context, say so, but you can use your general knowledge if helpful.\n\nContext:\n{context_text}"
+        }
         
+        # Build message chain
+        messages = [system_msg]
+        
+        # Add history (last 5 turns to save tokens)
+        for msg in history[-10:]: 
+            role = "user" if msg.get("role") == "user" else "assistant"
+            content = msg.get("content", "")
+            if content:
+                messages.append({"role": role, "content": content})
+        
+        # Add current query
+        messages.append({"role": "user", "content": query})
+
+        # 4. Generate Answer with Retry Logic
         max_retries = 3
         retry_delay = 2
 
         for attempt in range(max_retries):
             try:
                 completion = client.chat.completions.create(
-                    messages=[
-                        {"role": "system", "content": system_prompt},
-                        {"role": "user", "content": query}
-                    ],
+                    messages=messages,
                     model=LLM_MODEL,
                 )
                 return completion.choices[0].message.content, sources
@@ -76,8 +90,9 @@ if __name__ == "__main__":
             
         data = json.loads(input_data)
         query = data.get("query")
+        history = data.get("history", []) # Get history or empty list
         
-        answer, sources = generate_answer(query)
+        answer, sources = generate_answer(query, history)
         
         print(json.dumps({"answer": answer, "sources": sources}))
         

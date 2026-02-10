@@ -1,7 +1,9 @@
 groq
-sentence-transformers
-numpy
+# sentence-transformers (Removed for Render Optimization)
+# numpy (Removed for Render Optimization)
 python-dotenv
 pymongo
 pdfplumber
+requests
+huggingface-hub
 

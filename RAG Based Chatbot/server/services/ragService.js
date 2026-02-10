@@ -32,13 +32,16 @@ class RagService {
             });
 
             // Send data to Python via functions stdin
-            const inputPayload = JSON.stringify({ query, context: "" });
+            // FIX: Pass 'history' to Python so it can maintain context
+            const inputPayload = JSON.stringify({ query, history });
             pythonProcess.stdin.write(inputPayload);
             pythonProcess.stdin.end();
 
             // Collect output
             pythonProcess.stdout.on('data', (data) => {
-                outputData += data.toString();
+                const msg = data.toString();
+                console.log(`[PYTHON STDOUT]: ${msg}`); // FORCE LOGGING
+                outputData += msg;
             });
 
             pythonProcess.stderr.on('data', (data) => {
