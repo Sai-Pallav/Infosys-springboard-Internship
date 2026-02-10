@@ -10,28 +10,31 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 const MONGODB_URI = process.env.MONGODB_URI;
 
-// Middleware
-const helmet = require('helmet');
-const rateLimit = require('express-rate-limit');
-
-// 1. Security Headers
-app.use(helmet({
-    contentSecurityPolicy: false, // Disable CSP for now to allow inline scripts/styles if needed (dev mode)
-}));
-
-// 2. Rate Limiting (Limit to 100 requests per 15 minutes)
-const limiter = rateLimit({
-    windowMs: 15 * 60 * 1000, // 15 minutes
-    max: 100, // limit each IP to 100 requests per windowMs
-    message: { error: 'Too many requests, please try again later.' }
-});
-app.use('/api', limiter);
+// 2. CORS Configuration
+const allowedOrigins = [
+    'https://rag-based-chatbot-eacf7.web.app',
+    'https://rag-backend-hybrid.onrender.com',
+    'http://localhost:5000',
+    'http://localhost:3000'
+];
 
 app.use(cors({
-    origin: '*', // Allow all origins for initial setup/testing.
-    methods: ['GET', 'POST', 'OPTIONS'],
-    allowedHeaders: ['Content-Type', 'Authorization']
+    origin: function (origin, callback) {
+        // allow requests with no origin (like mobile apps or curl requests)
+        if (!origin) return callback(null, true);
+        if (allowedOrigins.indexOf(origin) === -1) {
+            var msg = 'The CORS policy for this site does not allow access from the specified Origin.';
+            return callback(new Error(msg), false);
+        }
+        return callback(null, true);
+    },
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With'],
+    credentials: true,
+    optionsSuccessStatus: 200 // For older browsers (IE11, various SmartTVs)
 }));
+
+// 3. Rate Limiting (Limit to 100 requests per 15 minutes)
 app.use(express.json({ limit: '10mb' })); // Limit JSON body size
 
 // MongoDB Connection
