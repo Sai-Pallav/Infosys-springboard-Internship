@@ -28,7 +28,7 @@ const limiter = rateLimit({
 app.use('/api', limiter);
 
 app.use(cors({
-    origin: '*', // Allow all origins for initial setup/testing. Ideally restrict to Firebase domain later.
+    origin: '*', // Allow all origins for initial setup/testing.
     methods: ['GET', 'POST', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization']
 }));

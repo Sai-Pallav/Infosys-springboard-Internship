@@ -1,41 +1,42 @@
-# Render Deployment Guide (Hybrid Node.js + Python)
+# Render Deployment Guide (Docker Method)
 
-This project uses a **Hybrid Architecture** where a Node.js server spawns Python subprocesses for AI tasks.
+Since we have added a `Dockerfile`, deploying this project to Render is very straightforward.
 
-## Prerequisites
-- GitHub Account
-- Render Account (https://render.com)
-- MongoDB Atlas Connection String
-- Groq API Key
+## 1. Create a New Web Service
+1.  Log in to your [Render Dashboard](https://dashboard.render.com).
+2.  Click the **"New +"** button and select **"Web Service"**.
+3.  Choose **"Build and deploy from a Git repository"**.
+4.  Connect your repository: `Infosys-springboard-Internship`.
 
-## Steps
+## 2. Configure the Service (Critical Steps)
+You must configure these settings exactly as shown below:
 
-1.  **Push Code to GitHub**:
-    - Ensure your code is pushed to your repository.
+| Setting | Value |
+| :--- | :--- |
+| **Name** | `rag-chatbot-backend` (or any name you like) |
+| **Region** | Choose the one closest to you (e.g., Singapore) |
+| **Branch** | `main` |
+| **Root Directory** | `RAG Based Chatbot` |
+| **Runtime** | **Docker** (Render should auto-detect this if Root Directory is correct) |
+| **Instance Type** | **Free** |
 
-2.  **Create Service on Render**:
-    - Go to **Dashboard** -> **New** -> **Web Service**.
-    - Connect your GitHub repository.
+> **⚠️ IMPORTANT:** You **MUST** set the **Root Directory** to `RAG Based Chatbot`. If you leave it empty, the deployment will fail because Render won't find the Dockerfile.
 
-3.  **Configuration**:
-    - **Name**: `rag-backend-hybrid`
-    - **Root Directory**: `RAG Based Chatbot/server` (Do not forget the "RAG Based Chatbot/" part!)
-    - **Runtime**: `Node`
-    - **Build Command**: `npm install && pip install -r ../code_Files/requirements.txt`
-    - **Start Command**: `node index.js`
-    - **Plan**: Free
+## 3. Environment Variables
+Scroll down to the **Environment Variables** section and add the following keys. Copy the values from your local `.env` file.
 
-    > **Note**: Setting the **Root Directory** to `RAG Based Chatbot/server` tells Render where the Node.js project is. We then use `../` in the build command to reach the Python `requirements.txt`.
+| Key | Value |
+| :--- | :--- |
+| `GROQ_API_KEY` | *(Paste your actual API Key)* |
+| `MONGODB_URI` | *(Paste your actual MongoDB Connection String)* |
+| `PYTHON_PATH` | `python3` |
+| `PORT` | `5000` |
 
-4.  **Environment Variables**:
-    - Add the following in the **Environment Variables** section:
-        - `MONGODB_URI`: `mongodb+srv://kotasaipallav123_db_user:i7zpzvTEtzhzT5g7@cluster0.l6zwnxg.mongodb.net/rag_chatbot?appName=Cluster0`
-        - `GROQ_API_KEY`: (Your actual Groq API key)
+## 4. Deploy
+1.  Click **"Create Web Service"**.
+2.  Render will start building the Docker image. This might take a few minutes as it installs Python and Node.js.
+3.  Once finished, you will see a green **"Live"** badge.
 
-5.  **Deploy**:
-    - Click **Create Web Service**.
-    - Wait for the build to finish.
-
-## Verification
-- Visit `https://your-app.onrender.com/health`.
-- Chat with the bot and check logs to see "Calling Python Generation Script...".
+## 5. Verification
+-   Your URL will look like: `https://rag-chatbot-backend.onrender.com`
+-   Visit `https://rag-chatbot-backend.onrender.com/status` to confirm the API is running.

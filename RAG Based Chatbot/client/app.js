@@ -15,15 +15,16 @@ if (menuBtn && sidebar) {
 }
 
 // Default Render Backend URL
-const RENDER_BACKEND_URL = 'https://rag-backend-hybrid.onrender.com';
+// Default to relative path for same-origin deployment (Render)
+const RENDER_BACKEND_URL = '';
 
 let API_BASE_URL = localStorage.getItem('api_base_url');
 
-// If we are on Firebase (or any production domain) but the saved URL is localhost, 
-// OR if the URL is not set at all, use the Render Backend.
+// If we are on localhost, default to localhost:5000. 
+// If on production (Render), default to relative path (empty string)
 const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
 
-if (!API_BASE_URL || (!isLocal && API_BASE_URL.includes('localhost'))) {
+if (!API_BASE_URL || (!isLocal && API_BASE_URL.includes('localhost')) || API_BASE_URL.includes('rag-backend-hybrid')) {
     API_BASE_URL = isLocal ? 'http://localhost:5000' : RENDER_BACKEND_URL;
     localStorage.setItem('api_base_url', API_BASE_URL);
 }
