@@ -3,11 +3,13 @@ import { useEffect, useState } from 'react';
 import { clsx } from 'clsx';
 import { twMerge } from 'tailwind-merge';
 import { API_BASE } from '../config';
+import StatusIndicator from './StatusIndicator';
 
 export default function Sidebar({ 
   isOpen, setIsOpen, sessions, currentSessionId, onSelectSession, onNewChat, 
   onDeleteSession, onOpenSettings, settings, onSaveSettings,
-  documents, setDocuments, activeDocuments, setActiveDocuments, onUrlIngest
+  documents, setDocuments, activeDocuments, setActiveDocuments, onUrlIngest,
+  backendStatus
 }) {
   const [showUrlInput, setShowUrlInput] = useState(false);
   const [urlInput, setUrlInput] = useState('');

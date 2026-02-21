@@ -2,8 +2,9 @@ import { useState, useRef, useEffect } from 'react';
 import { Send, Paperclip, Loader2, Mic, Download, Square, Share, Zap, Plus, Trash2, Sparkles } from 'lucide-react';
 import MessageBubble from './MessageBubble';
 import { clsx } from 'clsx';
+import StatusIndicator from './StatusIndicator';
 
-export default function ChatWindow({ messages, currentSessionId, onSendMessage, onFileUpload, isLoading, isSidebarOpen, onStopGeneration, settings }) {
+export default function ChatWindow({ messages, currentSessionId, onSendMessage, onFileUpload, isLoading, isSidebarOpen, onStopGeneration, settings, backendStatus }) {
   const [input, setInput] = useState('');
   const [isListening, setIsListening] = useState(false);
   const messagesEndRef = useRef(null);
@@ -175,7 +176,7 @@ export default function ChatWindow({ messages, currentSessionId, onSendMessage, 
     <div className="flex-1 flex flex-col h-full relative bg-surface-light dark:bg-[#0a0a0a] transition-all duration-300">
       {/* Top Bar for Chat Window */}
       {messages.length > 0 && (
-        <div className="absolute top-4 right-4 z-10 hidden lg:flex gap-2">
+        <div className="absolute top-4 right-20 z-10 hidden lg:flex items-center gap-3">
            <button 
              onClick={handleShare}
              className="flex items-center gap-2 px-3 py-1.5 bg-white/80 dark:bg-surface-darker/80 backdrop-blur-md border border-gray-200/50 dark:border-gray-800/50 text-gray-600 dark:text-gray-300 rounded-xl shadow-lg shadow-black/5 hover:bg-white dark:hover:bg-surface-darker hover:text-emerald-500 dark:hover:text-emerald-400 transition-all font-medium text-sm active:scale-95"
@@ -372,7 +373,7 @@ export default function ChatWindow({ messages, currentSessionId, onSendMessage, 
               value={input}
               onChange={(e) => setInput(e.target.value)}
               onKeyDown={handleKeyDown}
-              placeholder="Ask me to summarize, extract data, or explain... (Shift + Enter for new line)"
+              placeholder="Ask me to summarize, extract data, or explain..."
               className="flex-1 bg-transparent border-none focus:ring-0 resize-none py-3.5 px-3 max-h-40 text-gray-800 dark:text-gray-100 placeholder-gray-400 dark:placeholder-gray-500/80 text-[15px] leading-relaxed scrollbar-hide font-medium mb-0.5"
               rows={1}
               style={{ minHeight: '52px' }}

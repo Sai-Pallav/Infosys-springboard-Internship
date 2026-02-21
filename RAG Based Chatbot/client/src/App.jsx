@@ -3,6 +3,7 @@ import { Menu } from 'lucide-react';
 import Sidebar from './components/Sidebar';
 import ChatWindow from './components/ChatWindow';
 import SettingsModal from './components/SettingsModal';
+import StatusIndicator from './components/StatusIndicator';
 import { Toaster } from 'react-hot-toast';
 import { API_BASE } from './config';
 
@@ -13,6 +14,7 @@ function App() {
   const [currentSessionId, setCurrentSessionId] = useState(null);
   const [messages, setMessages] = useState([]); // Current session messages
   const [isLoading, setIsLoading] = useState(false);
+  const [backendStatus, setBackendStatus] = useState('connecting'); // online, connecting, offline
   const abortControllerRef = useRef(null);
   const [documents, setDocuments] = useState([]);
   const [activeDocuments, setActiveDocuments] = useState([]);
@@ -56,6 +58,35 @@ function App() {
     fetchSessions();
     fetchDocuments();
   }, []);
+
+  // Poll backend health status
+  useEffect(() => {
+    const checkStatus = async () => {
+      try {
+        // Correctly derive health URL from API_BASE
+        const healthUrl = API_BASE === '/api' 
+          ? (window.location.hostname === 'localhost' ? 'http://localhost:3000/health' : '/health')
+          : API_BASE.replace('/api', '/health');
+          
+        const res = await fetch(healthUrl);
+        if (res.ok) {
+          setBackendStatus('online');
+        } else {
+          setBackendStatus('connecting');
+        }
+      } catch (e) {
+        setBackendStatus('offline');
+      }
+    };
+
+    checkStatus();
+    
+    // Poll every 5s if not online, every 30s if online
+    const intervalTime = backendStatus === 'online' ? 30000 : 5000;
+    const intervalId = setInterval(checkStatus, intervalTime);
+
+    return () => clearInterval(intervalId);
+  }, [backendStatus]);
 
   const fetchDocuments = async () => {
     try {
@@ -375,9 +406,15 @@ function App() {
         activeDocuments={activeDocuments}
         setActiveDocuments={setActiveDocuments}
         onUrlIngest={handleUrlIngestion}
+        backendStatus={backendStatus}
       />
 
       <div className="flex-1 flex flex-col relative w-full">
+        {/* Global Status Indicator (Top Right) */}
+        <div className="fixed top-4 right-4 z-[60] lg:top-6 lg:right-8">
+           <StatusIndicator status={backendStatus} />
+        </div>
+
         {/* Mobile Header */}
         <header className="lg:hidden bg-white/80 dark:bg-surface-darker/80 backdrop-blur-md border-b border-gray-200/50 dark:border-gray-800/50 p-4 flex items-center justify-between transition-colors z-20 shadow-sm">
           <div className="flex items-center gap-3">
@@ -400,6 +437,7 @@ function App() {
           isSidebarOpen={isSidebarOpen}
           onStopGeneration={abortGeneration}
           settings={settings}
+          backendStatus={backendStatus}
         />
       </div>
 
