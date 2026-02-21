@@ -92,14 +92,18 @@ app.get('/health', (req, res) => {
 });
 
 
-app.use(express.static(path.join(__dirname, '../client/dist')));
-
+// In backend-only mode, we don't serve static files
+// All frontend requests are handled by Firebase
+app.get('/', (req, res) => {
+    res.json({
+        message: "RAG Chatbot API is online",
+        health: "/health",
+        api: "/api/status"
+    });
+});
 
 app.get('*', (req, res) => {
-    if (req.path.startsWith('/api')) {
-        return res.status(404).json({ error: 'API endpoint not found' });
-    }
-    res.sendFile(path.join(__dirname, '../client/dist/index.html'));
+    res.status(404).json({ error: 'Endpoint not found' });
 });
 
 
