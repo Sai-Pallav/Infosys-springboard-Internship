@@ -72,6 +72,14 @@ if (!MONGODB_URI) {
 }
 
 
+// Diagnostic Middleware
+app.use((req, res, next) => {
+    if (req.path.startsWith('/api') || req.path === '/health') {
+        console.log(`[Diagnostic] ${req.method} ${req.path}`);
+    }
+    next();
+});
+
 app.use('/api', apiRoutes);
 
 
