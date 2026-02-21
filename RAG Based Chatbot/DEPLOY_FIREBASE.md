@@ -23,7 +23,7 @@
       firebase init hosting
       ```
     - **Select**: "Use an existing project" (or create new).
-    - **Public directory**: `client`
+    - **Public directory**: `client/dist`
     - **Configure as single-page app?**: `Yes`
     - **Set up automatic builds/deploys?**: `No` (unless you want GitHub Actions)
 

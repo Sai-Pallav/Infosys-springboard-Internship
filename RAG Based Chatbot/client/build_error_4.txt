@@ -1,0 +1,110 @@
+﻿[36mvite v7.3.1 [32mbuilding client environment for production...[36m[39m
+transforming...
+[32mΓ£ô[39m 20 modules transformed.
+node.exe : 
+[31mΓ£ù[39m Build 
+failed in 310ms
+At line:1 char:1
++ & "C:\Program 
+Files\nodejs/node.exe" 
+"C:\Users\kotas\AppData
+\Roaming\ ...
++ ~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
+~~
+    + CategoryInfo     
+         : NotSpecifi  
+  ed: ([31mΓ£ù[39m   
+  Build failed in 3    
+10ms:String) [], R    
+emoteException
+    + FullyQualifiedEr 
+   rorId : NativeComm  
+  andError
+ 
+[31merror during 
+build:
+[31m[@tailwindcss/vite
+:generate:build] 
+Cannot apply unknown 
+utility class `shadow-[
+0_0_40px_-10px_rgba(0,`
+[31m
+file: [36mC:/Users/kot
+as/Desktop/Infosys 
+project root/RAG Based 
+Chatbot/client/src/inde
+x.css[31m
+    at 
+onInvalidCandidate (fil
+e:///C:/Users/kotas/Des
+ktop/Infosys%20project%
+20root/RAG%20Based%20Ch
+atbot/client/node_modul
+es/tailwindcss/dist/chu
+nk-O3SHLFNR.mjs:21:1511
+)
+    at $e (file:///C:/U
+sers/kotas/Desktop/Info
+sys%20project%20root/RA
+G%20Based%20Chatbot/cli
+ent/node_modules/tailwi
+ndcss/dist/chunk-O3SHLF
+NR.mjs:16:36740)
+    at file:///C:/Users
+/kotas/Desktop/Infosys%
+20project%20root/RAG%20
+Based%20Chatbot/client/
+node_modules/tailwindcs
+s/dist/chunk-O3SHLFNR.m
+js:21:355
+    at Ar (file:///C:/U
+sers/kotas/Desktop/Info
+sys%20project%20root/RA
+G%20Based%20Chatbot/cli
+ent/node_modules/tailwi
+ndcss/dist/chunk-O3SHLF
+NR.mjs:3:1733)
+    at I (file:///C:/Us
+ers/kotas/Desktop/Infos
+ys%20project%20root/RAG
+%20Based%20Chatbot/clie
+nt/node_modules/tailwin
+dcss/dist/chunk-O3SHLFN
+R.mjs:3:1377)
+    at Ce (file:///C:/U
+sers/kotas/Desktop/Info
+sys%20project%20root/RA
+G%20Based%20Chatbot/cli
+ent/node_modules/tailwi
+ndcss/dist/chunk-O3SHLF
+NR.mjs:21:172)
+    at Gi (file:///C:/U
+sers/kotas/Desktop/Info
+sys%20project%20root/RA
+G%20Based%20Chatbot/cli
+ent/node_modules/tailwi
+ndcss/dist/chunk-O3SHLF
+NR.mjs:38:294)
+    at async ao (file:/
+//C:/Users/kotas/Deskto
+p/Infosys%20project%20r
+oot/RAG%20Based%20Chatb
+ot/client/node_modules/
+tailwindcss/dist/chunk-
+O3SHLFNR.mjs:38:631)
+    at async vf (file:/
+//C:/Users/kotas/Deskto
+p/Infosys%20project%20r
+oot/RAG%20Based%20Chatb
+ot/client/node_modules/
+tailwindcss/dist/chunk-
+O3SHLFNR.mjs:38:1406)
+    at async uu (file:/
+//C:/Users/kotas/Deskto
+p/Infosys%20project%20r
+oot/RAG%20Based%20Chatb
+ot/client/node_modules/
+@tailwindcss/node/dist/
+index.mjs:10:3458)[39m

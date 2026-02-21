@@ -15,32 +15,39 @@ Use this to verify the server is running and the database is connected.
   }
   ```
 
-## 2. Chat (RAG)
-Send a user query to get an answer based on the knowledge base.
+## 2. Chat (RAG) - SSE Stream
+Send a user query to get an answer based on the knowledge base in real-time.
 
 - **Endpoint**: `POST /api/chat`
 - **Headers**:
   - `Content-Type`: `application/json`
+  - `Accept`: `text/event-stream`
 - **Body**:
   ```json
   {
     "query": "What is the capital of France?",
-    "sessionId": "sess_12345"
+    "sessionId": "sess_12345",
+    "model": "llama-3.1-8b-instant",
+    "systemPrompt": "Optional custom prompt...",
+    "activeDocuments": []
   }
   ```
-- **Response (Success - AI or Fallback)**:
+- **Response Format (Server-Sent Events)**:
+  The response is a series of `data:` blocks.
+  
+  **1. Chunk Block (Multiple)**:
   ```json
-  {
-    "answer": "The capital of France is Paris.",
-    "sources": ["geography_textbook.pdf"],
-    "history": [ ... ]
-  }
+  data: {"type": "chunk", "text": "The capital "}
   ```
-- **Response (Error)**:
+  
+  **2. Metadata Block (Final)**:
   ```json
-  {
-    "error": "Internal Server Error..."
-  }
+  data: {"type": "metadata", "sources": ["docs.pdf"], "followups": ["Tell me about Paris"]}
+  ```
+
+  **3. Error Block**:
+  ```json
+  data: {"type": "error", "error": "Quota exceeded"}
   ```
 
 ### Fallback Behavior

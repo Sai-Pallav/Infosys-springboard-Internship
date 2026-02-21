@@ -1,7 +1,6 @@
 @echo off
-cd ..
-git rm "RAG Based Chatbot/debug_git.bat" "RAG Based Chatbot/debug_push.bat" "RAG Based Chatbot/debug_state.bat"
-del "RAG Based Chatbot\git_push_log.txt"
+git rm debug_git.bat debug_push.bat debug_state.bat 2>NUL
+del git_push_log.txt 2>NUL
 git commit -m "Remove temporary debug scripts"
 git push origin main
 echo CLEANUP COMPLETE

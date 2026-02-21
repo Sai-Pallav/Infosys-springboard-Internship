@@ -26,6 +26,10 @@ const ConversationSchema = new mongoose.Schema({
         required: true,
         unique: true
     },
+    title: {
+        type: String,
+        default: 'New Conversation'
+    },
     messages: [MessageSchema],
     lastUpdated: {
         type: Date,

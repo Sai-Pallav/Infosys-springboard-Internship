@@ -1,0 +1,8 @@
+groq
+numpy
+pymongo
+requests
+beautifulsoup4
+huggingface_hub
+python-dotenv
+pdfplumber

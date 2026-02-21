@@ -1,6 +1,6 @@
 # Render Deployment Guide (Docker Method)
 
-Since we have added a `Dockerfile`, deploying this project to Render is very straightforward.
+Since we have added a `Dockerfile`, deploying this project to Render is very straightforward. The Dockerfile now automatically builds your React frontend and serves it via the Node.js backend as a single monolithic service.
 
 ## 1. Create a New Web Service
 1.  Log in to your [Render Dashboard](https://dashboard.render.com).
@@ -31,7 +31,7 @@ Scroll down to the **Environment Variables** section and add the following keys.
 | `MONGODB_URI` | *(Paste your actual MongoDB Connection String)* |
 | `HF_API_KEY` | *(Paste your actual Hugging Face Classic Token)* |
 | `PYTHON_PATH` | `python3` |
-| `PORT` | `5000` |
+| `PORT` | `3000` |
 | `NODE_ENV` | `production` |
 
 ## 4. Deploy

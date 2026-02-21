@@ -1,9 +1,5 @@
-# Use an official Python runtime as a parent image (so we have Python & Pip)
-# We use a slim version to keep it small, but with enough tools
 FROM python:3.10-slim
 
-# Install Node.js
-# We use curl to setup the nodejs repository
 RUN apt-get update && apt-get install -y \
     curl \
     gnupg \
@@ -13,25 +9,24 @@ RUN apt-get update && apt-get install -y \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
-# Set the working directory in the container
 WORKDIR /usr/src/app
 
-# Copy the entire project
 COPY . .
 
 # Install Python dependencies
-RUN pip install --no-cache-dir -r code_Files/requirements.txt
+RUN pip install --no-cache-dir -r server/python_engine/requirements.txt
 
-# Install Node.js dependencies
+# Build the client frontend
+WORKDIR /usr/src/app/client
+RUN npm install && npm run build
+
+# Set up the server
 WORKDIR /usr/src/app/server
 RUN npm install
 
-# Expose the API port
-EXPOSE 5000
-
-# Set environment variables (Render will provide strict ones, but these are defaults)
-ENV PORT=5000
+EXPOSE 3000
+ENV PORT=3000
 ENV PYTHON_PATH=python3
+ENV NODE_ENV=production
 
-# Start the server
 CMD ["node", "index.js"]

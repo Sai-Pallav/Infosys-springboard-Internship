@@ -3,8 +3,7 @@ echo ===================================================
 echo   Deploying to Infosys-springboard-Internship
 echo ===================================================
 
-:: Navigate to the parent directory (Repo Root)
-cd ..
+:: We are already in the Project Root
 echo [Debug] Current Directory: %CD%
 
 :: Check Status
@@ -22,8 +21,8 @@ git checkout main 2>NUL || git checkout -b main
 
 :: 1. Stage and Commit local changes FIRST (Required for rebase)
 echo [1/4] Staging and Committing local changes...
-git add "RAG Based Chatbot/Dockerfile" "RAG Based Chatbot/render.yaml" -f
-git add "RAG Based Chatbot"
+git add "Dockerfile" "render.yaml" -f
+git add .
 git commit -m "Update RAG Chatbot: Production Ready (Security, UX, Stability fixes)"
 
 :: 2. Sync with Remote (Pull with rebase)
