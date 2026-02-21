@@ -14,14 +14,9 @@ WORKDIR /usr/src/app
 COPY . .
 
 # Install Python dependencies
-RUN pip install --no-cache-dir -r server/python_engine/requirements.txt
+RUN pip install --no-cache-dir -r python_engine/requirements.txt
 
-# Build the client frontend
-WORKDIR /usr/src/app/client
-RUN npm install && npm run build
-
-# Set up the server
-WORKDIR /usr/src/app/server
+# Set up the server (Root is already /server)
 RUN npm install
 
 EXPOSE 3000
