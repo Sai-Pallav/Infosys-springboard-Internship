@@ -13,14 +13,14 @@ You must configure these settings exactly as shown below:
 
 | Setting | Value |
 | :--- | :--- |
-| **Name** | `rag-chatbot-backend` (or any name you like) |
-| **Region** | Choose the one closest to you (e.g., Singapore) |
+| **Name** | `rag-chatbot-backend` |
+| **Region** | Choose the one closest to you |
 | **Branch** | `main` |
-| **Root Directory** | `RAG Based Chatbot` |
-| **Runtime** | **Docker** (Render should auto-detect this if Root Directory is correct) |
+| **Root Directory** | `RAG Based Chatbot/server` |
+| **Runtime** | **Docker** |
 | **Instance Type** | **Free** |
 
-> **⚠️ IMPORTANT:** You **MUST** set the **Root Directory** to `RAG Based Chatbot`. If you leave it empty, the deployment will fail because Render won't find the Dockerfile.
+> **⚠️ IMPORTANT:** You **MUST** set the **Root Directory** to `RAG Based Chatbot/server`. This ensures Render looks directly at the backend code and the sub-directory Dockerfile.
 
 ## 3. Environment Variables
 Scroll down to the **Environment Variables** section and add the following keys. Copy the values from your local `.env` file.
