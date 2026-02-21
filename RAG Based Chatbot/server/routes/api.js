@@ -11,12 +11,18 @@ const Conversation = require('../models/Conversation');
 
 // API Status
 router.get('/status', (req, res) => {
-    res.json({ status: 'API is running' });
+    res.json({ status: 'API is running', timestamp: new Date() });
+});
+
+// Diagnostic Route
+router.get('/test', (req, res) => {
+    res.json({ message: 'Router is matching correctly' });
 });
 
 // Get recent sessions
 router.get('/sessions', async (req, res) => {
     try {
+        console.log("[API] Fetching sessions...");
         const conversations = await Conversation.find({}, 'sessionId title lastUpdated')
             .sort({ lastUpdated: -1 })
             .limit(20);
